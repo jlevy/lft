@@ -50,7 +50,7 @@ I see so much focus today on the rising capabilities of AI systems—but vastly 
 Doug's vision is unchanged.
 It's time we apply the tools of today with his vision in mind.
 
-## Why We Need Small Tools
+## Why We Need More Flexible Primitive Operations
 
 > "Civilization advances by extending the number of important operations which we can
 > perform without thinking about them."
@@ -65,10 +65,35 @@ That's why it makes sense to build tools that make individual steps more powerfu
 larger, human processes accelerate over time.
 
 In software, big ideas often must be realized from practical, concrete pieces.
-So often I like to work "bottom up".
+
+Typically there are two opposite pitfalls when building software:
+
+- *Underengineering (inadequate up-front design)*: This is when you don't plan ahead and
+  just building a tool, realizing it doesn't work as hoped, but then getting stuck
+  because the complexity of the software is too high to change it.
+  This too little design and too much technical debt.
+
+- *Overengineering (too much up-front design)*: This is the opposite, which is that
+  you're so afraid of inadquate design that you design a much more complex
+  architecture—but then it ships too slow and it too might not work as hoped.
+  This is too much design without testing and learning.
+  This is common among engineers of moderate experience and was called by Fred Brooks
+  [the second-system effect](https://en.wikipedia.org/wiki/Second-system_effect).
+
+Unfortunately, for products like knowledge tools, the use cases are complex and not
+obvious. So both of these are real risks.
+
+So what do you do?
+
+My answer is you should work "bottom up"—that is, you should build small pieces that
+combine in many ways, including in ways you can't plan for right now.
 
 If you can build small pieces that combine in many ways, the right combinations and
 workflows become easier to discover.
+
+A good analogy for this is the old story about planning paths on a college campus: you
+can try to design them up front, or you can put down grass, wait for students to create
+paths in the grass, then pave them.
 
 ## Why Linting is a Powerful Idea
 

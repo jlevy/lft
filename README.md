@@ -182,7 +182,7 @@ software) to human problems.*
 
 </div>
 
-### Why is Software Engineering Hard?
+### What is Good Engineering?
 
 Another fundamental question is, why does it seem like software engineering is quite
 hard, both for humans and now for LLMs?
@@ -199,12 +199,12 @@ So more often than not, the solutions are complex and constantly evolving.
 
 That means *good* software engineering is the art of rapidly and effectively exploring
 and building software solutions to human (or specifically customer) problems that are
-complex and evolving.
+complex and evolving.[^whyfast]
 
 <div class="boxed-text">
 
 ***Good engineering** is engineering that allows **sustained velocity** in exploring
-solutions to human problems.*
+solutions.*
 
 </div>
 
@@ -214,21 +214,58 @@ that aren't really relevant to the problem.
 As one of the best engineers I know describes it, "good engineering is moving fast but
 not painting yourself into a corner."
 
-Another important way to frame this statement, originally due to Fred Brooks: good
-engineering involves exploring the *essential* complexity of a problem and possible
-solutions without adding too much *accidental*
-complexity.[^nosilverbullet][^naturalcomplexity] Having too much accidental complexity
-is a common way engineering becomes ineffective.[^techdebt]
+### Three Types of Complexity
+
+Often, using a single word for multiple things can lead to a lot of confusion.
+Complexity is one of those words.
+
+Another important way to frame the concept of good engineering is originally due to Fred
+Brooks: good engineering involves exploring the *essential complexity* of a problem and
+possible solutions without adding too much *accidental complexity* that distracts and
+hinders your ability to find solutions to problems.[^nosilverbullet] Having too much
+accidental complexity is a common way engineering becomes ineffective.[^techdebt]
+
+In fact, I think it's worth distinguishing three kinds of complexity that arise in
+engineering:
+
+- **Natural complexity:** If you are building an airplane, you need a good understanding
+  of aerodynamics and materials science, which are governed by quite complex
+  interactions of the laws of physics.
+  This is natural complexity.
+  It involved inherent consequences of mathematics and the laws of physics.
+  It is *ultimately consistent.
+
+  *Engineers should always try to understand natural complexity.*
+
+- **Feature complexity:** On the other hand, if you are building a messaging platform,
+  you will discover your users (and competitors) like features such as emoji reactions
+  and generative-AI stickers.
+  These make your product significantly more complex as you try to make your users
+  happy. I'll call it *feature complexity* and it really is the complexity of human
+  desires. It is not well defined and subjective but under your control.
+
+  *Engineers should exercise careful judgement about when to explore feature
+  complexity.*
+
+- **Accidental complexity:** As you build something, it invariably becomes more and more
+  complex. Most large, popular software is so complex few normal people can even hold all
+  the details in their mind.
+  But a lot of it is details that don't really matter in the design process.
+  Accidental complexity arises not from nature or from human desires but from the
+  engineering process.
+
+  *Engineers should try to avoid or reduce accidental complexity.*
 
 <div class="boxed-text">
 
 *The **hard part of engineering** is understanding and exploring **essential
-complexity** while managing **accidental complexity**.*
+complexity** (natural complexity and feature complexity) while managing **accidental
+complexity**.*
 
 </div>
 
-This is true whether you're a human developer or an LLM. And it's one more thing that
-*doesn't* change with progress in AI.
+Note this is true whether you're a human developer or an LLM agent.
+It's one more thing that *doesn't* change with progress in AI.
 
 ### Why Don't Apps Have the Features We Want?
 
@@ -288,7 +325,7 @@ communication**, **profit incentives**, and **organizational structure**.*
 
 This too won't change.
 
-## The Future of Software Development
+## The Future of Software Engineering
 
 Now we've talked about the essential facts that seem inherent to how and why humans
 build software, it's time to ask what *is* changing?
@@ -442,7 +479,7 @@ It's quite likely we'll see emergence of languages at new points between English
 current programming languages, or of rigorous, constrained formats for English
 (themselves enforced by LLMs and grammar specifications).
 
-### The Future of Knowledge Work
+### What is the Future of Knowledge Work?
 
 Does the history of software engineering really have relevance for us today for people
 who are not engineers or builders of software?
@@ -714,23 +751,22 @@ feedback if you're willing to share it.
 
 [^oreilly]: https://www.oreilly.com/tim/wtf-book.html
 
+[^whyfast]: A reasonable question is, why is good engineering mean building things
+    quickly? Isn't it more important to build them right?
+
+    There are two answers: One a business reason: if you don't build it quickly, someone
+    else might, and you may not have a successful product or company.
+
+    But there's an equally important and subtle reason: building more quickly means you
+    learn more quickly in the process of exploring solutions.
+
+    Engineering is exploration.
+    And exploration is directly powered by learning.
+    This is the real reason for the classic startup advice to ship fast and iterate.
+
 [^nosilverbullet]: Frederick P. Brooks, [*No Silver Bullet—Essence and Accident in
     Software
     Engineering*](https://worrydream.com/refs/Brooks_1986_-_No_Silver_Bullet.pdf), 1986.
-
-[^naturalcomplexity]: It's worth noting essential complexity comes in two forms.
-
-    If you are building an airplane, you need a good understanding of aerodynamics and
-    materials science, which are governed by quite complex interactions of the laws of
-    physics. This is *natural complexity*.
-
-    On the other hand, if you are building a messaging platform, you will discover your
-    users (and competitors) like features such as emoji reactions and generative-AI
-    stickers. These make your product significantly more complex in response to human
-    desires. This is *feature complexity*.
-
-    Both are distinct from *accidental complexity*, which arises not from nature or from
-    human desires but from the engineering process.
 
 [^techdebt]: Some call this technical debt.
 

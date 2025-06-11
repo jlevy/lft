@@ -1,22 +1,34 @@
-# Linters for Thought
+# Linters for Thought: What Software Engineering Teaches Us About Collective Intelligence
 
 Joshua Levy\
-*v0.1.2 (June 2025) – Draft!*
+*v0.1.3 (June 2025) – Draft!*
+
+<div class="boxed-text">
+
+This is a rough draft.
+I'd be very grateful for your feedback!
+
+The ideas here come from many people, no doubt far more than I have currently cited.
+Some are from conversations with friends and colleagues over the years.
+I would like to add more credits where they are due.
+If you know relevant work or if your own work is relevant, please let me know so I can
+reference it.
+
+The fastest way to reach me is to tag or DM me: [x.com/ojoshe](https://x.com/ojoshe)
+
+</div>
 
 ## Purpose
 
-This is an incomplete and rough draft I'm using to articulate a few ideas for research
-on the idea of "linters for thought."
-It revisits some long-standing ideas of Engelbart and some thoughts of my own on how to
-think about tools for augmenting human collective intelligence.
+This work is a collection of reflections and research ideas on software engineering and
+"linters for thought":
 
-I walk through some underlying concepts on what augmentation is and why it's important,
-the history and future of software engineering and its relation to human knowledge work,
-and discuss we might design, discover, and build tools for augmenting our collective
-ability to explore solutions to complex problems.
-
-I'd love your feedback!
-The fastest way is DMs: [x.com/ojoshe](https://x.com/ojoshe)
+I'll start with Engelbart's ideas on intelligence augmentation and talk about why it's
+important today. Then I turn to the history software engineering and its relation to
+human knowledge work.
+Finally, I'll get into a few specific ideas for tools we might design, discover, and
+build that augment our *collective intelligence*—that is, improving our ability to find
+solutions to complex human problems.
 
 ## Intelligence Augmentation
 
@@ -64,7 +76,7 @@ Internet, the GUI, the mouse, and almost every piece of software we use, he alwa
 considered his dream unrealized.
 It's time we apply the vastly more powerful tools of today with his insights in mind.
 
-### Why Technological Shifts Happen First for Programmers
+### Why Programmers Live in the Future
 
 I want to take a significant detour in the next section through some core insights about
 the challenges of building software.
@@ -75,6 +87,7 @@ most influenced online products and culture were first observed by programmers.
 Although historically, programming was at first seen as an arcane skill, over the
 history of programming, we have seen over and over that the challenges and insights of
 programmers are usually challenges or insights we face in general with knowledge work.
+
 If you want to see the future of the knowledge economy, look at what programmers are
 excited about today.
 
@@ -214,18 +227,77 @@ that aren't really relevant to the problem.
 As one of the best engineers I know describes it, "good engineering is moving fast but
 not painting yourself into a corner."
 
+### Product vs. Infrastructure Engineering
+
+Often, using a single word for distinct but related things can lead to a lot of
+confusion.
+
+While we're talking about this, it's worth distinguishing between two kinds of
+engineering.
+
+In comedy, there are "comedians' comedians"—the comedians other comedians most respect.
+But these are often *not* the people the general public finds most funny.
+
+There is something similar with engineering.
+For lack of better terminology, I'll call them *product engineering* and *infrastructure
+engineering*.
+
+<div class="boxed-text">
+
+***Product engineers** explore solutions for users.*
+
+***Infrastructure engineers** explore solutions for other engineers.*
+
+</div>
+
+This distinction can help resolve some confusions.
+
+For example, most arguments between engineers on things like software architecture and
+programming languages are not about product engineering.
+
+Product-thinking people often find these arguments confusing or distracting.
+
+But it's because they are not about product engineering.
+They are about infrastructure engineering: they are arguments about *what infrastructure
+will lead to future sustained velocity for other engineers*.
+
+Product-oriented people most respect people who give solutions to users.
+Engineering-oriented people most respect engineers who help other engineers be more
+productive.
+
+These observations have applied for decades on software teams.
+
+But it has new relevance today with LLMs.
+LLMs are currently best implementing clear specifications.
+Product engineers can often give clear specifications.
+However, infrastructure engineers are problems for other engineers.
+It's harder to give specifications for infrastructure engineering because so aspects are
+non-obvious, second order, and take time to observe.
+
+LLMs help all engineers, but they can do more for product engineers than for
+infrastructure engineers.
+So human engineering effort is increasingly about infrastructure engineering.
+
+<div class="boxed-text">
+
+Human product engineers need LLMs and LLMs need human infrastructure engineers.
+
+</div>
+
 ### Three Types of Complexity
 
-Often, using a single word for multiple things can lead to a lot of confusion.
-Complexity is one of those words.
+Let's mention another word that has a few distinct meanings in engineering: complexity.
 
-Another important way to frame the concept of good engineering is originally due to Fred
-Brooks: good engineering involves exploring the *essential complexity* of a problem and
-possible solutions without adding too much *accidental complexity* that distracts and
-hinders your ability to find solutions to problems.[^nosilverbullet] Having too much
-accidental complexity is a common way engineering becomes ineffective.[^techdebt]
+An alternate and important way to frame the concept of good engineering is originally
+due to Fred Brooks: good engineering involves exploring the *essential complexity* of a
+problem and possible solutions without adding too much *accidental complexity* that
+distracts and hinders your ability to find solutions to problems.[^nosilverbullet]
 
-In fact, I think it's worth distinguishing three kinds of complexity that arise in
+This is actually just a reframing of the same definition above of sustained velocity.
+Having too much accidental complexity is a common way engineering slows down and becomes
+ineffective.[^techdebt]
+
+In fact, I think it's best to think of three kinds of complexity that arise in
 engineering:
 
 - **Natural complexity:** If you are building an airplane, you need a good understanding
@@ -579,7 +651,7 @@ to code have realized types make LLMs far more reliable and better at coding acc
 
 What was good for humans was great for LLMs.
 
-## Can We Build Tools for Collective Augmentation of Thought?
+## Can We Build Better Tools?
 
 What are the tools that can help people iteratively improve the quality of written work
 and consequently, of their ideas, both individually and when collaborating?
@@ -636,7 +708,7 @@ doing right now. The three key differences:
 This may sound ambitious but I want to be ruthlessly practical about it too.
 See below for some concrete examples of what I've begun building.
 
-### Build More Flexible Primitive Operations
+### The Value of Flexible Primitive Operations
 
 > “*Civilization advances by extending the number of important operations which we can
 > perform without thinking about them.*” —Alfred North Whitehead[^whitehead]
@@ -680,17 +752,209 @@ A good analogy for this is the old story about planning paths on a college campu
 can try to design them up front, or you can put down grass, wait for students to create
 paths in the grass, then pave them.
 
-## A Few Tool Experiments (So Far)
+### Principles for Compositional Tools
 
 In software, big ideas often must be realized from practical, concrete pieces.
-So often I like to work "bottom up".
+So I think it makes sense to work "bottom up".
+
+So what are some areas where we could begin to build better primitive operations?
+
+Some key principles are:
+
+1. **Transparency:** Increase visibility of content at all times, including text, edits,
+   and LLM prompts used to make edits.
+   (Many current AI tools don't reveal all these details.)
+
+2. **Flexibility:** Increase variety of operations.
+   It should be easy to add new operations.
+
+3. **Power:** Single operations should be able to do quite complex things.
+   An example would be fact checking a document and adding annotations.
+   Or transcribing, summarizing, and formatting a lecture.
+   A key part of this is **reduced friction** around performing different operations.
+   For example, it is far preferable to have a unified UX rather than having to
+   copy/paste into and out of your ChatGPT window for each step.
+
+4. **Reliability:** Not every LLM-powered step is reliable.
+   We can wait for models to improve, but we also need ways to make unreliable steps
+   more reliable (by having steps for additional checks like groundedness checks or
+   filtering of diffs).
+
+5. **Trivial to extend or compose features:** This is the biggest departure from many
+   existing tools. A key element here is *data-driven user interfaces*. Many tools and
+   workflows do do not exist
+
+## Selected Ideas for Better Tools
+
+### Areas To Explore
+
+Given this, here are some areas where I think are high leverage or underrated—where
+building and exploring products could have surprisingly large impacts:
+
+1. **Making quality of writing and clarity of reasoning more apparent**
+
+   - **Consistent writing metrics:** Ways to measure and attributes of writing (clarity,
+     cohesion, depth, rigor, factuality, warmth, etc.)
+
+   - **Fact-check linting:** Workflows for LLM-based fact checking (perform searches,
+     highlight inconsistencies, rank issues and concerns based on explicitly defined and
+     revised credibility rules)
+
+   - **Groundedness linting:** Workflows for LLM-based measurement and improvements to
+     groundedness and citations
+
+   - **Logical linting:** Surfacing areas of uncertainty or disagreement qualitatively
+     and visually in text
+
+   - **Visualizations:** Design both simple and more detailed visualizations for all of
+     these
+
+2. **Simpler and more flexible writing and editing workflows**
+
+   - Editors and LLM-powered editing should not be apps—they should be features
+     available anywhere
+
+   - First-class support for semi-structured documents
+
+     - The line between spreadsheet and doc should be blurred
+
+     - The most effective way is via format conventions: a hybrid Markdown format that
+       supports structured annotations that is both LLM friendly and convertible to any
+       other format and that is easily editable with simple browser-based editing tools
+
+   - Improved designs and UX for multi-role editing and review workflows
+
+     - Key to proper collaboration is supporting workflows with disparate roles of
+       different participants: writers, subject-matter experts, fact checkers, copy
+       editors, etc.
+
+     - Traditionally, we have used collaborative documents like Notion or Google Docs,
+       but these are not designed with these different roles in mind
+
+3. **Extraction and visualization of concepts and relations**
+
+   - Automated concept and relationship extraction
+
+   - Automated semi-structured fact and assertion extraction
+
+   - There should be much less friction to grasp key concepts in written works
+
+   - LLMs make it trivial to extract concepts and relations, but the UX for visualizing
+     and improving these visualizations is still primitive
+
+4. **Simpler and more flexible publishing formats**
+
+   - **Make complex docs simple to publish:** Complex docs (like deep research reports)
+     should be both beautiful and easy to read, supporting tables, footnotes,
+     annotations, table of contents, mouseovers on links, etc.
+
+   - **Tree summaries:** Documents should have tree summaries, i.e. recursive summaries
+     of sections and subsections, so you can quickly navigate and understand the
+     structure of a document, and improved browser-based UX to support reading content
+     in this format
+
+5. **Collaborative editing of structured relations**
+
+   - For example, facts that a text makes are readily summarized by an LLM as specific
+     assertions
+
+   - But UIs for editing and curating these changes are still primitive
+
+   - This is needed for humans reviewing LLM content, for humans reviewing content from
+     other humans, and for LLMs reviewing content from humans and LLMs
+
+6. **Integration of formal reasoning with fact checking**
+
+   - Historically, logic-based AI expert systems have had many limitations, leading to
+     their abandonment as a primary approach to AI
+
+   - However, blending formal reasoning with LLM-enhanced annotations of facts is a
+     lightweight way to combine the rigor and consistency of formality with the reality
+     that no writing is ever perfectly precise or consistent
+
+   - Tools should highlight *apparent inconsistencies* so you effectively have *logic
+     linters*
+
+7. **Bridging-based ranking for resolving disagreements**
+
+   - **Consistency improvements via bridging-based ranking:** Bridging-based ranking is
+     among the most effective ways to find helpful consensus on areas of disagreement or
+     dispute
+
+   - **Conflict resolution workflows:** Send a draft to a group of people to resolve
+     disputed or confusing facts or parts of a work
+
+### Will Current Companies Build These Tools?
+
+A reasonable question to ask about these ideas for tools is whether they will simply
+emerge from existing tools from OpenAI, Google, Anthropic, Cursor, or other current
+companies and AI startups.
+
+My answer is yes, of course some of these features will emerge.
+
+At the same time, without conscious design to simplify them, they will tend to emerge in
+complex ways that add accidental complexity to content and processes to maintain them.
+
+Increasingly, LLMs are writing more code for us.
+This is a good thing.
+
+But it remains the job of creative *human* engineers to shape the way we use tools.
+
+### Tactics for Better Tool Engineering
+
+The above list may sound like a laundry list.
+But experimenting with many of them is easier than one might think, because the tools
+discussed can be built from the same more primitive pieces.
+
+Some key areas where document and tooling infrastructure needs to improve:
+
+- **Simple formats and conventions for files:**
+
+  - Consistent metadata on files that is backward-compatible and simple
+
+  - Conventions for making information available in workspaces
+
+  - Formats and conventions for *stand-off annotations* that are compatible with LLMs
+
+  - Formats and conventions for semi-structured data blended with text documents,
+    including formats and conventions for concepts and relations and for tables
+
+- **Simple formats and conventions for documents:**
+
+  - Tools for managing Markdown documents in powerful, consistent ways, including
+    controlled edits and readable diffs
+
+- **Data-driven UX with GUI/Terminal Hybrid Capabilities:**
+
+  - Currently, building things like Vercel's "rich chat"
+    [AI SDK](https://ai-sdk.dev/docs/introduction) require extensive amounts of code for
+    full-stack web development, involving many frameworks.
+    This is far too slow as a way to build new UX.
+
+  - As we've seen with Claude Code and other tools, the terminal, while not perfect,
+    allows for much more flexible workflows.
+    Claude Code can add features with almost zero effort on UX.
+
+  - It's time we find a way to blend these approaches.
+    It's definitely technically feasible, but we need to escape the history of complex
+    web stacks.
+
+- **Better shells:**
+
+  - A special case of data-driven UX, the classic Unix shell offers a model of an
+    extremely powerful and flexible UX
+
+  - There are numerous ways shell and shell-like UIs can be enhanced to be *both* easier
+    to use and more powerful
+
+### A Few of My Own Experiments (So Far)
 
 Over the past couple months, I've found that because I can build more myself with LLM
 coding tools, I have been able to prototype a few of these bottom-up tools.
 These are just a start but they are pieces that build on each other:
 
-All of these are rough and I haven't promoted any of them yet, but I'd like early
-feedback if you're willing to share it.
+All of these are rough and I haven't really promoted them yet as they are early
+prototypes. But I'd love early feedback if you're willing to share it:
 
 - **Textpress:** A new platform for simple publishing of complex documents.
   You can publish or republish research reports for Gemini or OpenAI, PDFs or DOCX
@@ -734,18 +998,106 @@ feedback if you're willing to share it.
 
   Repo: [kash](https://github.com/jlevy/kash)
 
+And some lower-level libraries I've found helpful for the above work:
+
+- **Frontmatter format:** Simple, readable metadata attached to files can be useful in
+  numerous situations, such as recording title, author, source, copyright, or the
+  provenance of a file.
+
+  Unfortunately, it's often unclear how to format such metadata consistently across
+  different file types while preserving valid syntax, making parsing easy, and not
+  breaking interoperability with existing tools.
+
+  Frontmatter format is a way to add metadata as frontmatter on any file.
+  It is basically a micro-format: a simple set of conventions to put structured metadata
+  as YAML at the top of a file in a syntax that is broadly compatible with programming
+  languages, browsers, editors, and other tools.
+
+  Frontmatter format specifies a syntax for the metadata as a comment block at the top
+  of a file. This approach works while ensuring the file remains valid Markdown, HTML,
+  CSS, Python, C/C++, Rust, SQL, or most other text formats.
+  Frontmatter format is a generalization of the common format for frontmatter used by
+  Jekyll and other CMSs for Markdown files.
+  In that format, frontmatter is enclosed in lines containing `---` delimiters.
+
+  This repository is a **description of the format** and an easy-to-use **reference
+  implementation**. The implementation is in Python but the format is very simple and
+  easy to implement in any language.
+
+  Repo: [frontmatter-format](https://github.com/jlevy/frontmatter-format)
+
+- **Flowmark:** Flowmark is a new Python implementation of **text and Markdown line
+  wrapping and filling**, with an emphasis on making **git diffs** and **LLM edits** to
+  text documents easier to diff and review.
+
+  - Flowmark has the option to to use **semantic line breaks** (using a heuristic to
+    break lines on sentences sentences when that is reasonable), which is an underrated
+    feature that can **make diffs on GitHub much more readable**. The the change may
+    seem subtle but avoids having paragraphs reflow for very small edits, which does a
+    lot to **minimize merge conflicts**. An example of what sentence-guided wrapping
+    looks like, see the
+    [Markdown source](https://github.com/jlevy/flowmark/blob/main/README.md?plain=1) of
+    this readme file.)
+
+  - Very simple and fast **regex-based sentence splitting**. It's just based on letters
+    and punctuation so isn't perfect but works well for these purposes (and is much
+    faster and simpler than a proper sentence parser like SpaCy).
+    It should work fine for English and many other latin/Cyrillic languages but hasn't
+    been tested on CJK.
+
+  Because **YAML frontmatter** is common on Markdown files, the Markdown autoformat
+  preserves all frontmatter (content between `---` delimiters at the front of a file).
+
+- **Chopdiff:** `chopdiff` is a small library of tools I've developed to make it easier
+  to do fairly complex transformations of text documents, especially for LLM
+  applications, where you want to manipulate text, Markdown, and HTML documents in a
+  clean way.
+
+  Basically, it lets you parse, diff, and transform text at the level of words,
+  sentences, paragraphs, and "chunks" (paragraphs grouped in an HTML tag like a
+  `<div>`). It aims to have minimal dependencies.
+
+  Example use cases:
+
+  - **Filter diffs:** Diff two documents and only accept changes that fit a specific
+    filter. For example, you can ask an LLM to edit a transcript, only inserting
+    paragraph breaks but enforcing that the LLM can't do anything except insert
+    whitespace. Or let it only edit punctuation, whitespace, and lemma variants of words.
+    Or only change one word at a time (e.g. for spell checking).
+
+  - **Backfill information:** Match edited text against a previous version of a document
+    (using a word-level LCS diff), then pull information from one doc to another.
+    For example, say you have a timestamped transcript and an edited summary.
+    You can then backfill timestamps of each paragraph into the edited text.
+
+  - **Windowed transforms:** Walk through a large document N paragraphs, N sentences, or
+    N tokens at a time, processing the results with an LLM call, then "stitching
+    together" the results, even if the chunks overlap.
+
+  Repo: [chopdiff](https://github.com/jlevy/chopdiff)
+
+* * *
+
+## License
+
+© 2025 by Joshua Levy
+
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International
+License](http://creativecommons.org/licenses/by-sa/4.0/).
+
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+
 * * *
 
 ## Notes
+
 [^engelbart]: https://en.wikipedia.org/wiki/Douglas_Engelbart
 
 [^futurehistory]: In fact, this is true for many fields.
-
     I think the reason is that in newer but rapidly growing domains—such as physics or
     math in the early 20th century, or computer science and software engineering over
     the past 60 years—when a field is young, it is small enough for a few early
     visionaries to deeply understand the whole field.
-
     This lets them see further ahead than even brilliant people decades later, because
     the field has become so large that no human can truly grasp it all deeply.
 
@@ -754,12 +1106,11 @@ feedback if you're willing to share it.
 [^whyfast]: A reasonable question is, why is good engineering mean building things
     quickly? Isn't it more important to build them right?
 
-    There are two answers: One a business reason: if you don't build it quickly, someone
-    else might, and you may not have a successful product or company.
-
+    There are two answers.
+    One is a business reason: if you don't build it quickly, someone else might, and you
+    may not have a successful product or company.
     But there's an equally important and subtle reason: building more quickly means you
     learn more quickly in the process of exploring solutions.
-
     Engineering is exploration.
     And exploration is directly powered by learning.
     This is the real reason for the classic startup advice to ship fast and iterate.
@@ -776,7 +1127,6 @@ feedback if you're willing to share it.
     makes the most sense to use English when communicating with LLMs about code.
 
 [^nines]: Experienced designers and engineers will tell you to count nines.
-
     We tend to forget, when seeing prototypes and demos, a fundamental fact: the design
     and success of products is fundamentally different depending on whether they need to
     work 90 %, 99 %, or 99.999 % of the time.
@@ -797,13 +1147,3 @@ feedback if you're willing to share it.
     perform without thinking about them.”
     —Alfred N. Whitehead, *An Introduction to Mathematics* (1911), p. 61
 
-* * *
-
-## License
-
-© 2024-2025 by Joshua Levy
-
-This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International
-License](http://creativecommons.org/licenses/by-sa/4.0/).
-
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)

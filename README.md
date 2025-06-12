@@ -21,7 +21,7 @@ The fastest way to reach me is to tag or DM me: [x.com/ojoshe](https://x.com/ojo
 ## Purpose
 
 This work is a collection of reflections and research ideas on software engineering and
-"linters for thought".
+tools for thought.
 
 I'll start with Engelbart's ideas on intelligence augmentation and talk about why it's
 important today. Then I turn to the history software engineering and its relation to
@@ -602,7 +602,7 @@ This may be a bold statement, but I think it's worth exploring its implications.
 > augment ourselves to do things that were previously impossible..." —Doug
 > Engelbart[^aug]
 
-### A Brief History of Linting
+### A Brief History of Linting and Type Checking
 
 The power of incremental improvements is powerfully illustrated by the history of
 linting and type checking in software.
@@ -630,59 +630,63 @@ It would be quite difficult to imagine building software of the complexity we ha
 without the tooling like linters, type checkers, auto-formatters, and IDEs, that were
 developed in the 1990s, 2000s, and 2010s.
 
-### The Lesson of Linting
+### What Was Good for Humans is Great for LLMs
 
-The lesson of linting is partly that catching typos or obvious bugs saves time.
+Today the rise of LLMs means more and more code is written by LLMs, with some human
+oversight and review.
+
+But this doesn't change the value of linting and type checking.
+In fact, it seems to make it all the more important.
+
+An interesting example: For decades, there have been debates among programmers about the
+the advisability of using strongly typed languages (like Rust or Java) and to what
+degree dynamically typed languages (like Python and JavaScript) should have types added.
+
+These debates have suddenly largely been resolved.
+Almost everyone using Cursor and other AI tools have quickly seen how types make LLMs
+far better at coding accurately.
+
+A similar thing is true for unit tests.
+While people often knew that unit tests were a good practice, the fact that they are now
+quick to write with LLMs *and* they then benefit LLMs in writing code with fewer bugs
+has driven to a rapid increase in their use.
+
+In short, if it was good for humans, it's great for LLMs.
+
+### What is Linting?
+
+Historically, linting is mostly used to refer to fairly low level, specific coding
+errors.
+
+One lesson of linting that catching typos or obvious bugs saves time.
 But the impact is more profound than that.
 
-For complex and difficult problems, the scarcest resource is attention.
-Linters (broadly speaking) make small and common errors not something you waste
-attention on. This benefit is significant for even one engineer, and it is even larger
-with a team of engineers (or LLM agents).
+But metaphorically, it's worth extending the idea to include type checking and more
+broadly, checking for a wide range of specific errors, both for humans and for LLMs.
 
 <div class="boxed-text">
 
-*Use tools to remove the necessity of fixing small errors inessential to the core
-problems at hand.*
-
-</div>
-
-### The Value of Linting to LLMs
-
-Today the rise of LLMs has made it possible to write code significantly more complex
-applications. People who have never coded now realize they can build software.
-And experienced engineers (myself included) are finding they can build certain things
-much faster.
-
-This has great benefits and some risks.
-We don't need to get into them here.
-
-But suddenly, prompts, tools, UIs, and frameworks to help LLMs get more reliable at
-coding have become extremely valuable.
-
-A key part of this is LLMs have been greatly enhanced in their ability to write better
-code by the maturity of linters and type checkers.
-
-In fact, perennial debates in Python and JavaScript ecosystem about the advisability of
-using types have largely gone away suddenly, as people using Cursor and other AI tools
-to code have realized types make LLMs far more reliable and better at coding accurately.
-
-What was good for humans was great for LLMs.
-
-### What Else Can You Lint?
-
-In practice currently, linting is mostly fairly low level.
-But metaphorically, the concept of linting can be applied far more broadly, for humans
-and for LLMs.
-
-<div class="boxed-text">
-
-***Linters** are tools that minimize the attention needed to fix errors or
+***Linting** is the use of tools that minimize the attention needed to fix errors or
 inconsistencies.
 
 </div>
 
-A key part of this general definition is it can include a few kinds of tools:
+### Why is Linting Powerful?
+
+For complex and difficult problems, the scarcest resource is attention.
+Linters (broadly speaking) make small and common errors something you waste less
+attention on. This benefit is compounding and significant even one engineer.
+It is even larger with a team of engineers or LLM agents.
+
+<div class="boxed-text">
+
+*Tools increase in power as they remove the necessity of fixing small errors inessential
+to the core problems at hand.*
+
+</div>
+
+A key part of this broadened idea of linting is that it can include a more kinds of
+tools:
 
 - Tools that automatically fix small or trivial errors (some spell checking is like
   this)
@@ -724,7 +728,7 @@ By improving content along the right dimensions, and using these tools collabora
 so the judgement of many people is combined, it seems we can significantly improve the
 quality, rigor, and real-world effectiveness of many ideas.
 
-### What Will Improve Our Tools?
+### What Will Improve Tools for Thought?
 
 For certain hard problems, the devil is in the details.
 Often we can have exactly the right idea but not work on it at the right time.
@@ -833,14 +837,22 @@ Some key principles are:
    For example, it is far preferable to have a unified UX rather than having to
    copy/paste into and out of your ChatGPT window for each step.
 
-4. **Reliability:** Not every LLM-powered step is reliable.
-   We can wait for models to improve, but we also need ways to make unreliable steps
-   more reliable (by having steps for additional checks like groundedness checks or
-   filtering of diffs).
+4. **Reliable quality and groundedness:** So far, LLMs are great at plausibility and
+   mediocre at factual and rigorously logical.
+   Models, especially reasoning models are improving, but we also need ways to make
+   unreliable steps more reliable.
+   A key way is by having steps for additional checks like groundedness checks or
+   careful reviewing of edits/diffs.
 
-5. **Trivial to extend or compose features:** This is the biggest departure from many
-   existing tools. A key element here is *data-driven user interfaces*. Many tools and
-   workflows do do not exist
+5. **Easy extensibility:** This is the biggest departure from many existing tools.
+   It is easy to add new operations, and these operations should be in a simple format
+   that's also easy for an LLM to write (generally, possibly restricted Python or
+   TypeScript/HTML/CSS, as these are well understood by LLMs).
+
+6. **Built-in compositionality:** Typically missing in many tools is the idea of
+   *data-driven user interfaces*. The idea is that you can combine items and operations
+   in new ways *with no new code required for UI/UX*. Terminal apps are much like this
+   and the idea of hybrid GUI/terminal UIs is a key way to improve them.
 
 ## Selected Ideas for Better Tools
 

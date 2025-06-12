@@ -32,7 +32,7 @@ solutions to complex human problems.
 
 ## Intelligence Augmentation
 
-### Learning from History
+### The Problem of Solving Problems
 
 In 1950, Doug Engelbart was 25, newly engaged, and realized he had no career plans.
 After months of reflection, he famously came to three conclusions:[^engelbart]
@@ -67,62 +67,51 @@ with other humans to solve human problems*.
 I see so much focus today on the rising capabilities of AI systems—but vastly less on
 *how* we can use LLMs and other tools to augment human thinking and collaboration.
 
-Another old mentor of mine, Adam Cheyer (who was also at SRI, before he built Siri),
-used to tell me: if you want to see the future of technology, you should look to the
-past.[^futurehistory]
-
 Doug's vision never wavered, but in spite of the immense impact of his work on the
 Internet, the GUI, the mouse, and almost every piece of software we use, he always
 considered his dream unrealized.
 It's time we apply the vastly more powerful tools of today with his insights in mind.
 
-### Why Programmers Live in the Future
+### To Shape the Future, Study the Past
 
-I want to take a significant detour in the next section through some core insights about
-the challenges of building software.
+Another old mentor of mine, Adam Cheyer (who was also at SRI, before he built Siri),
+used to tell me: if you want to see the future of technology, you should look to the
+past.[^futurehistory]
 
-This is for two reasons.
-Firstly, if you look at the history of the Internet, you'll see many of the things that
-most influenced online products and culture were first observed by programmers.
-Although historically, programming was at first seen as an arcane skill, over the
-history of programming, we have seen over and over that the challenges and insights of
-programmers are usually challenges or insights we face in general with knowledge work.
-
-If you want to see the future of the knowledge economy, look at what programmers are
-excited about today.
-
-Secondly, the rise of LLMs are making it possible for non-programmers to become
-programmers, programmers to become designers, and roles to increasingly blur.
-Along with this, the dichotomy between human language and code is blurring.
-
-LLMs don't change the fundamentals of how humans interact with information.
-But they are accelerating changes that have long been happening to an even more rapid
-pace. These insights are increasingly relevant to writing, communication, and clear
-thinking in a post-LLM world.
-
-## Reflections on Software
-
-### What Doesn't Change in Software?
-
-Today, as AI is transforming software and the knowledge economy, famous technologists
-are confidently making extreme predictions almost every day.
-
-Does AI make work obsolete and eliminate all jobs?
-Does it accelerate us toward multi-planetary techno-Utopia?
-Or is your P(doom) so high you should liquidate your retirement portfolio?
-
-In a world where software is more intelligent, what creates value and makes the world a
-better place—and what averts possible disaster?
-
-Predictions about large technology-driven changes are rarely reliable, even if they are
-made by experts.
+Recently, famous technologists seem to make confident (and often extreme) predictions
+about AI almost every day.
+However, predictions about large technology-driven changes are highly unreliable, even
+when made by experts.
 
 In technology, some things change fast—and some don't change at all.
-The hard part is in knowing which parts are which.
-However, as Jeff Bezos pointed out, you often can have more confidence in things that
-don't change.
+The hard part is figuring out which parts are which.
 
-So let's look first at what *doesn't* change.
+Before thinking about the future of software, it is wise to reflect on its history.
+
+### Why Programmers Live in the Future
+
+In the next section I want to take a significant detour through some historical insights
+about the challenges of building software.
+
+When we look at the history of the Internet, one persistent fact is that many of the
+things that most influenced online products and culture were first observed by
+programmers. Although historically, programming was at first seen as an arcane skill,
+over the history of programming, we have seen over and over that the challenges and
+insights of programmers are usually challenges or insights we face in general with
+knowledge work.
+
+So if you want to see the future of the knowledge economy, look at what programmers are
+excited about today.
+
+The rise of LLMs are making it possible for non-programmers to become programmers,
+programmers to become designers, and roles to increasingly blur.
+Along with this, the dichotomy between human language and code is blurring.
+
+LLMs don't change the fundamentals of writing, communication, or clear thinking.
+But they are accelerating changes in tools that have long been happening for a long
+time.
+
+## Reflections on Software
 
 ### What is Technology?
 
@@ -147,20 +136,33 @@ So even if many things are changing, we have one concept that doesn't change.
 
 ### What is Software Engineering?
 
-Another surprising thing today is how many programmers and tech leaders make quite
-confused statements about programming and engineering.
+People (even programmers and tech leaders) make confused statements about programming
+and engineering surprisingly often.
 
-Many seem to confuse software engineering with coding.
-This is a bit like confusing writing with typing.
-One currently involves the other, but it's a woeful misunderstanding to think the value
-of a writer is their typing ability.
+The thinking seems to be: Programmers write code.
+But now AI writes code.
+In fact, it writes code better than most programmers.
+Therefore programmers are no longer needed.
 
-At the most essential level, software engineering is not writing code.
+In my view, this reasoning reflects a deep misunderstanding of what engineering is.
+It is a bit like confusing writing with typing.
+Writing certainly involves typing (at least, it does today), but it's a woeful
+misunderstanding to think the value of a writer is their typing
+ability.[^combinedskills]
 
-It is critical to realize, programming is not just implementing a specification—or
-commanding an AI tool to build a solution.
-It is an exploration of solutions.
-Because not all human desires are logically or practically feasible.
+Software engineering is not writing code.
+It is not simply implementing a specification—or even commanding an AI tool to build a
+solution.
+
+Not all human desires are logically or practically feasible.
+Sometimes problems are ill-defined.
+And even when the problem is clear, it will not be apparent what kind of software will
+best solve the problem.
+It takes time and effort to *explore* the problem and possible solutions.
+Engineering is a practical exploration of solutions to a problem.
+
+Not everyone would give this definition, but I hope I can convince you this is the
+correct one.
 
 Just for fun, let’s take a hypothetical example.
 
@@ -1102,6 +1104,20 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
     the field has become so large that no human can truly grasp it all deeply.
 
 [^oreilly]: https://www.oreilly.com/tim/wtf-book.html
+
+[^combinedskills]: It's worth pointing out that at any point in history, the most
+    successful people at a given thing often combine a few related skills.
+    For example, the best bloggers of the early Internet were often people who were a
+    little bit tech savvy, because that combination of writing ability and HTML skills
+    made it easier for them to gain traction.
+    It doesn't mean the core skill of blogging is HTML, but it is relevant to success.
+    Later, blogging platforms matured and the most successful writers today are ones
+    with discipline and skills to do well promoting their work on Substack.
+
+    The same is likely true of engineering and writing code.
+    The most successful engineers of recent years are extremely good at writing code.
+    The most successful engineers of the future may combine have a different combination
+    of skills.
 
 [^whyfast]: A reasonable question is, why is good engineering mean building things
     quickly? Isn't it more important to build them right?

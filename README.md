@@ -1,16 +1,15 @@
 # Linters for Thought: Reflections on Software Engineering and Collective Intelligence
 
 Joshua Levy ([GitHub](https://github.com/jlevy), [Twitter](https://x.com/ojoshe))\
-*v0.1.4 (June 2025) – Draft!*
+*v0.1.5 (June 2025) – Draft!*
 
 <div class="boxed-text">
 
-This is a rough draft.
+This is a rough and incomplete draft.
 I'd be very grateful for your feedback!
 
 The ideas here come from many people, no doubt far more than I have currently cited.
-Some are from conversations with friends and colleagues over the years.
-I would like to add more credits where they are due.
+I would like to include more references and credits where they are due.
 If you know relevant work or if your own work is relevant, please let me know so I can
 reference it.
 
@@ -18,17 +17,44 @@ The fastest way to reach me is to tag or DM me: [x.com/ojoshe](https://x.com/ojo
 
 </div>
 
-## Purpose
+## Overview
 
 This work is a collection of reflections and research ideas on software engineering and
-tools for thought.
+tools for thought that augment our *collective intelligence*—that is, improving our
+ability to find solutions to complex human problems.
 
-I'll start with Engelbart's ideas on intelligence augmentation and talk about why it's
-important today. Then I turn to the history software engineering and its relation to
-human knowledge work.
-Finally, I'll get into a few specific ideas for tools we might design, discover, and
-build that augment our *collective intelligence*—that is, improving our ability to find
-solutions to complex human problems.
+I've worked in software and knowledge tools for a long time, in research, in startups,
+and in publishing.
+In terms of the ability of software to impact our lives, the mid 2020s
+is possibly the most exciting time since the dawn of the Internet.
+
+However, there are several ways my own views seem to differ from what I see in many
+discussions today. There's a lot here, but it is in support of four key points:
+
+1. Although popular debate today focuses on "AGI" and how AI can replicate human
+   abilities, Doug Engelbart's ideas on augmenting *human* intellect (*intelligence
+   augmentation*, or IA) are as prescient and relevant as they were 50 years ago.
+
+2. Although many are wondering if AI is replacing software engineers, the essential
+   challenge of software engineering is *the exploration of software solutions to human
+   problems*—and this is the same today as it was decades ago.
+
+3. The challenges of software engineering in fact give glimpses into the future of *all*
+   human knowledge work.
+   Instead of saying software engineers are being replaced by LLMs, it is more accurate
+   to say *the patterns we now see with software engineers using LLMs will increasingly
+   appear in all knowledge work and problem solving*.
+
+4. In both software engineering and other knowledge work, the most difficult but
+   high-leverage activities improve "infrastructure": tools that help people explore
+   solutions more efficiently.
+   This is analogous to software engineering, where the most powerful systems always
+   need mature, flexible tools and infrastructure.
+
+If you find you agree with these arguments, you'll see this suggests some different
+emphasis than what we currently see in many AI labs and startups.
+At the end, I give a few tentative ideas on how to approach building such tools and
+infrastructure.
 
 <div class="boxed-text">
 
@@ -98,7 +124,7 @@ The hard part is figuring out which parts are which.
 
 </div>
 
-### Why Programmers Live in the Future
+### Programmers Live in the Future
 
 In the next section I want to take a significant detour through some historical insights
 about the challenges of building software.
@@ -323,7 +349,7 @@ engineering:
   It involved inherent consequences of mathematics and the laws of physics.
   It is ultimately consistent.
 
-  Engineers should *always try to understand natural complexity.
+  Engineers should *always try to understand natural complexity*.
 
 - **Feature complexity:** On the other hand, if you are building a messaging platform,
   you will discover your users (and competitors) like features such as emoji reactions
@@ -667,7 +693,7 @@ broadly, checking for a wide range of specific errors, both for humans and for L
 <div class="boxed-text">
 
 ***Linting** is the use of tools that minimize the attention needed to fix errors or
-inconsistencies.
+inconsistencies.*
 
 </div>
 
@@ -1017,7 +1043,7 @@ Some key areas where document and tooling infrastructure needs to improve:
   - There are numerous ways shell and shell-like UIs can be enhanced to be *both* easier
     to use and more powerful
 
-### A Few of My Own Experiments (So Far)
+## Appendix: A Few of My Own Experiments (So Far)
 
 Over the past couple months, I've found that because I can build more myself with LLM
 coding tools, I have been able to prototype a few of these bottom-up tools.

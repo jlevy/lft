@@ -1,7 +1,7 @@
-# Linters for Thought: What Software Engineering Teaches Us About Collective Intelligence
+# Linters for Thought: Reflections on Software Engineering and Collective Intelligence
 
-Joshua Levy\
-*v0.1.3 (June 2025) – Draft!*
+Joshua Levy ([GitHub](https://github.com/jlevy), [Twitter](https://x.com/ojoshe))\
+*v0.1.4 (June 2025) – Draft!*
 
 <div class="boxed-text">
 
@@ -21,7 +21,7 @@ The fastest way to reach me is to tag or DM me: [x.com/ojoshe](https://x.com/ojo
 ## Purpose
 
 This work is a collection of reflections and research ideas on software engineering and
-"linters for thought":
+"linters for thought".
 
 I'll start with Engelbart's ideas on intelligence augmentation and talk about why it's
 important today. Then I turn to the history software engineering and its relation to
@@ -29,6 +29,12 @@ human knowledge work.
 Finally, I'll get into a few specific ideas for tools we might design, discover, and
 build that augment our *collective intelligence*—that is, improving our ability to find
 solutions to complex human problems.
+
+<div class="boxed-text">
+
+*In case you're in a hurry or skimming, key insights are in boxes like this.*
+
+</div>
 
 ## Intelligence Augmentation
 
@@ -86,7 +92,11 @@ when made by experts.
 In technology, some things change fast—and some don't change at all.
 The hard part is figuring out which parts are which.
 
-Before thinking about the future of software, it is wise to reflect on its history.
+<div class="boxed-text">
+
+*Before thinking about the future of software, it is wise to reflect on its history.*
+
+</div>
 
 ### Why Programmers Live in the Future
 
@@ -100,8 +110,12 @@ over the history of programming, we have seen over and over that the challenges 
 insights of programmers are usually challenges or insights we face in general with
 knowledge work.
 
-So if you want to see the future of the knowledge economy, look at what programmers are
-excited about today.
+<div class="boxed-text">
+
+*If you want to see the future of the knowledge work, look at what people who build
+software are excited about today.*
+
+</div>
 
 The rise of LLMs are making it possible for non-programmers to become programmers,
 programmers to become designers, and roles to increasingly blur.
@@ -111,7 +125,7 @@ LLMs don't change the fundamentals of writing, communication, or clear thinking.
 But they are accelerating changes in tools that have long been happening for a long
 time.
 
-## Reflections on Software
+## Reflections on Software Engineering
 
 ### What is Technology?
 
@@ -282,7 +296,7 @@ So human engineering effort is increasingly about infrastructure engineering.
 
 <div class="boxed-text">
 
-Human product engineers need LLMs and LLMs need human infrastructure engineers.
+*(Human) product engineers need LLMs and LLMs need (human) infrastructure engineers.*
 
 </div>
 
@@ -307,9 +321,9 @@ engineering:
   interactions of the laws of physics.
   This is natural complexity.
   It involved inherent consequences of mathematics and the laws of physics.
-  It is *ultimately consistent.
+  It is ultimately consistent.
 
-  *Engineers should always try to understand natural complexity.*
+  Engineers should *always try to understand natural complexity.
 
 - **Feature complexity:** On the other hand, if you are building a messaging platform,
   you will discover your users (and competitors) like features such as emoji reactions
@@ -318,8 +332,8 @@ engineering:
   happy. I'll call it *feature complexity* and it really is the complexity of human
   desires. It is not well defined and subjective but under your control.
 
-  *Engineers should exercise careful judgement about when to explore feature
-  complexity.*
+  Engineers should *exercise careful judgement about when to explore feature
+  complexity*.
 
 - **Accidental complexity:** As you build something, it invariably becomes more and more
   complex. Most large, popular software is so complex few normal people can even hold all
@@ -328,7 +342,7 @@ engineering:
   Accidental complexity arises not from nature or from human desires but from the
   engineering process.
 
-  *Engineers should try to avoid or reduce accidental complexity.*
+  Engineers should *avoid or reduce accidental complexity*.
 
 <div class="boxed-text">
 
@@ -396,8 +410,6 @@ managers, designers, entrepreneurs, and companies design and ship solutions.
 communication**, **profit incentives**, and **organizational structure**.*
 
 </div>
-
-This too won't change.
 
 ## The Future of Software Engineering
 
@@ -581,8 +593,7 @@ the same thing.*
 
 </div>
 
-This may be a bold statement, but I think it's worth entertaining and exploring its
-implications.
+This may be a bold statement, but I think it's worth exploring its implications.
 
 ## The Metaphor of Linting
 
@@ -621,15 +632,20 @@ developed in the 1990s, 2000s, and 2010s.
 
 ### The Lesson of Linting
 
-The key insight is this: *Remove the necessity to sort out trivial errors inessential to
-the core problems at hand.*
-
-This is partly an issue of catching typos or obvious bugs.
+The lesson of linting is partly that catching typos or obvious bugs saves time.
 But the impact is more profound than that.
 
 For complex and difficult problems, the scarcest resource is attention.
 Linters (broadly speaking) make small and common errors not something you waste
-attention on.
+attention on. This benefit is significant for even one engineer, and it is even larger
+with a team of engineers (or LLM agents).
+
+<div class="boxed-text">
+
+*Use tools to remove the necessity of fixing small errors inessential to the core
+problems at hand.*
+
+</div>
 
 ### The Value of Linting to LLMs
 
@@ -653,13 +669,53 @@ to code have realized types make LLMs far more reliable and better at coding acc
 
 What was good for humans was great for LLMs.
 
-## Can We Build Better Tools?
+### What Else Can You Lint?
+
+In practice currently, linting is mostly fairly low level.
+But metaphorically, the concept of linting can be applied far more broadly, for humans
+and for LLMs.
+
+<div class="boxed-text">
+
+***Linters** are tools that minimize the attention needed to fix errors or
+inconsistencies.
+
+</div>
+
+A key part of this general definition is it can include a few kinds of tools:
+
+- Tools that automatically fix small or trivial errors (some spell checking is like
+  this)
+
+- Tools that surface errors that support other automated processes (type checking with
+  an LLM agent is often like this)
+
+- Tools that flag issues that need to be addressed later or reviewed by humans
+
+- Tools with a UI that interactively supports a human in writing or thinking with
+  greater consistency or clarity (such as using colors or annotations)
+
+- Tools with a UI that supports multiple people in writing or thinking or in resolving
+  disagreements
+
+If you think of linters generally in this way, it becomes apparent that with the power
+of LLMs, we can build linters at various levels of the "stack" of human knowledge work:
+
+- **Language:** Spell checking and grammar (much like Grammarly)
+
+- **Style rules:** Enforcing larger sets of language rules
+
+- **Factuality:** Tools that surface and help confirm factuality of statements
+
+- **Basic consistency:** Tools that help enforce logical consistency
+
+- **Formal consistency:** Tools that formally model concepts or assertions and actually
+  formally look for proofs and surface soundness or possible errors or inconsistencies
+
+## Strategies for Building Tools
 
 What are the tools that can help people iteratively improve the quality of written work
 and consequently, of their ideas, both individually and when collaborating?
-
-While linting is good metaphor, I don't mean it literally, like simply finding grammar
-errors in whitepapers.
 
 What I mean is we need to look for more reliable, small steps that makes meaningful
 adjustments and improvements to content so it is better in different dimensions—clarity,

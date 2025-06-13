@@ -1,7 +1,7 @@
 # Linters for Thought: Reflections on Software Engineering and Collective Intelligence
 
 Joshua Levy ([GitHub](https://github.com/jlevy), [Twitter](https://x.com/ojoshe))\
-*v0.1.5 (June 2025) – Draft!*
+*v0.1.6 (June 2025) – Draft!*
 
 <div class="boxed-text">
 
@@ -177,7 +177,7 @@ So even if many things are changing, we have one concept that doesn't change.
 ### What is Software Engineering?
 
 People (even programmers and tech leaders) make confused statements about programming
-and engineering surprisingly often.
+and engineering[^progvseng] surprisingly often.
 
 The thinking seems to be: Programmers write code.
 But now AI writes code.
@@ -411,17 +411,17 @@ and know how to build it*. It's worth being aware of the key ones:
 3. *Lack of resources*: They understand the problem, but don't have the resources to
    properly design and build it
 
-4. *Innovator's Dilemma*: They understand and have the resources, believe it is
-   relatively less profitable than working on other products and features
+4. *Innovator's Dilemma*: They understand and have the resources, but to do so seems
+   irrational because it is *relatively* less profitable than working on existing,
+   successful products and features
 
 5. *Conway's Law*: They understand the problem and resources and incentives to solve the
    problem, but still don't solve it (or solve it poorly or do something else).
-   Many don't realize how common this is.
-   The biggest reason many large, successful companies don't add specific features you
-   want, even if they are obviously a good idea, is
-   [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law), the underrated but
-   well-established rule that teams are constrained to produce products that mirror
-   their organizational structure.
+   This is surprisingly common for larger teams.
+   The reason many large, successful companies don't add specific features you want,
+   even if they should and they are obviously a good idea, is
+   [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law): teams are almost always
+   constrained to ship products that mirror their organizational structure.
 
 Looking at these reasons, we can see that for the most part, none of these fundamentally
 go away with AI tools.
@@ -432,8 +432,9 @@ managers, designers, entrepreneurs, and companies design and ship solutions.
 
 <div class="boxed-text">
 
-*Even with perfect engineering, software and features are constrained by **human
-communication**, **profit incentives**, and **organizational structure**.*
+*Even with perfect engineering and powerful AI, software and features are always
+constrained by **human understanding**, **profit incentives**, and **organizational
+structure**.*
 
 </div>
 
@@ -449,23 +450,23 @@ to code more complex things by using Cursor, GitHub Copilot, and other LLM codin
 
 It has become popular to say English[^english] is the new programming language.
 
-This may be partly true, but of course applications are still actually committed to
-GitHub and then deployed based on Python, TypeScript, Rust, SQL, and the other standard
-programming languages.
+This clearly is partly true.
+But of course applications are still actually committed to GitHub and then deployed
+based on Python, TypeScript, Rust, SQL, and the other standard programming languages.
 
-So is English code? How should we even define code now?
+So is English now code?
+How should we even define code now?
 
 ### What is Code?
 
-Before we talk about natural language coding and specifications, let's talk about code.
-Oddly enough, just like there are common confusions about the true purpose of
-engineering, there are also common confusions about the true purpose of code.
+Oddly enough, just like there are common confusions about the essential nature of
+engineering, there are also common confusions about the essential nature of code.
 
 When learning to program, people tend to think of programming as communicating with the
-computer. It can even be a fun challenge to do this in as direct a way as possible, such
-as in C or assembly language.
-Over time, engineers and programmers invariably move to to “higher-level” languages and
-frameworks that are easier to write in.
+computer. It can be good for learning or a fun challenge to do this "the hard way" in C
+or assembly language.
+Over time, whenever they can, engineers and programmers invariably move to to
+“higher-level” languages and frameworks that are easier to write in.
 
 But there is a key point even some experienced programmers forget: As systems evolve,
 more time is spent reading, debugging, and changing the code than writing it.
@@ -1043,7 +1044,7 @@ Some key areas where document and tooling infrastructure needs to improve:
   - There are numerous ways shell and shell-like UIs can be enhanced to be *both* easier
     to use and more powerful
 
-## Appendix: A Few of My Own Experiments (So Far)
+## Appendix: A Few Experiments
 
 Over the past couple months, I've found that because I can build more myself with LLM
 coding tools, I have been able to prototype a few of these bottom-up tools.
@@ -1198,6 +1199,15 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
     the field has become so large that no human can truly grasp it all deeply.
 
 [^oreilly]: https://www.oreilly.com/tim/wtf-book.html
+
+[^progvseng]: There is a long-standing and pedantic debate about whether people who
+    build software should be called *programmers*, *developers*, or *engineers*. Many
+    people prefer the sound of "engineer" in their job title.
+    Others fairly point out that "software engineering" is a rather pretentious term
+    since hacking JavaScript is quite different from "hard" engineering disciplines with
+    formal standards and training, like mechanical or structural engineering.
+    Generally I prefer "engineering" over "programming" simply because it helps clarify
+    that building software is a process that includes more than typing code.
 
 [^combinedskills]: It's worth pointing out that at any point in history, the most
     successful people at a given thing often combine a few related skills.

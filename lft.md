@@ -1,13 +1,12 @@
-# Linters for Thought: Reflections on Software Engineering and Collective Intelligence
+# Linters for Thought: Reflections on Software Engineering, LLMs, and Collective Intelligence
 
 Joshua Levy ([GitHub](https://github.com/jlevy), [Twitter](https://x.com/ojoshe))\
-*v0.1.6 (June 2025) – Draft!*
+*v0.1.7 (June 2025) – Draft!*
 
 <div class="boxed-text">
 
-This is a rough and incomplete draft.
+This is a rough draft.
 I'd be very grateful for your feedback!
-
 The ideas here come from many people, no doubt far more than I have currently cited.
 I would like to include more references and credits where they are due.
 If you know relevant work or if your own work is relevant, please let me know so I can
@@ -31,13 +30,14 @@ is possibly the most exciting time since the dawn of the Internet.
 However, there are several ways my own views seem to differ from what I see in many
 discussions today. There's a lot here, but it is in support of four key points:
 
-1. Although popular debate today focuses on "AGI" and how AI can replicate human
+1. Although popular debate today focuses on AGI and how AI can replicate human
    abilities, Doug Engelbart's ideas on augmenting *human* intellect (*intelligence
    augmentation*, or IA) are as prescient and relevant as they were 50 years ago.
 
-2. Although many are wondering if AI is replacing software engineers, the essential
-   challenge of software engineering is *the exploration of software solutions to human
-   problems*—and this is the same today as it was decades ago.
+2. LLMs that write code well is a profound change.
+   But it doesn't replace engineering.
+   The essential challenge of software engineering is *the exploration of software
+   solutions to human problems*—and this is the same today as it was decades ago.
 
 3. The challenges of software engineering in fact give glimpses into the future of *all*
    human knowledge work.
@@ -53,8 +53,11 @@ discussions today. There's a lot here, but it is in support of four key points:
 
 If you find you agree with these arguments, you'll see this suggests some different
 emphasis than what we currently see in many AI labs and startups.
-At the end, I give a few tentative ideas on how to approach building such tools and
-infrastructure.
+
+It suggests directions that where we could use tools and infrastructure of software
+engineers, like linting, as inspiration for more powerful collaboration tools and tools
+for thought. At the end, I give a few tentative ideas on a few key areas that might have
+practical impact.
 
 <div class="boxed-text">
 
@@ -408,8 +411,8 @@ and know how to build it*. It's worth being aware of the key ones:
    properly (because they haven't talked to users or because they can't as a team
    describe or articulate it in a way that can be built)
 
-3. *Lack of resources*: They understand the problem, but don't have the resources to
-   properly design and build it
+3. *Lack of resources*: They understand the problem, but don't have the resources
+   (money, data, or people with the right skills) to properly design and build it
 
 4. *Innovator's Dilemma*: They understand and have the resources, but to do so seems
    irrational because it is *relatively* less profitable than working on existing,
@@ -440,10 +443,8 @@ structure**.*
 
 ## The Future of Software Engineering
 
-Now we've talked about the essential facts that seem inherent to how and why humans
-build software, it's time to ask what *is* changing?
-
-### Is English the New Programming Language?
+Now we've talked about the essential facts that seem inherent to how and why we build
+software, it's time to ask what *is* changing?
 
 One of the most remarkable shifts in the last year or two is that more people are able
 to code more complex things by using Cursor, GitHub Copilot, and other LLM coding tools.
@@ -489,16 +490,17 @@ But with only a small addition we have a clear definition.
 
 <div class="boxed-text">
 
-***Code** is the communication format for humans (and LLMs) to express with **near-exact
-precision** the behavior of software in a way humans (and LLMs) can understand.*
+***Code** is the communication format for humans (and LLMs) to express with **exact
+precision**[^exact] the behavior of software in a way humans (and LLMs) can understand.*
 
 </div>
 
-Aside from this broadening, this definition is the same as it would have been 20 years
+Aside from mentioning LLMs, this definition is the same as it would have been 20 years
 ago.
 
 Code is the medium to allow humans to perform the process of exploring solutions in a
 completely precise (and ideally, practical) way.
+
 That's why *effective workflows* around code, such as tests, commits, pull requests, and
 code reviews, are so important.
 They are what structure and manage the complexity of expressing and updating the current
@@ -521,7 +523,7 @@ Documents are "dead" unless they are part of routine engineering workflows.
 So over time, the "real" specification was often just the code itself.
 
 Now vibe coders working with LLMs are rediscovering specifications, because of this
-crucial difference. While imperfect, it's effortless to convert English to and from
+crucial difference. While imperfect, it's now far easier to convert English to and from
 programming languages.
 
 The history of programming languages perfectly illustrates this convergence.
@@ -535,16 +537,66 @@ essential complexity of problems.
 
 ***Specifications** are a communication format for humans (and LLMs) to express with
 **acceptable precision** the behavior of software in a way humans (and LLMs) can
-understand (more easily than code).*
+understand.*
 
 </div>
 
-Specifications and code have always both been different ways to express software
-behavior in a way that helps human engineers communicate about it.
+<div class="boxed-text">
 
-### Are LLMs the New Compilers?
+***Code** and **specifications** are both ways to express the desired behavior of
+software. The differences are a matter of **language** (programming language versus
+natural language) and **precision** (how exact the descriptions are).*
 
-Engineers are now writing more and software by using just English and natural-language
+</div>
+
+### Exact and Inexact Processes
+
+Experienced designers and engineers sometimes talk about counting nines.
+This is because of a fundamental fact:
+
+<div class="boxed-text">
+
+*The design of products is fundamentally shaped by **the cost of errors**: whether they
+need to work 90%, 99%, or 99.999% of the time.*
+
+</div>
+
+Let's illustrate this by imagining you have back pain.
+Consider these three systems:
+
+1. The search engine and websites that help you find articles about treating back pain
+
+2. The online messaging system you use to write to your physician about it
+
+3. The software and process the pharmacisst uses to fill your prescription bottle with
+   the correct pill
+
+The first can tolerate a 1–10% error rate since you're reading many things and will form
+your own opinions. The second can tolerate perhaps a 1% error rate.
+The third has very low tolerance for error, perhaps a 0.01% error rate or less.
+
+It is certain that each of these systems could improve with machine learning and AI. But
+if you want to add AI or machine learning to each of those use cases, the approach needs
+to be very different.
+You can't get away from the fact that some systems need high reliability and precision.
+In other cases, we can adapt to errors because the cost is of errors is low.
+
+As we've seen, specification in English and code in Python have similar purpose but not
+interchangeable. For some situations, exact descriptions are of fundamental and
+unavoidable importance.
+For others, convenience and low cost are more important.
+For almost any project, team, or company, both exact and inexact processes are needed.
+
+<div class="boxed-text">
+
+Socio-technical systems are built from a combination of both **exact** and **inexact**
+processes that are qualitatively different and not interchangeable.
+
+</div>
+
+### Is English the New Programming Language?
+
+Engineers are now writing more and software just by using English and natural-language
 specifications and docs.
 Developers of Claude Code now say most (perhaps even 90%) of Claude Code's own codebase
 is now written in Claude Code.
@@ -553,38 +605,44 @@ This is a remarkable fact.
 It's now tempting to say English is the new programming language, and LLMs are the new
 compilers. (On Twitter, and you'll see similar statements almost every day.)
 
-But this simply isn't the most insightful way to frame what is happening.
+I hope by now you'd agree with me that this isn't the most insightful way to frame what
+is happening.
 
-As we've seen, you can't get away from the fact that we have always needed rigor and
-precision in expressing solutions to the essential parts of our problems.
-
-Specs in English and code in Python are closely related.
-They're both documents to help describe and explore software behavior.
-
-But English specs and programming languages with formal semantics are not the same.
-Precision of such descriptions in corner cases is of fundamental and unavoidable
-importance for many of the use cases that matter most.[^nines] English in the form we
-normally use it is far too ambiguous and imprecise to express the behavior of software
-with full precision.
+English in the form we normally use it is far too ambiguous and imprecise to express the
+behavior of software with full precision.
 We can use English in *many* ways with LLMs, from writing poetry to brainstorming
 software architecture.
-Only some of these forms directly support engineering.
+Some of these forms directly support engineering.
+Others do not.
 
 It's more accurate to say we are seeing three related but different changes:
 
-1. We are using English with LLMs and LLM-powered agents to read, write, and test code
-   more quickly than ever before
+1. **Faster coding with LLM tools:** Engineers can code more quickly by using English
+   with LLMs and LLM-powered agents to read, write, and test code more quickly than ever
+   before (e.g., vibe coding prototypes)
 
-2. We are seeing the emergence of English documents as specifications that are critical
-   parts of workflows, used by both humans and LLM agents
+2. **Broader capabilities of human workers:** Because a single person can build and test
+   software more quickly, they can rapidly make experiments; in fact, they can
+   effectively broaden their roles (e.g., a desinger coding in HTML/CSS instead of
+   waiting for a frontend engineer to convert Figma to code)
 
-3. Because a single person can build and test software more quickly, they can rapidly
-   make experiments and test and see if the software works or solves their problem
+3. **Software processes described in natural language:** We are seeing the emergence of
+   English documents as specifications that are critical parts of workflows, used by
+   both humans and LLM agents (e.g., Claude agent rules, LLM-based validation workflows)
 
 We're moving from a world where we had occasional, poorly used English specifications to
 one where clear and precise English is essential to working efficiently with our tools
 and teammates. And we'll work with this *and* traditional programming language code with
 formal semantics.
+
+<div class="boxed-text">
+
+**Inexact processes** previously mostly handled by humans will increasingly become
+automated with the use natural language specifications shared by both humans and LLMs
+tools. **Exact processes** will still have code as the primary description of their
+behavior.*
+
+</div>
 
 LLMs are pushing us toward precise and structured ways of expressing software that are
 more human friendly.
@@ -610,13 +668,16 @@ And now AI tools transform the nature of our work so code and language, writing 
 spoken word, are increasingly interchangeable, the distinctions of the past are becoming
 flimsy.
 
-In short, if you believe all the points I've made so far, it's hard not to come to a
-possibly surprising conclusion:
+In short, if you believe all the points I've made so far, you may see some possibly
+surprising conclusions:
 
 <div class="boxed-text">
 
-***Effective knowledge work** and **effective software engineering** are increasingly
-the same thing.*
+*The consequence of AI coding tools is not that software engineering is going away:
+instead, it means **more knowledge work involves engineering**.*
+
+*Increasingly, the distinction between **software engineering** and **knowledge work**
+is disappearing.*
 
 </div>
 
@@ -1246,16 +1307,13 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
     Since English is used for much of the training data and documentation, it often
     makes the most sense to use English when communicating with LLMs about code.
 
-[^nines]: Experienced designers and engineers will tell you to count nines.
-    We tend to forget, when seeing prototypes and demos, a fundamental fact: the design
-    and success of products is fundamentally different depending on whether they need to
-    work 90 %, 99 %, or 99.999 % of the time.
-
-    To take a healthcare example, compare the software involved for (1) Googling and
-    reading WebMD, (2) messaging your physician, and (3) the tools and process your
-    pharmacist uses to make sure the right pill is in your prescription bottle.
-    If you want to add machine learning to each of those use cases, the approach needs
-    to be very different in each.
+[^exact]: There are some subtleties to what "exact" means.
+    Technically, depending on the scope of what code and parts of a system you're
+    looking at, code is not really an exact description of the behavior of software.
+    For example, how two threads in an application interact with a third-party service
+    is not expressed in the code for either thread.
+    But for our discussion, the point is that code is an exact description of the logic
+    in *that piece* of the software.
 
 [^aug]: *Augmenting Human Intellect: A Conceptual Framework* —\
     https://www.dougengelbart.org/pubs/augment-3906.html

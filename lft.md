@@ -1,4 +1,4 @@
-# Linters for Thought: Reflections on Software Engineering, LLMs, and Collective Intelligence
+# Linters for Thought: Reflections on Software Engineering and Collective Intelligence
 
 Joshua Levy ([GitHub](https://github.com/jlevy), [Twitter](https://x.com/ojoshe))\
 *v0.1.7 (June 2025) – Draft!*
@@ -6,7 +6,8 @@ Joshua Levy ([GitHub](https://github.com/jlevy), [Twitter](https://x.com/ojoshe)
 <div class="boxed-text">
 
 This is a rough draft.
-I'd be very grateful for your feedback!
+I'd like to revise this as I get feedback and I'd be grateful if you share your thoughts
+on any part, especially skepticism or disagreement.
 The ideas here come from many people, no doubt far more than I have currently cited.
 I would like to include more references and credits where they are due.
 If you know relevant work or if your own work is relevant, please let me know so I can
@@ -16,48 +17,59 @@ The fastest way to reach me is to tag or DM me: [x.com/ojoshe](https://x.com/ojo
 
 </div>
 
-## Overview
+## Introduction
 
 This work is a collection of reflections and research ideas on software engineering and
-tools for thought that augment our *collective intelligence*—that is, improving our
-ability to find solutions to complex human problems.
+tools to augment our *collective intelligence*—that is, to improve our ability to find
+solutions to complex human problems.
 
 I've worked in software and knowledge tools for a long time, in research, in startups,
-and in publishing.
-In terms of the ability of software to impact our lives, the mid 2020s
-is possibly the most exciting time since the dawn of the Internet.
+and in publishing. In terms of the ability of software to impact our lives, right now,
+the mid-2020s, is possibly the most exciting time since the dawn of the Internet.
 
-However, there are several ways my own views seem to differ from what I see in many
-discussions today. There's a lot here, but it is in support of four key points:
+I've also used LLMs almost every day since 2022 and read *far* too many strong opinions
+about AI on Twitter.
+I find there are several ways my own views seem to differ significantly from what I see
+in popular discussion.
+This is my attempt to capture the insights I want to share when I talk to founders,
+engineers, and others about how we can use AI and software for good.
 
-1. Although popular debate today focuses on AGI and how AI can replicate human
+There is quite a bit here,[^marktwain] but it is all in support of four key points:
+
+1. **IA deserves more attention.**
+
+   Although popular debate today focuses on AGI and how AI can replicate human
    abilities, Doug Engelbart's ideas on augmenting *human* intellect (*intelligence
    augmentation*, or IA) are as prescient and relevant as they were 50 years ago.
 
-2. LLMs that write code well is a profound change.
-   But it doesn't replace engineering.
-   The essential challenge of software engineering is *the exploration of software
-   solutions to human problems*—and this is the same today as it was decades ago.
+2. **Software engineering is essential to solving human problems.**
 
-3. The challenges of software engineering in fact give glimpses into the future of *all*
+   LLMs writing code is a profound change in software.
+   But it does not reduce the need for software engineering; rather, it increases it.
+   The essential challenge of software engineering is *the exploration of software
+   solutions to human problems*—and this need is as acute today as it was decades ago.
+
+3. **Software engineering reveals the future of knowledge work.**
+
+   The challenges of software engineering in fact give glimpses into the future of *all*
    human knowledge work.
    Instead of saying software engineers are being replaced by LLMs, it is more accurate
-   to say *the patterns we now see with software engineers using LLMs will increasingly
-   appear in all knowledge work and problem solving*.
+   to say *the patterns of how software engineers use LLMs will increasingly appear in
+   all knowledge work and problem solving*.
 
-4. In both software engineering and other knowledge work, the most difficult but
-   high-leverage activities improve "infrastructure": tools that help people explore
-   solutions more efficiently.
-   This is analogous to software engineering, where the most powerful systems always
-   need mature, flexible tools and infrastructure.
+4. **It pays to focus on better "infrastructure" for tools for thought.**
 
-If you find you agree with these arguments, you'll see this suggests some different
-emphasis than what we currently see in many AI labs and startups.
+   In both software engineering and other knowledge work, the most difficult but
+   high-leverage activities *improve tools to explore solutions more efficiently*. This
+   is analogous to software engineering, where the most powerful systems rest on
+   well-designed programming languages, flexible developer tools, and stable
+   infrastructure.
 
-It suggests directions that where we could use tools and infrastructure of software
-engineers, like linting, as inspiration for more powerful collaboration tools and tools
-for thought. At the end, I give a few tentative ideas on a few key areas that might have
-practical impact.
+If you find you agree with these arguments, you'll see this suggests different areas of
+emphasis than is currently in many research labs and AI startups.
+It suggests areas where we could take inspiration from known patterns like linting to
+build more powerful tools for thought and collective problem-solving.
+At the end, I give a few ideas for areas to focus on.
 
 <div class="boxed-text">
 
@@ -1248,6 +1260,8 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
 * * *
 
 ## Notes
+
+[^marktwain]: Like Mark Twain, I have not yet had time to make it shorter.
 
 [^engelbart]: https://en.wikipedia.org/wiki/Douglas_Engelbart
 

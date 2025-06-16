@@ -1,6 +1,8 @@
 # Linters for Thought: Reflections on Software Engineering and Collective Intelligence
 
-Joshua Levy ([GitHub](https://github.com/jlevy), [Twitter](https://x.com/ojoshe))\
+<div class="sans-text">
+
+**Joshua Levy** ([GitHub](https://github.com/jlevy), [Twitter](https://x.com/ojoshe))\
 *v0.1.7 (June 2025) – Draft!*
 
 <div class="boxed-text">
@@ -14,6 +16,8 @@ If you know relevant work or if your own work is relevant, please let me know so
 reference it.
 
 The fastest way to reach me is to tag or DM me: [x.com/ojoshe](https://x.com/ojoshe)
+
+</div>
 
 </div>
 
@@ -337,7 +341,9 @@ So human engineering effort is increasingly about infrastructure engineering.
 
 <div class="boxed-text">
 
-*(Human) product engineers need LLMs and LLMs need (human) infrastructure engineers.*
+*LLMs make (human) product engineers more effective.*
+
+*(Human) infrastructure engineers make LLMs more effective.*
 
 </div>
 
@@ -568,7 +574,7 @@ This is because of a fundamental fact:
 
 <div class="boxed-text">
 
-*The design of products is fundamentally shaped by **the cost of errors**: whether they
+*The design of products is fundamentally shaped by the **cost of errors**: whether they
 need to work 90%, 99%, or 99.999% of the time.*
 
 </div>
@@ -649,10 +655,11 @@ formal semantics.
 
 <div class="boxed-text">
 
-**Inexact processes** previously mostly handled by humans will increasingly become
+***Inexact processes** previously mostly handled by humans will increasingly become
 automated with the use natural language specifications shared by both humans and LLMs
-tools. **Exact processes** will still have code as the primary description of their
-behavior.*
+tools.*
+
+***Exact processes** will still have code as the primary description of their behavior.*
 
 </div>
 
@@ -755,14 +762,14 @@ In short, if it was good for humans, it's great for LLMs.
 
 ### What is Linting?
 
-Historically, linting is mostly used to refer to fairly low level, specific coding
-errors.
+Historically, linting is mostly used to refer to highlighting fairly low level, specific
+coding errors.
 
-One lesson of linting that catching typos or obvious bugs saves time.
+One lesson of linting is that catching typos or obvious bugs saves time.
 But the impact is more profound than that.
 
-But metaphorically, it's worth extending the idea to include type checking and more
-broadly, checking for a wide range of specific errors, both for humans and for LLMs.
+Metaphorically, it's worth extending the idea to include type checking and more broadly,
+checking for a wide range of specific errors, both for humans and for LLMs.
 
 <div class="boxed-text">
 

@@ -8,7 +8,7 @@
 <div class="boxed-text">
 
 This is a rough draft.
-I'd like to revise this as I get feedback and I'd be grateful if you share your thoughts
+I’d like to revise this as I get feedback and I’d be grateful if you share your thoughts
 on any part, especially skepticism or disagreement.
 The ideas here come from many people, no doubt far more than I have currently cited.
 I would like to include more references and credits where they are due.
@@ -27,11 +27,11 @@ This work is a collection of reflections and research ideas on software engineer
 tools to augment our *collective intelligence*—that is, to improve our ability to find
 solutions to complex human problems.
 
-I've worked in software and knowledge tools for a long time, in research, in startups,
+I’ve worked in software and knowledge tools for a long time, in research, in startups,
 and in publishing. In terms of the ability of software to impact our lives, right now,
 the mid-2020s, is possibly the most exciting time since the dawn of the Internet.
 
-I've also used LLMs almost every day since 2022 and read *far* too many strong opinions
+I’ve also used LLMs almost every day since 2022 and read *far* too many strong opinions
 about AI on Twitter.
 I find there are several ways my own views seem to differ significantly from what I see
 in popular discussion.
@@ -43,7 +43,7 @@ There is quite a bit here,[^marktwain] but it is all in support of four key poin
 1. **IA deserves more attention.**
 
    Although popular debate today focuses on AGI and how AI can replicate human
-   abilities, Doug Engelbart's ideas on augmenting *human* intellect (*intelligence
+   abilities, Doug Engelbart’s ideas on augmenting *human* intellect (*intelligence
    augmentation*, or IA) are as prescient and relevant as they were 50 years ago.
 
 2. **Software engineering is essential to solving human problems.**
@@ -61,7 +61,7 @@ There is quite a bit here,[^marktwain] but it is all in support of four key poin
    to say *the patterns of how software engineers use LLMs will increasingly appear in
    all knowledge work and problem solving*.
 
-4. **It pays to focus on better "infrastructure" for tools for thought.**
+4. **It pays to focus on better “infrastructure” for tools for thought.**
 
    In both software engineering and other knowledge work, the most difficult but
    high-leverage activities *improve tools to explore solutions more efficiently*. This
@@ -69,7 +69,7 @@ There is quite a bit here,[^marktwain] but it is all in support of four key poin
    well-designed programming languages, flexible developer tools, and stable
    infrastructure.
 
-If you find you agree with these arguments, you'll see this suggests different areas of
+If you find you agree with these arguments, you’ll see this suggests different areas of
 emphasis than is currently in many research labs and AI startups.
 It suggests areas where we could take inspiration from known patterns like linting to
 build more powerful tools for thought and collective problem-solving.
@@ -77,7 +77,7 @@ At the end, I give a few ideas for areas to focus on.
 
 <div class="boxed-text">
 
-*In case you're in a hurry or skimming, key insights are in boxes like this.*
+*In case you’re in a hurry or skimming, key insights are in boxes like this.*
 
 </div>
 
@@ -93,7 +93,7 @@ After months of reflection, he famously came to three conclusions:[^engelbart]
 2. Serious efforts to make the world better would require harnessing collective human
    intellect to contribute to effective solutions
 
-3. If you could dramatically improve how we do that, you'd be boosting every effort on
+3. If you could dramatically improve how we do that, you’d be boosting every effort on
    the planet to solve important problems
 
 A key inspiration in my own career was meeting Doug in the 2000s, when I was a young
@@ -118,10 +118,10 @@ with other humans to solve human problems*.
 I see so much focus today on the rising capabilities of AI systems—but vastly less on
 *how* we can use LLMs and other tools to augment human thinking and collaboration.
 
-Doug's vision never wavered, but in spite of the immense impact of his work on the
+Doug’s vision never wavered, but in spite of the immense impact of his work on the
 Internet, the GUI, the mouse, and almost every piece of software we use, he always
 considered his dream unrealized.
-It's time we apply the vastly more powerful tools of today with his insights in mind.
+It’s time we apply the vastly more powerful tools of today with his insights in mind.
 
 ### To Shape the Future, Study the Past
 
@@ -134,7 +134,7 @@ about AI almost every day.
 However, predictions about large technology-driven changes are highly unreliable, even
 when made by experts.
 
-In technology, some things change fast—and some don't change at all.
+In technology, some things change fast—and some don’t change at all.
 The hard part is figuring out which parts are which.
 
 <div class="boxed-text">
@@ -166,7 +166,7 @@ The rise of LLMs are making it possible for non-programmers to become programmer
 programmers to become designers, and roles to increasingly blur.
 Along with this, the dichotomy between human language and code is blurring.
 
-LLMs don't change the fundamentals of writing, communication, or clear thinking.
+LLMs don’t change the fundamentals of writing, communication, or clear thinking.
 But they are accelerating changes in tools that have long been happening for a long
 time.
 
@@ -176,16 +176,16 @@ time.
 
 > “Technology is the solution to human problems, and we won’t run out of work till we
 > run out of problems.”
-> –Tim O'Reilly[^oreilly]
+> –Tim O’Reilly[^oreilly]
 
 Many people today fear AI eliminates jobs.
-And it's true many roles are changing or being eliminated.
+And it’s true many roles are changing or being eliminated.
 
-As Tim O'Reilly explains, human problems are complex and evolving because human desires
+As Tim O’Reilly explains, human problems are complex and evolving because human desires
 are insatiable. And technology is the ever-evolving ways we find solutions to those
 problems.
 
-So even if many things are changing, we have one concept that doesn't change.
+So even if many things are changing, we have one concept that doesn’t change.
 
 <div class="boxed-text">
 
@@ -205,7 +205,7 @@ Therefore programmers are no longer needed.
 
 In my view, this reasoning reflects a deep misunderstanding of what engineering is.
 It is a bit like confusing writing with typing.
-Writing certainly involves typing (at least, it does today), but it's a woeful
+Writing certainly involves typing (at least, it does today), but it’s a woeful
 misunderstanding to think the value of a writer is their typing
 ability.[^combinedskills]
 
@@ -231,7 +231,7 @@ misunderstands them.
 
 Say you give it to a bunch of users.
 You know what you’d discover?
-At first, they'll be delighted by simple things.
+At first, they’ll be delighted by simple things.
 But once they start to do anything really complex, your *users* will begin to have
 misunderstandings *with themselves* about what they want the software to do.
 
@@ -247,7 +247,7 @@ figuring out what they really wanted?
 
 You guessed it: engineers.
 
-So this brings us to a second definition that doesn't change:
+So this brings us to a second definition that doesn’t change:
 
 <div class="boxed-text">
 
@@ -261,9 +261,9 @@ software) to human problems.*
 Another fundamental question is, why does it seem like software engineering is quite
 hard, both for humans and now for LLMs?
 
-I'd like to say the answer is simple, but it's not: the answer is *complexity*.
+I’d like to say the answer is simple, but it’s not: the answer is *complexity*.
 
-For better or worse, it's a fact that humans have varied and insatiable desires.
+For better or worse, it’s a fact that humans have varied and insatiable desires.
 And our desires arise not just from our own needs or imagination, but out of what we see
 others want.
 
@@ -283,24 +283,24 @@ solutions.*
 </div>
 
 You need to do it quickly but at the same time without getting bogged down by details
-that aren't really relevant to the problem.
+that aren’t really relevant to the problem.
 
-As one of the best engineers I know describes it, "good engineering is moving fast but
-not painting yourself into a corner."
+As one of the best engineers I know describes it, “good engineering is moving fast but
+not painting yourself into a corner.”
 
 ### Product vs. Infrastructure Engineering
 
 Often, using a single word for distinct but related things can lead to a lot of
 confusion.
 
-While we're talking about this, it's worth distinguishing between two kinds of
+While we’re talking about this, it’s worth distinguishing between two kinds of
 engineering.
 
 In comedy, there are "comedians' comedians"—the comedians other comedians most respect.
 But these are often *not* the people the general public finds most funny.
 
 There is something similar with engineering.
-For lack of better terminology, I'll call them *product engineering* and *infrastructure
+For lack of better terminology, I’ll call them *product engineering* and *infrastructure
 engineering*.
 
 <div class="boxed-text">
@@ -318,7 +318,7 @@ programming languages are not about product engineering.
 
 Product-thinking people often find these arguments confusing or distracting.
 
-But it's because they are not about product engineering.
+But it’s because they are not about product engineering.
 They are about infrastructure engineering: they are arguments about *what infrastructure
 will lead to future sustained velocity for other engineers*.
 
@@ -332,7 +332,7 @@ But it has new relevance today with LLMs.
 LLMs are currently best implementing clear specifications.
 Product engineers can often give clear specifications.
 However, infrastructure engineers are problems for other engineers.
-It's harder to give specifications for infrastructure engineering because so aspects are
+It’s harder to give specifications for infrastructure engineering because so aspects are
 non-obvious, second order, and take time to observe.
 
 LLMs help all engineers, but they can do more for product engineers than for
@@ -349,7 +349,7 @@ So human engineering effort is increasingly about infrastructure engineering.
 
 ### Three Types of Complexity
 
-Let's mention another word that has a few distinct meanings in engineering: complexity.
+Let’s mention another word that has a few distinct meanings in engineering: complexity.
 
 An alternate and important way to frame the concept of good engineering is originally
 due to Fred Brooks: good engineering involves exploring the *essential complexity* of a
@@ -360,7 +360,7 @@ This is actually just a reframing of the same definition above of sustained velo
 Having too much accidental complexity is a common way engineering slows down and becomes
 ineffective.[^techdebt]
 
-In fact, I think it's best to think of three kinds of complexity that arise in
+In fact, I think it’s best to think of three kinds of complexity that arise in
 engineering:
 
 - **Natural complexity:** If you are building an airplane, you need a good understanding
@@ -376,7 +376,7 @@ engineering:
   you will discover your users (and competitors) like features such as emoji reactions
   and generative-AI stickers.
   These make your product significantly more complex as you try to make your users
-  happy. I'll call it *feature complexity* and it really is the complexity of human
+  happy. I’ll call it *feature complexity* and it really is the complexity of human
   desires. It is not well defined and subjective but under your control.
 
   Engineers should *exercise careful judgement about when to explore feature
@@ -385,7 +385,7 @@ engineering:
 - **Accidental complexity:** As you build something, it invariably becomes more and more
   complex. Most large, popular software is so complex few normal people can even hold all
   the details in their mind.
-  But a lot of it is details that don't really matter in the design process.
+  But a lot of it is details that don’t really matter in the design process.
   Accidental complexity arises not from nature or from human desires but from the
   engineering process.
 
@@ -399,49 +399,49 @@ complexity**.*
 
 </div>
 
-Note this is true whether you're a human developer or an LLM agent.
-It's one more thing that *doesn't* change with progress in AI.
+Note this is true whether you’re a human developer or an LLM agent.
+It’s one more thing that *doesn’t* change with progress in AI.
 
-### Why Don't Apps Have the Features We Want?
+### Why Don’t Apps Have the Features We Want?
 
-So we now know one reason it's hard to be a good software engineer: because it's hard to
+So we now know one reason it’s hard to be a good software engineer: because it’s hard to
 explore the essential complexity of problems.
 
 It can be hard to understand what problems your user (or even you yourself) are really
-solving, and it's hard to identify the essential parts of that problem.
-And especially over time, it's hard to build and evolve solutions that aren't
+solving, and it’s hard to identify the essential parts of that problem.
+And especially over time, it’s hard to build and evolve solutions that aren’t
 constrained by accidental complexity.
 
 We all know numerous situations where we want a software program to solve a problem we
 have. But we know ChatGPT, Anthropic, Notion, Google Docs, Slack, Excel, and Zapier, and
-dozens of other products don't quite solve it directly.
+dozens of other products don’t quite solve it directly.
 
 But often, we know what the solution is.
-Why don't companies build the solution to your problem?
+Why don’t companies build the solution to your problem?
 
 There are several reasons for this.
 And they depend on the size of the team and some apply *even if people know the solution
-and know how to build it*. It's worth being aware of the key ones:
+and know how to build it*. It’s worth being aware of the key ones:
 
-1. *Lack of awareness*: They don't know your problem exists
+1. *Lack of awareness*: They don’t know your problem exists
 
-2. *Lack of understanding*: They are aware of the problem but don't understand it
-   properly (because they haven't talked to users or because they can't as a team
+2. *Lack of understanding*: They are aware of the problem but don’t understand it
+   properly (because they haven’t talked to users or because they can’t as a team
    describe or articulate it in a way that can be built)
 
-3. *Lack of resources*: They understand the problem, but don't have the resources
+3. *Lack of resources*: They understand the problem, but don’t have the resources
    (money, data, or people with the right skills) to properly design and build it
 
-4. *Innovator's Dilemma*: They understand and have the resources, but to do so seems
+4. *Innovator’s Dilemma*: They understand and have the resources, but to do so seems
    irrational because it is *relatively* less profitable than working on existing,
    successful products and features
 
-5. *Conway's Law*: They understand the problem and resources and incentives to solve the
-   problem, but still don't solve it (or solve it poorly or do something else).
+5. *Conway’s Law*: They understand the problem and resources and incentives to solve the
+   problem, but still don’t solve it (or solve it poorly or do something else).
    This is surprisingly common for larger teams.
-   The reason many large, successful companies don't add specific features you want,
+   The reason many large, successful companies don’t add specific features you want,
    even if they should and they are obviously a good idea, is
-   [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law): teams are almost always
+   [Conway’s Law](https://en.wikipedia.org/wiki/Conway%27s_law): teams are almost always
    constrained to ship products that mirror their organizational structure.
 
 Looking at these reasons, we can see that for the most part, none of these fundamentally
@@ -461,8 +461,8 @@ structure**.*
 
 ## The Future of Software Engineering
 
-Now we've talked about the essential facts that seem inherent to how and why we build
-software, it's time to ask what *is* changing?
+Now we’ve talked about the essential facts that seem inherent to how and why we build
+software, it’s time to ask what *is* changing?
 
 One of the most remarkable shifts in the last year or two is that more people are able
 to code more complex things by using Cursor, GitHub Copilot, and other LLM coding tools.
@@ -482,7 +482,7 @@ Oddly enough, just like there are common confusions about the essential nature o
 engineering, there are also common confusions about the essential nature of code.
 
 When learning to program, people tend to think of programming as communicating with the
-computer. It can be good for learning or a fun challenge to do this "the hard way" in C
+computer. It can be good for learning or a fun challenge to do this “the hard way” in C
 or assembly language.
 Over time, whenever they can, engineers and programmers invariably move to to
 “higher-level” languages and frameworks that are easier to write in.
@@ -493,9 +493,9 @@ In software engineering, the true goal of writing code is not to give the comput
 more generally, the distributed system) commands, but to communicate to yourself and to
 other engineers what the whole system should do.
 
-As a side effect, you produce code that works (and, if you're good at it, also runs
+As a side effect, you produce code that works (and, if you’re good at it, also runs
 efficiently). Compilers can be built for any language.
-The history of the development of "better" programming languages is the history of
+The history of the development of “better” programming languages is the history of
 improving the languages to support communication *with people*.
 
 The point is still that code is actually about communication between humans.
@@ -519,10 +519,10 @@ ago.
 Code is the medium to allow humans to perform the process of exploring solutions in a
 completely precise (and ideally, practical) way.
 
-That's why *effective workflows* around code, such as tests, commits, pull requests, and
+That’s why *effective workflows* around code, such as tests, commits, pull requests, and
 code reviews, are so important.
 They are what structure and manage the complexity of expressing and updating the current
-description of the software's behavior.
+description of the software’s behavior.
 
 ### What is a Specification?
 
@@ -534,14 +534,14 @@ behavior precisely enough that programmers could implement it correctly.
 Famously, the waterfall approach to software development rarely worked in practice.
 (At this point this should come as no surprise since we know it fundamentally hinders
 the true process of engineering.)
-Specifications were too vague, didn't reflect a correct solution, or were too detailed
+Specifications were too vague, didn’t reflect a correct solution, or were too detailed
 to maintain as requirements evolved.
 
-Documents are "dead" unless they are part of routine engineering workflows.
-So over time, the "real" specification was often just the code itself.
+Documents are “dead” unless they are part of routine engineering workflows.
+So over time, the “real” specification was often just the code itself.
 
 Now vibe coders working with LLMs are rediscovering specifications, because of this
-crucial difference. While imperfect, it's now far easier to convert English to and from
+crucial difference. While imperfect, it’s now far easier to convert English to and from
 programming languages.
 
 The history of programming languages perfectly illustrates this convergence.
@@ -579,7 +579,7 @@ need to work 90%, 99%, or 99.999% of the time.*
 
 </div>
 
-Let's illustrate this by imagining you have back pain.
+Let’s illustrate this by imagining you have back pain.
 Consider these three systems:
 
 1. The search engine and websites that help you find articles about treating back pain
@@ -589,17 +589,17 @@ Consider these three systems:
 3. The software and process the pharmacisst uses to fill your prescription bottle with
    the correct pill
 
-The first can tolerate a 1–10% error rate since you're reading many things and will form
+The first can tolerate a 1–10% error rate since you’re reading many things and will form
 your own opinions. The second can tolerate perhaps a 1% error rate.
 The third has very low tolerance for error, perhaps a 0.01% error rate or less.
 
 It is certain that each of these systems could improve with machine learning and AI. But
 if you want to add AI or machine learning to each of those use cases, the approach needs
 to be very different.
-You can't get away from the fact that some systems need high reliability and precision.
+You can’t get away from the fact that some systems need high reliability and precision.
 In other cases, we can adapt to errors because the cost is of errors is low.
 
-As we've seen, specification in English and code in Python have similar purpose but not
+As we’ve seen, specification in English and code in Python have similar purpose but not
 interchangeable. For some situations, exact descriptions are of fundamental and
 unavoidable importance.
 For others, convenience and low cost are more important.
@@ -616,14 +616,14 @@ processes that are qualitatively different and not interchangeable.
 
 Engineers are now writing more and software just by using English and natural-language
 specifications and docs.
-Developers of Claude Code now say most (perhaps even 90%) of Claude Code's own codebase
+Developers of Claude Code now say most (perhaps even 90%) of Claude Code’s own codebase
 is now written in Claude Code.
 This is a remarkable fact.
 
-It's now tempting to say English is the new programming language, and LLMs are the new
-compilers. (On Twitter, and you'll see similar statements almost every day.)
+It’s now tempting to say English is the new programming language, and LLMs are the new
+compilers. (On Twitter, and you’ll see similar statements almost every day.)
 
-I hope by now you'd agree with me that this isn't the most insightful way to frame what
+I hope by now you’d agree with me that this isn’t the most insightful way to frame what
 is happening.
 
 English in the form we normally use it is far too ambiguous and imprecise to express the
@@ -633,7 +633,7 @@ software architecture.
 Some of these forms directly support engineering.
 Others do not.
 
-It's more accurate to say we are seeing three related but different changes:
+It’s more accurate to say we are seeing three related but different changes:
 
 1. **Faster coding with LLM tools:** Engineers can code more quickly by using English
    with LLMs and LLM-powered agents to read, write, and test code more quickly than ever
@@ -648,9 +648,9 @@ It's more accurate to say we are seeing three related but different changes:
    English documents as specifications that are critical parts of workflows, used by
    both humans and LLM agents (e.g., Claude agent rules, LLM-based validation workflows)
 
-We're moving from a world where we had occasional, poorly used English specifications to
+We’re moving from a world where we had occasional, poorly used English specifications to
 one where clear and precise English is essential to working efficiently with our tools
-and teammates. And we'll work with this *and* traditional programming language code with
+and teammates. And we’ll work with this *and* traditional programming language code with
 formal semantics.
 
 <div class="boxed-text">
@@ -665,7 +665,7 @@ tools.*
 
 LLMs are pushing us toward precise and structured ways of expressing software that are
 more human friendly.
-It's quite likely we'll see emergence of languages at new points between English and
+It’s quite likely we’ll see emergence of languages at new points between English and
 current programming languages, or of rigorous, constrained formats for English
 (themselves enforced by LLMs and grammar specifications).
 
@@ -687,7 +687,7 @@ And now AI tools transform the nature of our work so code and language, writing 
 spoken word, are increasingly interchangeable, the distinctions of the past are becoming
 flimsy.
 
-In short, if you believe all the points I've made so far, you may see some possibly
+In short, if you believe all the points I’ve made so far, you may see some possibly
 surprising conclusions:
 
 <div class="boxed-text">
@@ -700,13 +700,13 @@ is disappearing.*
 
 </div>
 
-This may be a bold statement, but I think it's worth exploring its implications.
+This may be a bold statement, but I think it’s worth exploring its implications.
 
 ## The Metaphor of Linting
 
-> "When you make it harder to do the basic parts of an activity, the more advanced parts
-> become almost impossible... Tools don't only make things easier: they allow us to
-> augment ourselves to do things that were previously impossible..." —Doug
+> “When you make it harder to do the basic parts of an activity, the more advanced parts
+> become almost impossible... Tools don’t only make things easier: they allow us to
+> augment ourselves to do things that were previously impossible...” —Doug
 > Engelbart[^aug]
 
 ### A Brief History of Linting and Type Checking
@@ -742,7 +742,7 @@ developed in the 1990s, 2000s, and 2010s.
 Today the rise of LLMs means more and more code is written by LLMs, with some human
 oversight and review.
 
-But this doesn't change the value of linting and type checking.
+But this doesn’t change the value of linting and type checking.
 In fact, it seems to make it all the more important.
 
 An interesting example: For decades, there have been debates among programmers about the
@@ -758,7 +758,7 @@ While people often knew that unit tests were a good practice, the fact that they
 quick to write with LLMs *and* they then benefit LLMs in writing code with fewer bugs
 has driven to a rapid increase in their use.
 
-In short, if it was good for humans, it's great for LLMs.
+In short, if it was good for humans, it’s great for LLMs.
 
 ### What is Linting?
 
@@ -768,7 +768,7 @@ coding errors.
 One lesson of linting is that catching typos or obvious bugs saves time.
 But the impact is more profound than that.
 
-Metaphorically, it's worth extending the idea to include type checking and more broadly,
+Metaphorically, it’s worth extending the idea to include type checking and more broadly,
 checking for a wide range of specific errors, both for humans and for LLMs.
 
 <div class="boxed-text">
@@ -810,7 +810,7 @@ tools:
   disagreements
 
 If you think of linters generally in this way, it becomes apparent that with the power
-of LLMs, we can build linters at various levels of the "stack" of human knowledge work:
+of LLMs, we can build linters at various levels of the “stack” of human knowledge work:
 
 - **Language:** Spell checking and grammar (much like Grammarly)
 
@@ -842,7 +842,7 @@ Often we can have exactly the right idea but not work on it at the right time.
 Or we might be at the right time but not be in an organization or with a team of the
 right structure and incentives to have the outcome we want.
 
-I'm fortunate to have worked at the intersection of knowledge tools, publishing,
+I’m fortunate to have worked at the intersection of knowledge tools, publishing,
 reasoning systems, and engineering extensively.
 Today, the rise of vibe coders, more powerful reasoning tools (like o3 and Gemini 2.5
 Deep Research), and the return of classical formal reasoning tools for use with LLMs
@@ -875,7 +875,7 @@ doing right now. The three key differences:
      LLM coders)
 
 This may sound ambitious but I want to be ruthlessly practical about it too.
-See below for some concrete examples of what I've begun building.
+See below for some concrete examples of what I’ve begun building.
 
 ### The Value of Flexible Primitive Operations
 
@@ -887,20 +887,20 @@ This is one of my favorite quotes.
 If we wish for LLMs to improve human rationality and our ability to work together, we
 need more tools that make complex tasks feel like easy steps.
 
-That's why it makes sense to build tools that make individual steps more powerful, so
+That’s why it makes sense to build tools that make individual steps more powerful, so
 larger, human processes accelerate over time.
 
 In software, big ideas often must be realized from practical, concrete pieces.
 
 Typically there are two opposite pitfalls when building software:
 
-- *Under-engineering (inadequate up-front design)*: This is when you don't plan ahead
-  and just building a tool, realizing it doesn't work as hoped, but then getting stuck
+- *Under-engineering (inadequate up-front design)*: This is when you don’t plan ahead
+  and just building a tool, realizing it doesn’t work as hoped, but then getting stuck
   because the complexity of the software is too high to change it.
   This too little design and too much technical debt.
 
 - *Over-engineering (too much up-front design)*: This is the opposite, which is that
-  you're so afraid of inadequate design that you design a much more complex
+  you’re so afraid of inadequate design that you design a much more complex
   architecture—but then it ships too slow and it too might not work as hoped.
   This is too much design without testing and learning.
   This is common among engineers of moderate experience and was called by Fred Brooks
@@ -912,7 +912,7 @@ obvious. So both of these are real risks.
 So what do you do?
 
 My answer is you should work "bottom up"—that is, you should build small pieces that
-combine in many ways, including in ways you can't plan for right now.
+combine in many ways, including in ways you can’t plan for right now.
 
 If you can build small pieces that combine in many ways, the right combinations and
 workflows become easier to discover.
@@ -924,7 +924,7 @@ paths in the grass, then pave them.
 ### Principles for Compositional Tools
 
 In software, big ideas often must be realized from practical, concrete pieces.
-So I think it makes sense to work "bottom up".
+So I think it makes sense to work “bottom up”.
 
 So what are some areas where we could begin to build better primitive operations?
 
@@ -932,7 +932,7 @@ Some key principles are:
 
 1. **Transparency:** Increase visibility of content at all times, including text, edits,
    and LLM prompts used to make edits.
-   (Many current AI tools don't reveal all these details.)
+   (Many current AI tools don’t reveal all these details.)
 
 2. **Flexibility:** Increase variety of operations.
    It should be easy to add new operations.
@@ -953,7 +953,7 @@ Some key principles are:
 
 5. **Easy extensibility:** This is the biggest departure from many existing tools.
    It is easy to add new operations, and these operations should be in a simple format
-   that's also easy for an LLM to write (generally, possibly restricted Python or
+   that’s also easy for an LLM to write (generally, possibly restricted Python or
    TypeScript/HTML/CSS, as these are well understood by LLMs).
 
 6. **Built-in compositionality:** Typically missing in many tools is the idea of
@@ -1103,17 +1103,17 @@ Some key areas where document and tooling infrastructure needs to improve:
 
 - **Data-driven UX with GUI/Terminal Hybrid Capabilities:**
 
-  - Currently, building things like Vercel's "rich chat"
+  - Currently, building things like Vercel’s “rich chat”
     [AI SDK](https://ai-sdk.dev/docs/introduction) require extensive amounts of code for
     full-stack web development, involving many frameworks.
     This is far too slow as a way to build new UX.
 
-  - As we've seen with Claude Code and other tools, the terminal, while not perfect,
+  - As we’ve seen with Claude Code and other tools, the terminal, while not perfect,
     allows for much more flexible workflows.
     Claude Code can add features with almost zero effort on UX.
 
-  - It's time we find a way to blend these approaches.
-    It's definitely technically feasible, but we need to escape the history of complex
+  - It’s time we find a way to blend these approaches.
+    It’s definitely technically feasible, but we need to escape the history of complex
     web stacks.
 
 - **Better shells:**
@@ -1126,16 +1126,16 @@ Some key areas where document and tooling infrastructure needs to improve:
 
 ## Appendix: A Few Experiments
 
-Over the past couple months, I've found that because I can build more myself with LLM
+Over the past couple months, I’ve found that because I can build more myself with LLM
 coding tools, I have been able to prototype a few of these bottom-up tools.
 These are just a start but they are pieces that build on each other:
 
-All of these are rough and I haven't really promoted them yet as they are early
-prototypes. But I'd love early feedback if you're willing to share it:
+All of these are rough and I haven’t really promoted them yet as they are early
+prototypes. But I’d love early feedback if you’re willing to share it:
 
 - **Textpress:** A new platform for simple publishing of complex documents.
   You can publish or republish research reports for Gemini or OpenAI, PDFs or DOCX
-  files, or other documents in a way that's easier to share and read, with good
+  files, or other documents in a way that’s easier to share and read, with good
   typography, mobile accessibility, clean footnotes, table of contents, annotations,
   etc. (This is in collaboration with another engineer, former YC founder and OpenAI
   engineer Kevin Lin.)
@@ -1158,30 +1158,30 @@ prototypes. But I'd love early feedback if you're willing to share it:
 
 - **Kash:** The knowledge agent shell.
   This is a library and tool for experimentation.
-  Think of it as a "command line for knowledge tasks".
+  Think of it as a “command line for knowledge tasks”.
 
-  It lets you iterate and experiment with "Actions" like transcribing audio, converting
+  It lets you iterate and experiment with “Actions” like transcribing audio, converting
   documents, fact checking, annotating, and pretty much any other task possible with
   Python and LLM APIs, but interactively and each in a single command.
   Current actions that already work are conversion of PDFs to text, transcription of
   videos, captioning and annotating text, organizing and structuring transcripts, etc.
 
-  It's currently terminal based (think like Claude Code).
+  It’s currently terminal based (think like Claude Code).
   It also lets you chain together commands and assemble the outputs in topical
   workspaces (think a bit like Obsidian).
   The goal is this framework would be open source and let more people experiment and
   discover more powerful AI workflows.
-  (It's also compatible with MCP.)
+  (It’s also compatible with MCP.)
 
   Repo: [kash](https://github.com/jlevy/kash)
 
-And some lower-level libraries I've found helpful for the above work:
+And some lower-level libraries I’ve found helpful for the above work:
 
 - **Frontmatter format:** Simple, readable metadata attached to files can be useful in
   numerous situations, such as recording title, author, source, copyright, or the
   provenance of a file.
 
-  Unfortunately, it's often unclear how to format such metadata consistently across
+  Unfortunately, it’s often unclear how to format such metadata consistently across
   different file types while preserving valid syntax, making parsing easy, and not
   breaking interoperability with existing tools.
 
@@ -1216,29 +1216,29 @@ And some lower-level libraries I've found helpful for the above work:
     [Markdown source](https://github.com/jlevy/flowmark/blob/main/README.md?plain=1) of
     this readme file.)
 
-  - Very simple and fast **regex-based sentence splitting**. It's just based on letters
-    and punctuation so isn't perfect but works well for these purposes (and is much
+  - Very simple and fast **regex-based sentence splitting**. It’s just based on letters
+    and punctuation so isn’t perfect but works well for these purposes (and is much
     faster and simpler than a proper sentence parser like SpaCy).
-    It should work fine for English and many other latin/Cyrillic languages but hasn't
+    It should work fine for English and many other latin/Cyrillic languages but hasn’t
     been tested on CJK.
 
   Because **YAML frontmatter** is common on Markdown files, the Markdown autoformat
   preserves all frontmatter (content between `---` delimiters at the front of a file).
 
-- **Chopdiff:** `chopdiff` is a small library of tools I've developed to make it easier
+- **Chopdiff:** `chopdiff` is a small library of tools I’ve developed to make it easier
   to do fairly complex transformations of text documents, especially for LLM
   applications, where you want to manipulate text, Markdown, and HTML documents in a
   clean way.
 
   Basically, it lets you parse, diff, and transform text at the level of words,
-  sentences, paragraphs, and "chunks" (paragraphs grouped in an HTML tag like a
+  sentences, paragraphs, and “chunks” (paragraphs grouped in an HTML tag like a
   `<div>`). It aims to have minimal dependencies.
 
   Example use cases:
 
   - **Filter diffs:** Diff two documents and only accept changes that fit a specific
     filter. For example, you can ask an LLM to edit a transcript, only inserting
-    paragraph breaks but enforcing that the LLM can't do anything except insert
+    paragraph breaks but enforcing that the LLM can’t do anything except insert
     whitespace. Or let it only edit punctuation, whitespace, and lemma variants of words.
     Or only change one word at a time (e.g. for spell checking).
 
@@ -1248,8 +1248,8 @@ And some lower-level libraries I've found helpful for the above work:
     You can then backfill timestamps of each paragraph into the edited text.
 
   - **Windowed transforms:** Walk through a large document N paragraphs, N sentences, or
-    N tokens at a time, processing the results with an LLM call, then "stitching
-    together" the results, even if the chunks overlap.
+    N tokens at a time, processing the results with an LLM call, then “stitching
+    together” the results, even if the chunks overlap.
 
   Repo: [chopdiff](https://github.com/jlevy/chopdiff)
 

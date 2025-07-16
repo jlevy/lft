@@ -3,23 +3,27 @@
 <div class="sans-text">
 
 **Joshua Levy** ([GitHub](https://github.com/jlevy), [Twitter](https://x.com/ojoshe))\
-*v0.1.7 (June 2025) – Draft!*
+*v0.1.8 (July 2025) – Draft!*
 
 <div class="boxed-text">
 
-This is a rough draft.
-I’d like to revise this as I get feedback and I’d be grateful if you share your thoughts
-on any part, especially skepticism or disagreement.
-The ideas here come from many people, no doubt far more than I have currently cited.
-I would like to include more references and credits where they are due.
-If you know relevant work or if your own work is relevant, please let me know so I can
-reference it.
+This is a draft. I’d be grateful if you share your thoughts on any part, especially
+skepticism or disagreement, as I revise it.
 
 The fastest way to reach me is to tag or DM me: [x.com/ojoshe](https://x.com/ojoshe)
 
 </div>
 
 </div>
+
+## Acknoledgements
+
+I’m grateful to many people who have discussed key ideas or who have given me feedback,
+including Adam Cheyer, Amina Green, Sean Grove, Carlos E. Perez, and Russell Power.
+
+I would like to include more references and credits where they are due.
+If you know relevant work or if your own work is relevant, please let me know so I can
+reference it.
 
 ## Introduction
 
@@ -258,10 +262,10 @@ software) to human problems.*
 
 ### What is Good Engineering?
 
-Another fundamental question is, why does it seem like software engineering is quite
-hard, both for humans and now for LLMs?
+Another fundamental question is, why is software engineering so hard, both for humans
+and now for LLMs?
 
-I’d like to say the answer is simple, but it’s not: the answer is *complexity*.
+The answer, of course, is *complexity*.
 
 For better or worse, it’s a fact that humans have varied and insatiable desires.
 And our desires arise not just from our own needs or imagination, but out of what we see
@@ -434,7 +438,7 @@ and know how to build it*. It’s worth being aware of the key ones:
 
 4. *Innovator’s Dilemma*: They understand and have the resources, but to do so seems
    irrational because it is *relatively* less profitable than working on existing,
-   successful products and features
+   successful products and features and features
 
 5. *Conway’s Law*: They understand the problem and resources and incentives to solve the
    problem, but still don’t solve it (or solve it poorly or do something else).
@@ -567,7 +571,7 @@ natural language) and **precision** (how exact the descriptions are).*
 
 </div>
 
-### Exact and Inexact Processes
+### Counting Nines
 
 Experienced designers and engineers sometimes talk about counting nines.
 This is because of a fundamental fact:
@@ -575,7 +579,7 @@ This is because of a fundamental fact:
 <div class="boxed-text">
 
 *The design of products is fundamentally shaped by the **cost of errors**: whether they
-need to work 90%, 99%, or 99.999% of the time.*
+need to work 90%, 99%, or 99.999% of the time.*[^uptimevscorrect]
 
 </div>
 
@@ -586,35 +590,100 @@ Consider these three systems:
 
 2. The online messaging system you use to write to your physician about it
 
-3. The software and process the pharmacisst uses to fill your prescription bottle with
+3. The software and process the pharmacist uses to fill your prescription bottle with
    the correct pill
 
 The first can tolerate a 1–10% error rate since you’re reading many things and will form
 your own opinions. The second can tolerate perhaps a 1% error rate.
-The third has very low tolerance for error, perhaps a 0.01% error rate or less.
+The third has very low tolerance for error, perhaps a 0.001% error rate or less.
 
 It is certain that each of these systems could improve with machine learning and AI. But
 if you want to add AI or machine learning to each of those use cases, the approach needs
 to be very different.
 You can’t get away from the fact that some systems need high reliability and precision.
-In other cases, we can adapt to errors because the cost is of errors is low.
+In other cases, we can adapt to errors because the cost of errors is low.
 
-As we’ve seen, specification in English and code in Python have similar purpose but not
-interchangeable. For some situations, exact descriptions are of fundamental and
-unavoidable importance.
-For others, convenience and low cost are more important.
-For almost any project, team, or company, both exact and inexact processes are needed.
+[^uptimevscorrect]: In engineering, “counting nines” traditionally refers to *service
+    availability* (uptime): 99.99% uptime means less than 52 minutes of downtime per
+    year. However, the concept equally applies to *correctness nines* for critical
+    processes.
+
+### Exact and Inexact Processes
+
+Most complex human endeavors can be viewed as a **socio-technical system** that involves
+multiple people, tools, and written or unwritten processes.
+Many activities are informal or ad-hoc, and some are more repeatable.
+
+As systems and products mature, processes are codified and automated for efficiency and
+consistency.
+And since software began “eating the world,” many of the tools and processes
+are implemented in software.
+
+For example, in a mature software business, there is a process for how software is
+deployed as well as processes for customer support.
+In an accounting department, there is a process for calculating revenue as well a
+process for auditing financial statements.
+
+Let’s call standard processes like this **procedures**.
+
+Procedures are not all the same.
+Some procedures are exact.
+When software is deployed, the program that users access should be *exactly* the same
+program that the developers tested.
+When an Excel spreadsheet calculates the revenue for the month, it should be *exactly*
+the same calculation performed last month.
+
+Other procedures are inexact.
+Even the most codified customer support processes are not exact.
+They require best-effort judgement in certain cases.
+The same is true for auditing financial statements.
+The decisions may often be clear-cut but there will inevitably be situational gray areas
+that need ongoing resolution.
 
 <div class="boxed-text">
 
-Socio-technical systems are built from a combination of both **exact** and **inexact**
-processes that are qualitatively different and not interchangeable.
+Socio-technical systems require a combination of both **exact** and **inexact**
+procedures.
+
+Exact and inexact procedures are qualitatively different and not interchangeable.
 
 </div>
 
+Imagine that you have code that performs a task, such as use an API to get your sales
+data from your payment processor.
+And you have certain pieces of code to calculate customized monthly sales metrics.
+It’s easy to combine these into reporting software that does both.
+
+This is how software is built: by **composition**. A typical application is the
+composition of dozens or hundreds of layers like this.
+
+That is the power of software encoding exact procedures.
+However, inexact procedures are different.
+
+Imagine you have a written procedure to handle customer support emails.
+And you have a written procedure to handle billing questions.
+
+<div class="boxed-text">
+
+Exact procedures can be composed easily: combine them and the result is an exact
+procedure.
+
+Inexact procedures can only be composed with care: combine several naively and the
+result is likely to be useless.
+
+</div>
+
+I’m not saying you can never compose inexact procedures.
+In fact, you often need to compose them a lot.
+
+It’s just that because each one has its own corner cases and failures, you can’t
+unthinkingly combine them and expect the resulting combination to work!
+This makes the design of systems of inexact processes qualitatively different from pure
+software engineering.
+
 ### Is English the New Programming Language?
 
-Engineers are now writing more and software just by using English and natural-language
+Engineers are now writing more software just by using English and natural-language
 specifications and docs.
 Developers of Claude Code now say most (perhaps even 90%) of Claude Code’s own codebase
 is now written in Claude Code.
@@ -626,22 +695,74 @@ compilers. (On Twitter, and you’ll see similar statements almost every day.)
 I hope by now you’d agree with me that this isn’t the most insightful way to frame what
 is happening.
 
-English in the form we normally use it is far too ambiguous and imprecise to express the
-behavior of software with full precision.
-We can use English in *many* ways with LLMs, from writing poetry to brainstorming
-software architecture.
-Some of these forms directly support engineering.
-Others do not.
+Specifications in English and code in Python may have similar purpose but are not
+interchangeable. English is too ambiguous and imprecise for exact procedures.
 
-It’s more accurate to say we are seeing three related but different changes:
+This is a fundamental issue, with both natural language and the development of LLMs.
+Even if an LLM correctly interprets an instruction 99.9% of the time today, it’s a
+significant challenge to have a process that ensures the updated LLM you will be using
+next month will do the same thing 99.9% of the time.
+
+<div class="boxed-text">
+
+English is ideal for documenting inexact procedures.
+
+Code (of some form) is ideal for documenting exact procedures.
+
+</div>
+
+There is an interesting nuance, however: Could we think of English as a program, but use
+LLMs to “compile” English to code of some form, and then review and use that code?
+Well, yes! That’s what we are already doing when we use LLMs to code.
+
+The only difference is right now we tend to only save or version control the code.
+Increasingly, we may wish to version control the spec that led to the code, as well, so
+we can streamline the update process of “re-compiling,” reviewing, and testing the code.
+
+### Automation of Inexact Procedures
+
+Traditionally, we have used code for exact procedures.
+And we’ve used people and documents for inexact procedures.
+
+<div class="boxed-text">
+
+*LLMs are as good as (or better) than humans for inexact procedures.*
+
+</div>
+
+<div class="boxed-text">
+
+*Inexact procedures will increasingly become automated with natural language
+specifications shared by both humans and LLMs tools.*
+
+</div>
+
+A lot of confusion arises from confusing the *automation* of LLMs with the *exactness*
+of code. I hope I’ve now convinced you of this:
+
+<div class="boxed-text">
+
+*LLMs can automate inexact procedures but automation does not make an inexact procedure
+an exact procedure.*
+
+</div>
+
+In other words, LLMs offer automation, but they don’t eliminate the prime importance of
+code to define software behavior.
+
+### Software Engineering with LLMs
+
+Now let’s think about software engineering again.
+If we accept that human engineers still need to work with code, what is changing?
+I think of three key areas:
 
 1. **Faster coding with LLM tools:** Engineers can code more quickly by using English
    with LLMs and LLM-powered agents to read, write, and test code more quickly than ever
-   before (e.g., vibe coding prototypes)
+   before (e.g., “vibe coding” prototypes)
 
 2. **Broader capabilities of human workers:** Because a single person can build and test
    software more quickly, they can rapidly make experiments; in fact, they can
-   effectively broaden their roles (e.g., a desinger coding in HTML/CSS instead of
+   effectively broaden their roles (e.g., a designer coding in HTML/CSS instead of
    waiting for a frontend engineer to convert Figma to code)
 
 3. **Software processes described in natural language:** We are seeing the emergence of
@@ -652,16 +773,6 @@ We’re moving from a world where we had occasional, poorly used English specifi
 one where clear and precise English is essential to working efficiently with our tools
 and teammates. And we’ll work with this *and* traditional programming language code with
 formal semantics.
-
-<div class="boxed-text">
-
-***Inexact processes** previously mostly handled by humans will increasingly become
-automated with the use natural language specifications shared by both humans and LLMs
-tools.*
-
-***Exact processes** will still have code as the primary description of their behavior.*
-
-</div>
 
 LLMs are pushing us toward precise and structured ways of expressing software that are
 more human friendly.
@@ -924,7 +1035,7 @@ paths in the grass, then pave them.
 ### Principles for Compositional Tools
 
 In software, big ideas often must be realized from practical, concrete pieces.
-So I think it makes sense to work “bottom up”.
+So I think it makes sense to work “bottom up.”
 
 So what are some areas where we could begin to build better primitive operations?
 

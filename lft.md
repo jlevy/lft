@@ -3,20 +3,19 @@
 <div class="sans-text">
 
 **Joshua Levy** ([GitHub](https://github.com/jlevy), [Twitter](https://x.com/ojoshe))\
-*v0.1.8 (July 2025) – Draft!*
+*v0.1.9 (July 2025) – Draft!*
 
 <div class="boxed-text">
 
 This is a draft. I’d be grateful if you share your thoughts on any part, especially
 skepticism or disagreement, as I revise it.
-
-The fastest way to reach me is to tag or DM me: [x.com/ojoshe](https://x.com/ojoshe)
-
-</div>
+The easiest way is to tag or DM me: [x.com/ojoshe](https://x.com/ojoshe)
 
 </div>
 
-## Acknoledgements
+</div>
+
+## Acknowledgments
 
 I’m grateful to many people who have discussed key ideas or who have given me feedback,
 including Adam Cheyer, Amina Green, Sean Grove, Carlos E. Perez, and Russell Power.
@@ -42,7 +41,7 @@ in popular discussion.
 This is my attempt to capture the insights I want to share when I talk to founders,
 engineers, and others about how we can use AI and software for good.
 
-There is quite a bit here,[^marktwain] but it is all in support of four key points:
+There is quite a bit here, but it is all in support of four key points:
 
 1. **IA deserves more attention.**
 
@@ -174,13 +173,13 @@ LLMs don’t change the fundamentals of writing, communication, or clear thinkin
 But they are accelerating changes in tools that have long been happening for a long
 time.
 
-## Reflections on Software Engineering
+## The Complexity of Software Engineering
 
 ### What is Technology?
 
 > “Technology is the solution to human problems, and we won’t run out of work till we
 > run out of problems.”
-> –Tim O’Reilly[^oreilly]
+> —Tim O’Reilly[^oreilly]
 
 Many people today fear AI eliminates jobs.
 And it’s true many roles are changing or being eliminated.
@@ -353,6 +352,10 @@ So human engineering effort is increasingly about infrastructure engineering.
 
 ### Three Types of Complexity
 
+> People will strive to experience an equal or increasing level of complexity in their
+> lives no matter what is done to reduce it.
+> —Bruce Tognazzini
+
 Let’s mention another word that has a few distinct meanings in engineering: complexity.
 
 An alternate and important way to frame the concept of good engineering is originally
@@ -394,6 +397,19 @@ engineering:
   engineering process.
 
   Engineers should *avoid or reduce accidental complexity*.
+
+If you want a simple way to think about it:
+
+- Natural complexity arises from the universe
+
+- Feature complexity arises from human desires
+
+- Accidental complexity arises from human stupidity
+
+In fact, I think “essential” complexity is a slightly misleading term, because it makes
+it sound fixed. In fact, feature explexity alwasy expands due to
+[Tog’s pardox](https://www.votito.com/methods/togs-paradox/): as soon as you solve a
+problem for someone, they will think of a new problem.
 
 <div class="boxed-text">
 
@@ -471,14 +487,14 @@ software, it’s time to ask what *is* changing?
 One of the most remarkable shifts in the last year or two is that more people are able
 to code more complex things by using Cursor, GitHub Copilot, and other LLM coding tools.
 
-It has become popular to say English[^english] is the new programming language.
+It has become popular to say Englishis the new programming language.[^english]
 
 This clearly is partly true.
 But of course applications are still actually committed to GitHub and then deployed
 based on Python, TypeScript, Rust, SQL, and the other standard programming languages.
 
 So is English now code?
-How should we even define code now?
+Do we even agree on what code is?
 
 ### What is Code?
 
@@ -512,8 +528,8 @@ But with only a small addition we have a clear definition.
 
 <div class="boxed-text">
 
-***Code** is the communication format for humans (and LLMs) to express with **exact
-precision**[^exact] the behavior of software in a way humans (and LLMs) can understand.*
+***Code** is any text format that describes the behavior of software with **exact
+precision** in a way humans (and LLMs) can understand.*[^exact]
 
 </div>
 
@@ -557,17 +573,16 @@ essential complexity of problems.
 
 <div class="boxed-text">
 
-***Specifications** are a communication format for humans (and LLMs) to express with
-**acceptable precision** the behavior of software in a way humans (and LLMs) can
-understand.*
+***Specifications** are text format that describes the behavior of software with
+**inexact precision** in a way humans (and LLMs) can understand.*
 
 </div>
 
 <div class="boxed-text">
 
-***Code** and **specifications** are both ways to express the desired behavior of
-software. The differences are a matter of **language** (programming language versus
-natural language) and **precision** (how exact the descriptions are).*
+*Code and specifications are both ways to express the desired behavior of software.
+The differences are a matter of language (programming language versus natural language)
+and precision (exact vs inexact).*
 
 </div>
 
@@ -652,23 +667,30 @@ Exact and inexact procedures are qualitatively different and not interchangeable
 Imagine that you have code that performs a task, such as use an API to get your sales
 data from your payment processor.
 And you have certain pieces of code to calculate customized monthly sales metrics.
-It’s easy to combine these into reporting software that does both.
+It’s easy to combine these into reporting software that does both reliably.
 
 This is how software is built: by **composition**. A typical application is the
 composition of dozens or hundreds of layers like this.
 
-That is the power of software encoding exact procedures.
+That is the power of software precisely encoding exact procedures.
 However, inexact procedures are different.
 
-Imagine you have a written procedure to handle customer support emails.
-And you have a written procedure to handle billing questions.
+Imagine you have an inexact procedure for a sales engineering team to configure your B2B
+SaaS product to work for a new customer.
+And you have an inexact procedure where an account manager emails the customer to be
+sure they’re happy with the service.
+Partly or even fully automating both these processes might be possible, but it’s not a
+simple composition of two procedures.
+To do this right requires creating *more* procedures, such as a dashboard for the CEO,
+the sales lead, and and the account manager to monitor the state of these automations
+and deal with issues personally.
 
 <div class="boxed-text">
 
 Exact procedures can be composed easily: combine them and the result is an exact
 procedure.
 
-Inexact procedures can only be composed with care: combine several naively and the
+Inexact procedures can only be composed with care: if you combine them naively the
 result is likely to be useless.
 
 </div>
@@ -678,8 +700,13 @@ In fact, you often need to compose them a lot.
 
 It’s just that because each one has its own corner cases and failures, you can’t
 unthinkingly combine them and expect the resulting combination to work!
-This makes the design of systems of inexact processes qualitatively different from pure
-software engineering.
+
+The design of systems of inexact processes is qualitatively different from pure software
+engineering.
+This is why many generic early “agent frameworks” were not as useful as they
+at first may have seemed.
+Agent frameworks often are trying to componse lots of inexact processes, blindly hoping
+the composition would work.
 
 ### Is English the New Programming Language?
 
@@ -1379,8 +1406,6 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 ## Notes
 
-[^marktwain]: Like Mark Twain, I have not yet had time to make it shorter.
-
 [^engelbart]: https://en.wikipedia.org/wiki/Douglas_Engelbart
 
 [^futurehistory]: In fact, this is true for many fields.
@@ -1439,9 +1464,9 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
     Since English is used for much of the training data and documentation, it often
     makes the most sense to use English when communicating with LLMs about code.
 
-[^exact]: There are some subtleties to what "exact" means.
+[^exact]: There are some subtleties to what “exact” means.
     Technically, depending on the scope of what code and parts of a system you're
-    looking at, code is not really an exact description of the behavior of software.
+    looking at, code is not quite an exact description of the behavior of software.
     For example, how two threads in an application interact with a third-party service
     is not expressed in the code for either thread.
     But for our discussion, the point is that code is an exact description of the logic

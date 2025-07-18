@@ -3,7 +3,7 @@
 <div class="sans-text">
 
 **Joshua Levy** ([GitHub](https://github.com/jlevy), [Twitter](https://x.com/ojoshe))\
-*v0.1.9 (July 2025) – Draft!*
+*v0.1.10 (July 2025) – Draft!*
 
 <div class="boxed-text">
 
@@ -75,8 +75,8 @@ There is quite a bit here, but it is all in support of four key points:
 If you find you agree with these arguments, you’ll see this suggests different areas of
 emphasis than is currently in many research labs and AI startups.
 It suggests areas where we could take inspiration from known patterns like linting to
-build more powerful tools for thought and collective problem-solving.
-At the end, I give a few ideas for areas to focus on.
+build more powerful tools for thought and collective problem-solving.[^matuschak] At the
+end, I give a few ideas for areas to focus on.
 
 <div class="boxed-text">
 
@@ -89,18 +89,19 @@ At the end, I give a few ideas for areas to focus on.
 ### The Problem of Solving Problems
 
 In 1950, Doug Engelbart was 25, newly engaged, and realized he had no career plans.
-After months of reflection, he famously came to three conclusions:[^engelbart]
+After months of reflection influenced by Vannevar Bush’s 1945 essay “As We May Think,”
+he famously came to three conclusions:[^bush][^engelbart]
 
 1. He would focus his career on making the world a better place
 
 2. Serious efforts to make the world better would require harnessing collective human
    intellect to contribute to effective solutions
 
-3. If you could dramatically improve how we do that, you’d be boosting every effort on
-   the planet to solve important problems
+3. If we could dramatically improve how we do that, we’d be boosting every effort on the
+   planet to solve important problems
 
 A key inspiration in my own career was meeting Doug in the 2000s, when I was a young
-researcher at SRI.
+researcher at [SRI](https://en.wikipedia.org/wiki/SRI_International).
 
 75 years later, over 50 years after he invented the computer mouse and gave [the Mother
 of All Demos](https://en.wikipedia.org/wiki/The_Mother_of_All_Demos), I think his
@@ -406,8 +407,9 @@ If you want a simple way to think about it:
 
 - Accidental complexity arises from human stupidity
 
-In fact, I think “essential” complexity is a slightly misleading term, because it makes
-it sound fixed. In fact, feature explexity alwasy expands due to
+Note “essential complexity” is a slightly misleading term, because it makes it sound
+like the feature complexity is unchanging.
+In fact, feature complexity always expands due to
 [Tog’s pardox](https://www.votito.com/methods/togs-paradox/): as soon as you solve a
 problem for someone, they will think of a new problem.
 
@@ -454,7 +456,7 @@ and know how to build it*. It’s worth being aware of the key ones:
 
 4. *Innovator’s Dilemma*: They understand and have the resources, but to do so seems
    irrational because it is *relatively* less profitable than working on existing,
-   successful products and features and features
+   successful products and features.[^christensen]
 
 5. *Conway’s Law*: They understand the problem and resources and incentives to solve the
    problem, but still don’t solve it (or solve it poorly or do something else).
@@ -487,7 +489,7 @@ software, it’s time to ask what *is* changing?
 One of the most remarkable shifts in the last year or two is that more people are able
 to code more complex things by using Cursor, GitHub Copilot, and other LLM coding tools.
 
-It has become popular to say Englishis the new programming language.[^english]
+It is now common to hear that English is the new programming language.[^english]
 
 This clearly is partly true.
 But of course applications are still actually committed to GitHub and then deployed
@@ -498,8 +500,8 @@ Do we even agree on what code is?
 
 ### What is Code?
 
-Oddly enough, just like there are common confusions about the essential nature of
-engineering, there are also common confusions about the essential nature of code.
+Just as there are common confusions about the essential nature of engineering, there are
+also some common confusions about the essential nature of code.
 
 When learning to program, people tend to think of programming as communicating with the
 computer. It can be good for learning or a fun challenge to do this “the hard way” in C
@@ -618,21 +620,15 @@ to be very different.
 You can’t get away from the fact that some systems need high reliability and precision.
 In other cases, we can adapt to errors because the cost of errors is low.
 
-[^uptimevscorrect]: In engineering, “counting nines” traditionally refers to *service
-    availability* (uptime): 99.99% uptime means less than 52 minutes of downtime per
-    year. However, the concept equally applies to *correctness nines* for critical
-    processes.
-
 ### Exact and Inexact Processes
 
-Most complex human endeavors can be viewed as a **socio-technical system** that involves
-multiple people, tools, and written or unwritten processes.
-Many activities are informal or ad-hoc, and some are more repeatable.
+Most complex human endeavors can be viewed as a **socio-technical system**[^sociotech]
+that involves people, tools, and written or unwritten processes.
+Some activities in such a system are informal or ad-hoc, and some are more systemetized.
 
 As systems and products mature, processes are codified and automated for efficiency and
-consistency.
-And since software began “eating the world,” many of the tools and processes
-are implemented in software.
+consistency. And the decades since software began “eating the world,” many of the tools
+and processes are implemented in software.
 
 For example, in a mature software business, there is a process for how software is
 deployed as well as processes for customer support.
@@ -712,8 +708,8 @@ the composition would work.
 
 Engineers are now writing more software just by using English and natural-language
 specifications and docs.
-Developers of Claude Code now say most (perhaps even 90%) of Claude Code’s own codebase
-is now written in Claude Code.
+Developers of [Claude Code](https://claude.ai/code) now say most (perhaps even 90%) of
+Claude Code’s own codebase is now written in Claude Code.
 This is a remarkable fact.
 
 It’s now tempting to say English is the new programming language, and LLMs are the new
@@ -785,7 +781,7 @@ I think of three key areas:
 
 1. **Faster coding with LLM tools:** Engineers can code more quickly by using English
    with LLMs and LLM-powered agents to read, write, and test code more quickly than ever
-   before (e.g., “vibe coding” prototypes)
+   before (e.g., “vibe coding”[^vibecoding] prototypes)
 
 2. **Broader capabilities of human workers:** Because a single person can build and test
    software more quickly, they can rapidly make experiments; in fact, they can
@@ -813,6 +809,7 @@ Does the history of software engineering really have relevance for us today for 
 who are not engineers or builders of software?
 
 I think it does. The most difficult problems we face, where our collective intelligence
+is most needed, are increasingly similar to the challenges of software engineering.
 
 A decade ago, the practice of writing software was so different from writing emails or
 having meetings that it seemed like they were entirely different disciplines.
@@ -852,10 +849,10 @@ This may be a bold statement, but I think it’s worth exploring its implication
 The power of incremental improvements is powerfully illustrated by the history of
 linting and type checking in software.
 
-The original *lint* was created in 1978 by Stephen C. Johnson at Bell Labs to flag bugs
-and portability issues in C programs.
-Modern linters parse code into abstract syntax trees and check it against predefined
-rules. The idea was to catch bugs early before they manifest at runtime.
+The original *lint* was created in 1978 by Stephen C. Johnson at
+[Bell Labs](https://en.wikipedia.org/wiki/Bell_Labs) to flag bugs and portability issues
+in C programs. Modern linters parse code into abstract syntax trees and check it against
+predefined rules. The idea was to catch bugs early before they manifest at runtime.
 
 Now as it turned out, the validation of code is one of the hardest problems in software.
 The past 40 years, this idea has slowly but consistently grown in maturity and in
@@ -920,7 +917,7 @@ inconsistencies.*
 
 For complex and difficult problems, the scarcest resource is attention.
 Linters (broadly speaking) make small and common errors something you waste less
-attention on. This benefit is compounding and significant even one engineer.
+attention on. This benefit is compounding and significant even for one engineer.
 It is even larger with a team of engineers or LLM agents.
 
 <div class="boxed-text">
@@ -948,7 +945,8 @@ tools:
   disagreements
 
 If you think of linters generally in this way, it becomes apparent that with the power
-of LLMs, we can build linters at various levels of the “stack” of human knowledge work:
+of LLMs, we can build linters at various levels of the “stack” of human knowledge
+work:[^drucker]
 
 - **Language:** Spell checking and grammar (much like Grammarly)
 
@@ -966,12 +964,11 @@ of LLMs, we can build linters at various levels of the “stack” of human know
 What are the tools that can help people iteratively improve the quality of written work
 and consequently, of their ideas, both individually and when collaborating?
 
-What I mean is we need to look for more reliable, small steps that makes meaningful
-adjustments and improvements to content so it is better in different dimensions—clarity,
-rationality, rigor, and so on.
-By improving content along the right dimensions, and using these tools collaboratively,
-so the judgement of many people is combined, it seems we can significantly improve the
-quality, rigor, and real-world effectiveness of many ideas.
+We need to look for more reliable, small steps that makes meaningful adjustments and
+improvements to content so it is better in different dimensions—clarity, rationality,
+rigor, and so on. By improving content along the right dimensions, and using these tools
+collaboratively, so the judgement of many people is combined, it seems we can
+significantly improve the quality, rigor, and real-world effectiveness of many ideas.
 
 ### What Will Improve Tools for Thought?
 
@@ -1194,7 +1191,7 @@ building and exploring products could have surprisingly large impacts:
 
    - **Consistency improvements via bridging-based ranking:** Bridging-based ranking is
      among the most effective ways to find helpful consensus on areas of disagreement or
-     dispute
+     dispute[^bridging]
 
    - **Conflict resolution workflows:** Send a draft to a group of people to resolve
      disputed or confusing facts or parts of a work
@@ -1306,10 +1303,10 @@ prototypes. But I’d love early feedback if you’re willing to share it:
 
   It’s currently terminal based (think like Claude Code).
   It also lets you chain together commands and assemble the outputs in topical
-  workspaces (think a bit like Obsidian).
-  The goal is this framework would be open source and let more people experiment and
-  discover more powerful AI workflows.
-  (It’s also compatible with MCP.)
+  workspaces (think a bit like [Obsidian](https://obsidian.md/)). The goal is this
+  framework would be open source and let more people experiment and discover more
+  powerful AI workflows.
+  (It’s also compatible with [MCP](https://modelcontextprotocol.io/).)
 
   Repo: [kash](https://github.com/jlevy/kash)
 
@@ -1332,8 +1329,8 @@ And some lower-level libraries I’ve found helpful for the above work:
   of a file. This approach works while ensuring the file remains valid Markdown, HTML,
   CSS, Python, C/C++, Rust, SQL, or most other text formats.
   Frontmatter format is a generalization of the common format for frontmatter used by
-  Jekyll and other CMSs for Markdown files.
-  In that format, frontmatter is enclosed in lines containing `---` delimiters.
+  [Jekyll](https://en.wikipedia.org/wiki/Jekyll_(software)) and other CMSs for Markdown
+  files. In that format, frontmatter is enclosed in lines containing `---` delimiters.
 
   This repository is a **description of the format** and an easy-to-use **reference
   implementation**. The implementation is in Python but the format is very simple and
@@ -1451,7 +1448,8 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
     learn more quickly in the process of exploring solutions.
     Engineering is exploration.
     And exploration is directly powered by learning.
-    This is the real reason for the classic startup advice to ship fast and iterate.
+    This is the real reason for the classic startup advice to ship fast and
+    iterate.[^leanstartup]
 
 [^nosilverbullet]: Frederick P. Brooks, [*No Silver Bullet—Essence and Accident in
     Software
@@ -1481,4 +1479,43 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
     Civilization advances by extending the number of important operations which we can
     perform without thinking about them.”
     —Alfred N. Whitehead, *An Introduction to Mathematics* (1911), p. 61
+
+[^uptimevscorrect]: In engineering, "counting nines" traditionally refers to *service
+    availability* (uptime): 99.99% uptime means less than 52 minutes of downtime per
+    year. However, the concept equally applies to *correctness nines* for critical
+    processes.
+
+[^christensen]: Clayton Christensen's *The Innovator's Dilemma: When New Technologies
+    Cause Great Firms to Fail* (Harvard Business Review Press, 2015) famously discussed
+    how successful companies fail to innovate in ways that would disrupt their existing
+    business models.
+
+[^bush]: Vannevar Bush, "As We May Think," *The Atlantic Monthly* (July 1945). This
+    essay envisioned the Memex, a device for storing and linking information to augment
+    human memory and association.
+
+[^drucker]: Peter F. Drucker, *The Landmarks of Tomorrow* (Harper & Row, 1959). Drucker
+    predicted that knowledge work would become the dominant form of work in advanced
+    economies.
+
+[^matuschak]: The term “tools for thought” has been explored by several researchers.
+    A good article Andy Matuschak and Michael Nielsen, "How can we develop
+    transformative tools for thought?"
+    (2019). https://numinous.productions/ttft/
+
+[^bridging]: Aviv Ovadya, "Bridging-based ranking" and related work on bridging
+    recommender systems.
+    https://www.belfercenter.org/publication/bridging-based-ranking
+
+[^vibecoding]: "Vibe coding" is an informal term for writing code using natural language
+    instructions and LLMs, as opposed to traditional programming.
+
+[^sociotech]: The concept of socio-technical systems was developed by Eric Trist and
+    Fred Emery at the Tavistock Institute in the 1960s, emphasizing the interdependence
+    of social and technical factors in organizational design.
+
+[^leanstartup]: This principle is central to the lean startup methodology, popularized
+    by Eric Ries in *The Lean Startup* (2011), which emphasizes
+    building-measuring-learning feedback loops to reduce waste and accelerate
+    innovation.
 

@@ -18,9 +18,8 @@ The easiest way is to tag or DM me: [x.com/ojoshe](https://x.com/ojoshe)
 ## Acknowledgments
 
 I’m grateful to many people who have discussed key ideas or who have given me feedback,
-including Adam Cheyer, Amina Green, Sean Grove, Carlos E. Perez, and Russell Power.
-
-I would like to include more references and credits where they are due.
+including Adam Cheyer, Amina Green, Sean Grove, Kevin Lin, Carlos E. Perez, and Russell
+Power. I would like to include more references and credits where they are due.
 If you know relevant work or if your own work is relevant, please let me know so I can
 reference it.
 
@@ -30,7 +29,7 @@ This work is a collection of reflections and research ideas on software engineer
 tools to augment our *collective intelligence*—that is, to improve our ability to find
 solutions to complex human problems.
 
-I’ve worked in software and knowledge tools for a long time, in research, in startups,
+I’ve worked in software and knowledge tools for two decades, in research, in startups,
 and in publishing. In terms of the ability of software to impact our lives, right now,
 the mid-2020s, is possibly the most exciting time since the dawn of the Internet.
 
@@ -43,7 +42,7 @@ engineers, and others about how we can use AI and software for good.
 
 There is quite a bit here, but it is all in support of four key points:
 
-1. **IA deserves more attention.**
+1. **IA (intelligence augmentation) deserves more attention.**
 
    Although popular debate today focuses on AGI and how AI can replicate human
    abilities, Doug Engelbart’s ideas on augmenting *human* intellect (*intelligence
@@ -64,7 +63,7 @@ There is quite a bit here, but it is all in support of four key points:
    to say *the patterns of how software engineers use LLMs will increasingly appear in
    all knowledge work and problem solving*.
 
-4. **It pays to focus on better “infrastructure” for tools for thought.**
+4. **We should focus on better “infrastructure” for knowledge work.**
 
    In both software engineering and other knowledge work, the most difficult but
    high-leverage activities *improve tools to explore solutions more efficiently*. This
@@ -176,11 +175,11 @@ time.
 
 ## The Complexity of Software Engineering
 
-### What is Technology?
-
 > “Technology is the solution to human problems, and we won’t run out of work till we
 > run out of problems.”
 > —Tim O’Reilly[^oreilly]
+
+### What is Technology?
 
 Many people today fear AI eliminates jobs.
 And it’s true many roles are changing or being eliminated.
@@ -188,8 +187,6 @@ And it’s true many roles are changing or being eliminated.
 As Tim O’Reilly explains, human problems are complex and evolving because human desires
 are insatiable. And technology is the ever-evolving ways we find solutions to those
 problems.
-
-So even if many things are changing, we have one concept that doesn’t change.
 
 <div class="boxed-text">
 
@@ -251,12 +248,10 @@ figuring out what they really wanted?
 
 You guessed it: engineers.
 
-So this brings us to a second definition that doesn’t change:
-
 <div class="boxed-text">
 
-***Software engineering** is the precise exploration (by humans) of solutions (in
-software) to human problems.*
+***Software engineering** is the precise exploration of software solutions to human
+problems.*
 
 </div>
 
@@ -300,7 +295,7 @@ confusion.
 While we’re talking about this, it’s worth distinguishing between two kinds of
 engineering.
 
-In comedy, there are "comedians' comedians"—the comedians other comedians most respect.
+In comedy, there are “comedians’ comedians”—the comedians other comedians most respect.
 But these are often *not* the people the general public finds most funny.
 
 There is something similar with engineering.
@@ -375,10 +370,10 @@ engineering:
   of aerodynamics and materials science, which are governed by quite complex
   interactions of the laws of physics.
   This is natural complexity.
-  It involved inherent consequences of mathematics and the laws of physics.
+  It involves the inherent consequences logic, mathematics, physics, and the real world.
   It is ultimately consistent.
 
-  Engineers should *always try to understand natural complexity*.
+  *Engineers should always try to understand natural complexity.*
 
 - **Feature complexity:** On the other hand, if you are building a messaging platform,
   you will discover your users (and competitors) like features such as emoji reactions
@@ -387,8 +382,8 @@ engineering:
   happy. I’ll call it *feature complexity* and it really is the complexity of human
   desires. It is not well defined and subjective but under your control.
 
-  Engineers should *exercise careful judgement about when to explore feature
-  complexity*.
+  *Engineers should exercise careful judgement about when to explore feature
+  complexity.*
 
 - **Accidental complexity:** As you build something, it invariably becomes more and more
   complex. Most large, popular software is so complex few normal people can even hold all
@@ -397,27 +392,26 @@ engineering:
   Accidental complexity arises not from nature or from human desires but from the
   engineering process.
 
-  Engineers should *avoid or reduce accidental complexity*.
+  *Engineers should avoid or reduce accidental complexity.*
 
-If you want a simple way to think about it:
+Very simply:
 
-- Natural complexity arises from the universe
+- Natural complexity arises from logic or the world around us
 
 - Feature complexity arises from human desires
 
 - Accidental complexity arises from human stupidity
 
-Note “essential complexity” is a slightly misleading term, because it makes it sound
-like the feature complexity is unchanging.
-In fact, feature complexity always expands due to
+Note “essential complexity” is a slightly misleading term, because it sounds like if it
+is “essential” it might be fixed or unchanging.
+This isn’t true! In fact, feature complexity always grows due to human nature and
 [Tog’s pardox](https://www.votito.com/methods/togs-paradox/): as soon as you solve a
 problem for someone, they will think of a new problem.
 
 <div class="boxed-text">
 
-*The **hard part of engineering** is understanding and exploring **essential
-complexity** (natural complexity and feature complexity) while managing **accidental
-complexity**.*
+*The **hard part of engineering** is understanding and exploring **natural complexity**
+and **feature complexity** while managing **accidental complexity**.*
 
 </div>
 
@@ -840,9 +834,9 @@ This may be a bold statement, but I think it’s worth exploring its implication
 ## The Metaphor of Linting
 
 > “When you make it harder to do the basic parts of an activity, the more advanced parts
-> become almost impossible... Tools don’t only make things easier: they allow us to
-> augment ourselves to do things that were previously impossible...” —Doug
-> Engelbart[^aug]
+> become almost impossible … Tools don’t only make things easier: they allow us to
+> augment ourselves to do things that were previously impossible.”
+> —Doug Engelbart[^aug]
 
 ### A Brief History of Linting and Type Checking
 
@@ -1046,15 +1040,22 @@ obvious. So both of these are real risks.
 
 So what do you do?
 
-My answer is you should work "bottom up"—that is, you should build small pieces that
+My answer is you should work “bottom up”—that is, you should build small pieces that
 combine in many ways, including in ways you can’t plan for right now.
 
 If you can build small pieces that combine in many ways, the right combinations and
 workflows become easier to discover.
 
-A good analogy for this is the old story about planning paths on a college campus: you
-can try to design them up front, or you can put down grass, wait for students to create
-paths in the grass, then pave them.
+There is an old analogy for this: if you are improving a college campus, you can try to
+design all the walkways up front, or you can put down grass, wait for students to create
+paths in the grass, then pave the discovered paths.
+
+<div class="boxed-text">
+
+*Tooling should support powerful **primitve operations** and encourage **discoverd
+paths** that combine these operations in varied, creative ways.*
+
+</div>
 
 ### Principles for Compositional Tools
 
@@ -1143,7 +1144,7 @@ building and exploring products could have surprisingly large impacts:
      - Traditionally, we have used collaborative documents like Notion or Google Docs,
        but these are not designed with these different roles in mind
 
-3. **Extraction and visualization of concepts and relations**
+3. **Extraction and visualization of concepts and relationships**
 
    - Automated concept and relationship extraction
 
@@ -1417,19 +1418,19 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 [^progvseng]: There is a long-standing and pedantic debate about whether people who
     build software should be called *programmers*, *developers*, or *engineers*. Many
-    people prefer the sound of "engineer" in their job title.
-    Others fairly point out that "software engineering" is a rather pretentious term
-    since hacking JavaScript is quite different from "hard" engineering disciplines with
+    people prefer the sound of “engineer” in their job title.
+    Others fairly point out that “software engineering” is a rather pretentious term
+    since hacking JavaScript is quite different from “hard” engineering disciplines with
     formal standards and training, like mechanical or structural engineering.
-    Generally I prefer "engineering" over "programming" simply because it helps clarify
+    Generally I prefer “engineering” over “programming” simply because it helps clarify
     that building software is a process that includes more than typing code.
 
-[^combinedskills]: It's worth pointing out that at any point in history, the most
+[^combinedskills]: It’s worth pointing out that at any point in history, the most
     successful people at a given thing often combine a few related skills.
     For example, the best bloggers of the early Internet were often people who were a
     little bit tech savvy, because that combination of writing ability and HTML skills
     made it easier for them to gain traction.
-    It doesn't mean the core skill of blogging is HTML, but it is relevant to success.
+    It doesn’t mean the core skill of blogging is HTML, but it is relevant to success.
     Later, blogging platforms matured and the most successful writers today are ones
     with discipline and skills to do well promoting their work on Substack.
 
@@ -1439,12 +1440,12 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
     of skills.
 
 [^whyfast]: A reasonable question is, why is good engineering mean building things
-    quickly? Isn't it more important to build them right?
+    quickly? Isn’t it more important to build them right?
 
     There are two answers.
-    One is a business reason: if you don't build it quickly, someone else might, and you
+    One is a business reason: if you don’t build it quickly, someone else might, and you
     may not have a successful product or company.
-    But there's an equally important and subtle reason: building more quickly means you
+    But there’s an equally important and subtle reason: building more quickly means you
     learn more quickly in the process of exploring solutions.
     Engineering is exploration.
     And exploration is directly powered by learning.
@@ -1463,7 +1464,7 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
     makes the most sense to use English when communicating with LLMs about code.
 
 [^exact]: There are some subtleties to what “exact” means.
-    Technically, depending on the scope of what code and parts of a system you're
+    Technically, depending on the scope of what code and parts of a system you’re
     looking at, code is not quite an exact description of the behavior of software.
     For example, how two threads in an application interact with a third-party service
     is not expressed in the code for either thread.
@@ -1480,17 +1481,17 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
     perform without thinking about them.”
     —Alfred N. Whitehead, *An Introduction to Mathematics* (1911), p. 61
 
-[^uptimevscorrect]: In engineering, "counting nines" traditionally refers to *service
+[^uptimevscorrect]: In engineering, “counting nines” traditionally refers to *service
     availability* (uptime): 99.99% uptime means less than 52 minutes of downtime per
     year. However, the concept equally applies to *correctness nines* for critical
     processes.
 
-[^christensen]: Clayton Christensen's *The Innovator's Dilemma: When New Technologies
+[^christensen]: Clayton Christensen’s *The Innovator’s Dilemma: When New Technologies
     Cause Great Firms to Fail* (Harvard Business Review Press, 2015) famously discussed
     how successful companies fail to innovate in ways that would disrupt their existing
     business models.
 
-[^bush]: Vannevar Bush, "As We May Think," *The Atlantic Monthly* (July 1945). This
+[^bush]: Vannevar Bush, “As We May Think,” *The Atlantic Monthly* (July 1945). This
     essay envisioned the Memex, a device for storing and linking information to augment
     human memory and association.
 
@@ -1499,15 +1500,15 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
     economies.
 
 [^matuschak]: The term “tools for thought” has been explored by several researchers.
-    A good article Andy Matuschak and Michael Nielsen, "How can we develop
-    transformative tools for thought?"
+    A good article Andy Matuschak and Michael Nielsen, “How can we develop
+    transformative tools for thought?”
     (2019). https://numinous.productions/ttft/
 
-[^bridging]: Aviv Ovadya, "Bridging-based ranking" and related work on bridging
+[^bridging]: Aviv Ovadya, “Bridging-based ranking” and related work on bridging
     recommender systems.
     https://www.belfercenter.org/publication/bridging-based-ranking
 
-[^vibecoding]: "Vibe coding" is an informal term for writing code using natural language
+[^vibecoding]: “Vibe coding” is an informal term for writing code using natural language
     instructions and LLMs, as opposed to traditional programming.
 
 [^sociotech]: The concept of socio-technical systems was developed by Eric Trist and

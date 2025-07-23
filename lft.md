@@ -17,13 +17,18 @@ The easiest way is to tag or DM me: [x.com/ojoshe](https://x.com/ojoshe)
 
 ## Acknowledgments
 
-I’m grateful to many people who have discussed key ideas or who have given me feedback,
+I’m grateful to those who have discussed key ideas or who have given me feedback,
 including Adam Cheyer, Amina Green, Sean Grove, Kevin Lin, Carlos E. Perez, and Russell
 Power. I would like to include more references and credits where they are due.
 If you know relevant work or if your own work is relevant, please let me know so I can
 reference it.
 
+* * *
+
 ## Introduction
+
+> “*Civilization advances by extending the number of important operations which we can
+> perform without thinking about them.*” —Alfred North Whitehead[^whitehead]
 
 This work is a collection of reflections and research ideas on software engineering and
 tools to augment our *collective intelligence*—that is, to improve our ability to find
@@ -84,6 +89,11 @@ end, I give a few ideas for areas to focus on.
 </div>
 
 ## Intelligence Augmentation
+
+> “*When you make it harder to do the basic parts of an activity, the more advanced
+> parts become almost impossible … Tools don’t only make things easier: they allow us to
+> augment ourselves to do things that were previously impossible.*” —Doug
+> Engelbart[^aug]
 
 ### The Problem of Solving Problems
 
@@ -170,10 +180,9 @@ programmers to become designers, and roles to increasingly blur.
 Along with this, the dichotomy between human language and code is blurring.
 
 LLMs don’t change the fundamentals of writing, communication, or clear thinking.
-But they are accelerating changes in tools that have long been happening for a long
-time.
+But they are accelerating changes in tools that have been happening for a long time.
 
-## The Complexity of Software Engineering
+## Principles of Software Engineering
 
 > “*Technology is the solution to human problems, and we won’t run out of work till we
 > run out of problems.*” —Tim O’Reilly[^oreilly]
@@ -226,7 +235,7 @@ problems.*
 
 </div>
 
-### Why We Will Always Need Engineers
+### We Will Always Need Engineers
 
 Not everyone would give this definition of engineering, but I hope I can convince you
 this is the correct one,
@@ -302,6 +311,11 @@ There is something similar with engineering.
 For lack of better terminology, I’ll call them *product engineering* and *infrastructure
 engineering*.
 
+What is “infrastructure”?
+For our discussion, it is *any* tooling that helps engineers, including programming
+languages, frameworks, libraries, IDEs—and new AI-based tools (e.g. Cursor, Claude Code)
+and agent frameworks.
+
 <div class="boxed-text">
 
 ***Product engineers** explore solutions for users.*
@@ -317,10 +331,9 @@ database to use, which programming langauge is better, or if microservices are a
 mistake.
 
 Product-thinking people often find these arguments confusing or just a waste of time.
-
 That’s because they are not about product engineering.
 They are about *infrastructure engineering*: they are arguments about *what
-infrastructure will lead to future sustained velocity for other engineers*.
+infrastructure will lead to future sustained velocity* for other engineers.
 
 Product-oriented people most respect people who give solutions to users.
 Engineering-oriented people most respect engineers who help other engineers be more
@@ -330,12 +343,11 @@ These observations have applied for decades on software teams.
 But this observation has new relevance today with LLMs.
 
 LLMs are currently best implementing clear specifications.
-Product engineers can often give clear specifications.
-
-However, infrastructure engineers are solving problems for *other* engineers.
-It’s much harder to give specifications for infrastructure engineering because almost
-every hard decision is non-obvious, second order, and takes time (often years!)
-to observe.
+Product engineers usually have clear specifications for a feature.
+However, it’s much harder to give specifications for infrastructure engineering because
+almost every hard decision is non-obvious and second order.
+And it can takes time (often years!)
+to see if it worked out as intended.
 
 To a junior engineer, Java and Python may both seem perfectly fine for writing programs.
 Similarly, Postgres and MongoDB might seem like just two different ways to store data.
@@ -343,7 +355,8 @@ To an experienced engineer, these are radically different technologies.
 This is because they have years of experience with the non-obvious and painful ways each
 of these tools caused them problems.
 
-LLMs help all engineers, but they can do more for product engineers than for
+So how does this relate to LLM tools?
+Well, LLMs help all engineers, but they can do more for product engineers than for
 infrastructure engineers, because LLMs are best at pattern matching from training data.
 Such pattern matching works better for features (which are typically written using
 similar languages and syntax) than for infrastructure (which can change the way you
@@ -358,9 +371,12 @@ And secondly, good infrastructure, once it is used in training data, also helps 
 
 *LLMs are better at product engineering than at infrastructure engineering.*
 
-*LLMs make (human) product engineers more effective.*
+</div>
 
-*But (human) infrastructure engineers are what make LLMs more effective.*
+<div class="boxed-text">
+
+*LLMs make (human) product engineers more effective.
+But (human) infrastructure engineers are what make LLMs more effective.*
 
 </div>
 
@@ -372,14 +388,13 @@ previously error-prone for humans.
 
 This is true. But what is often overlooked is that another thing is also true: if it’s
 hard for humans, it’s also hard for LLMs!
-
 It is *relatively* far more productive to use an LLM with good infrastructure than it is
 with bad infrastructure.[^infravsllm]
 
 <div class="boxed-text">
 
 *If you can minimize irrelevant complexity for an LLM while staying within the scope of
-the training data, you can achieve more with the same LLM.*
+the training data, you can achieve more with an LLM.*
 
 </div>
 
@@ -616,9 +631,9 @@ essential complexity of problems.
 
 <div class="boxed-text">
 
-*Code and specifications are both ways to express the desired behavior of software.
-The differences are a matter of language (programming language versus natural language)
-and precision (exact vs inexact).*
+*Code and specifications are both **ways to express the desired behavior of software**.
+The differences are a matter of **language** (programming language or natural language)
+and **precision** (exact vs inexact).*
 
 </div>
 
@@ -646,7 +661,7 @@ Consider these three systems:
 
 The first can tolerate a 1–10% error rate since you’re reading many things and will form
 your own opinions. The second can tolerate perhaps a 1% error rate.
-The third has very low tolerance for error, perhaps a 0.001% error rate or less.
+The third has very low tolerance for error, perhaps a 0.01% error rate or less.
 
 It is certain that each of these systems could improve with machine learning and AI. But
 if you want to add AI or machine learning to each of those use cases, the approach needs
@@ -687,10 +702,9 @@ that need ongoing resolution.
 
 <div class="boxed-text">
 
-*Socio-technical systems require a combination of both **exact** and **inexact**
-procedures.*
-
-*Exact and inexact procedures are qualitatively different and not interchangeable.*
+*Socio-technical systems require a combination of both **exact procedures** and
+**inexact procedures**. Exact and inexact procedures are qualitatively different,
+regardless of how they are implemented.*
 
 </div>
 
@@ -717,11 +731,11 @@ and deal with issues personally.
 
 <div class="boxed-text">
 
-*Exact procedures can be composed easily: combine them and the result is an exact
-procedure.*
+***Exact procedures** are **easy to compose**: if you combine them, the result is an
+exact procedure.*
 
-*Inexact procedures can only be composed with care: if you combine them naively the
-result is likely to be useless.*
+***Inexact procedures** are **hard to compose**: if you combine them naively the result
+is often useless or doesn’t work as you expect.*
 
 </div>
 
@@ -735,8 +749,9 @@ The design of systems of inexact processes is qualitatively different from pure 
 engineering.
 This is why many generic early “agent frameworks” were not as useful as they
 at first may have seemed.
-Agent frameworks often are trying to compose lots of inexact processes, blindly hoping
-the composition would work.
+Agent frameworks often are trying to compose lots of inexact processes (e.g., check the
+user’s calendar, navigate to the airline website, choose the flight, pay for it),
+blindly hoping the composition would work.
 
 ### Is English the New Programming Language?
 
@@ -762,9 +777,9 @@ next month will do the same thing 99.9% of the time.
 
 <div class="boxed-text">
 
-*English is ideal for documenting inexact procedures.*
+***Inexact procedures** are best expressed in **English**.*
 
-*Code (of some form) is ideal for documenting exact procedures.*
+***Exact procedures** are best expressed in **code**.*
 
 </div>
 
@@ -783,14 +798,14 @@ And we’ve used people and documents for inexact procedures.
 
 <div class="boxed-text">
 
-*LLMs are as good as (or better) than humans for inexact procedures.*
+***LLMs** are now **as good as humans** for most inexact procedures.*
 
 </div>
 
 <div class="boxed-text">
 
-*Inexact procedures will increasingly become automated with natural language
-specifications shared by both humans and LLMs tools.*
+***Inexact procedures** will increasingly become automated with **natural language
+specifications** shared by both humans and LLMs tools.*
 
 </div>
 
@@ -799,8 +814,8 @@ of code. I hope I’ve now convinced you of this:
 
 <div class="boxed-text">
 
-*LLMs can automate inexact procedures but automation does not make an inexact procedure
-an exact procedure.*
+*LLMs can **automate inexact procedures** but without additions to the procedure,
+automation **does not make an inexact procedure exact**.*
 
 </div>
 
@@ -815,7 +830,7 @@ I think of three key areas:
 
 1. **Faster coding with LLM tools:** Engineers can code more quickly by using English
    with LLMs and LLM-powered agents to read, write, and test code more quickly than ever
-   before (e.g., “vibe coding”[^vibecoding] prototypes)
+   before (e.g., “vibe coding” prototypes)
 
 2. **Broader capabilities of human workers:** Because a single person can build and test
    software more quickly, they can rapidly make experiments; in fact, they can
@@ -864,19 +879,18 @@ surprising conclusions:
 *The consequence of AI coding tools is not that software engineering is going away:
 instead, it means **more knowledge work involves engineering**.*
 
-*Increasingly, the distinction between **software engineering** and **knowledge work**
-is disappearing.*
+</div>
+
+<div class="boxed-text">
+
+*The distinction between **software engineering** and **knowledge work** is
+disappearing.*
 
 </div>
 
 This may be a bold statement, but I think it’s worth exploring its implications.
 
 ## The Metaphor of Linting
-
-> “*When you make it harder to do the basic parts of an activity, the more advanced
-> parts become almost impossible … Tools don’t only make things easier: they allow us to
-> augment ourselves to do things that were previously impossible.*” —Doug
-> Engelbart[^aug]
 
 ### A Brief History of Linting and Type Checking
 
@@ -906,7 +920,7 @@ It would be quite difficult to imagine building software of the complexity we ha
 without the tooling like linters, type checkers, auto-formatters, and IDEs, that were
 developed in the 1990s, 2000s, and 2010s.
 
-### What Was Good for Humans is Great for LLMs
+### Type Checking and LLMs
 
 Today the rise of LLMs means more and more code is written by LLMs, with some human
 oversight and review.
@@ -927,7 +941,11 @@ While people often knew that unit tests were a good practice, the fact that they
 quick to write with LLMs *and* they then benefit LLMs in writing code with fewer bugs
 has driven to a rapid increase in their use.
 
-In short, if it was good for humans, it’s great for LLMs.
+<div class="boxed-text">
+
+When it comes to developer tooling, what is good humans is great for LLMs.
+
+</div>
 
 ### What is Linting?
 
@@ -956,8 +974,8 @@ It is even larger with a team of engineers or LLM agents.
 
 <div class="boxed-text">
 
-*Tools increase in power as they remove the necessity of fixing small errors inessential
-to the core problems at hand.*
+*Tools **increase in power** as they **remove the necessity of fixing small errors**
+inessential to the core problems at hand.*
 
 </div>
 
@@ -1025,33 +1043,31 @@ startups.
 But the approach I think makes sense is a bit different than what most startups are
 doing right now. The three key differences:
 
-1. Prioritize tools that *augment human ability* rather than just maximizing model
-   performance
+- **IA over AI:** Prioritize tools that *augment human ability* rather than just
+  maximizing model performance
 
-2. *Bottom-up development* of small, individually useful tools that are open source and
-   composable so they can be combined in varied, unexpected ways
+- **Extend primitive operations:** *Bottom-up development* of small, individually useful
+  tools that are open source and composable so they can be combined in varied,
+  unexpected ways
 
-3. The tricky part: Innovate and experiment at all three layers:
+- **Simplify complexity for all layers:** This is the tricky part: Making things simple
+  is hard, especially when the accidental complexity is spread across multiple layers.
+  It’s necessary to innovate and experiment at three layers:
 
-   - the content layer (text editing and annotation workflows that encourage
-     transparency, quality, and rigor)
+  - the content layer (text editing and annotation workflows that encourage
+    transparency, quality, and rigor)
 
-   - the UX layer (going beyond chat and doc UIs to more flexible hybrids that are
-     easier for unplanned workflows and cases, especially GUI/Terminal hybrid design)
+  - the UX layer (going beyond chat and doc UIs to more flexible hybrids that are easier
+    for unplanned workflows and cases, especially GUI/Terminal hybrid design)
 
-   - the engineering layer (restructuring and repackaging typical messy full-stack web
-     development in simpler ways so that simple apps are simple and for both humans and
-     LLM coders)
+  - the engineering layer (restructuring and repackaging typical messy full-stack web
+    development in simpler ways so that simple apps are simple and for both humans and
+    LLM coders)
 
-This may sound ambitious but I want to be ruthlessly practical about it too.
-See below for some concrete examples of what I’ve begun building.
+This may sound ambitious but I think we can be ruthlessly practical about it too.
+(See below for some concrete examples of what I’ve begun building.)
 
 ### The Value of Flexible Primitive Operations
-
-> “*Civilization advances by extending the number of important operations which we can
-> perform without thinking about them.*” —Alfred North Whitehead[^whitehead]
-
-This is one of my favorite quotes.
 
 If we wish for LLMs to improve human rationality and our ability to work together, we
 need more tools that make complex tasks feel like easy steps.
@@ -1063,12 +1079,12 @@ In software, big ideas often must be realized from practical, concrete pieces.
 
 Typically there are two opposite pitfalls when building software:
 
-- *Under-engineering (inadequate up-front design)*: This is when you don’t plan ahead
+- **Under-engineering (inadequate up-front design):** This is when you don’t plan ahead
   and just building a tool, realizing it doesn’t work as hoped, but then getting stuck
   because the complexity of the software is too high to change it.
   This too little design and too much technical debt.
 
-- *Over-engineering (too much up-front design)*: This is the opposite, which is that
+- **Over-engineering (too much up-front design):** This is the opposite, which is that
   you’re so afraid of inadequate design that you design a much more complex
   architecture—but then it ships too slow and it too might not work as hoped.
   This is too much design without testing and learning.
@@ -1137,9 +1153,7 @@ Some key principles are:
    in new ways *with no new code required for UI/UX*. Terminal apps are much like this
    and the idea of hybrid GUI/terminal UIs is a key way to improve them.
 
-## Selected Ideas for Better Tools
-
-### Areas To Explore
+### Selected Ideas for Better Tools
 
 Given this, here are some areas where I think are high leverage or underrated—where
 building and exploring products could have surprisingly large impacts:
@@ -1492,7 +1506,7 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
     This is the real reason for the classic startup advice to ship fast and
     iterate.[^leanstartup]
 
-[^infravsllm]: Another way to think of this is, LLM training is generally not the most
+[^infravsllm]: Another way to think of this: LLM training is generally not the most
     efficient way to design infrastructure, because essential information (such as the
     difficulty of writing code, or how error prone that code is in a given framework)
     simply isn’t in the training data (at least so far).
@@ -1552,9 +1566,6 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
 [^bridging]: Aviv Ovadya, “Bridging-based ranking” and related work on bridging
     recommender systems.
     https://www.belfercenter.org/publication/bridging-based-ranking
-
-[^vibecoding]: “Vibe coding” is an informal term for writing code using natural language
-    instructions and LLMs, as opposed to traditional programming.
 
 [^sociotech]: The concept of socio-technical systems was developed by Eric Trist and
     Fred Emery at the Tavistock Institute in the 1960s, emphasizing the interdependence

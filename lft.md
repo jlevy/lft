@@ -18,10 +18,10 @@ The easiest way is to tag or DM me: [x.com/ojoshe](https://x.com/ojoshe)
 ## Acknowledgments
 
 I’m grateful to those who have discussed key ideas or who have given me feedback,
-including Adam Cheyer, Amina Green, Sean Grove, Kevin Lin, Carlos E. Perez, and Russell
-Power. I would like to include more references and credits where they are due.
-If you know relevant work or if your own work is relevant, please let me know so I can
-reference it.
+including Adam Cheyer, Amina Green, Sean Grove, Bekir Khan, Kevin Lin, Carlos E. Perez,
+and Russell Power. I would like to include more references and credits where they are
+due. If you know relevant work or if your own work is relevant, please let me know so I
+can reference it.
 
 * * *
 
@@ -88,7 +88,7 @@ end, I give a few ideas for areas to focus on.
 
 </div>
 
-## Intelligence Augmentation
+## The Unfinished Revolution
 
 > “*When you make it harder to do the basic parts of an activity, the more advanced
 > parts become almost impossible … Tools don’t only make things easier: they allow us to
@@ -134,9 +134,18 @@ I see so much focus today on the rising capabilities of AI systems—but vastly 
 Doug’s vision never wavered, but in spite of the immense impact of his work on the
 Internet, the GUI, the mouse, and almost every piece of software we use, he always
 considered his dream unrealized.
-It’s time we apply the vastly more powerful tools of today with his insights in mind.
+
+However those who knew him tend to feel his most profound legacy wasn’t the mouse or
+GUI, but rather his “[unfinished
+revolution](https://dougengelbart.org/content/view/194)”—a vision for increasing our
+collective capacity to address challenging problems.
+
+It’s time we apply the vastly more powerful tools of today with this vision in mind.
 
 ### To Shape the Future, Study the Past
+
+> “*The farther back you can look, the farther forward you are likely to see.*” —Winston
+> Churchill
 
 Another old mentor of mine, Adam Cheyer (who was also at SRI, before he built Siri),
 used to tell me: if you want to see the future of technology, you should look to the
@@ -152,7 +161,8 @@ The hard part is figuring out which parts are which.
 
 <div class="boxed-text">
 
-*Before thinking about the future of software, it is wise to reflect on its history.*
+*Many of the inherent challenges of building AI and software products have been with us
+for decades. To plan the future, we must also study the past.*
 
 </div>
 
@@ -180,7 +190,8 @@ programmers to become designers, and roles to increasingly blur.
 Along with this, the dichotomy between human language and code is blurring.
 
 LLMs don’t change the fundamentals of writing, communication, or clear thinking.
-But they are accelerating changes in tools that have been happening for a long time.
+But they are accelerating many of the challenges that we have seen in software and
+digital media for many years.
 
 ## Principles of Software Engineering
 
@@ -190,11 +201,9 @@ But they are accelerating changes in tools that have been happening for a long t
 ### What is Technology?
 
 Many people today fear AI eliminates jobs.
-And it’s true many roles are changing or being eliminated.
-
-As Tim O’Reilly explains, human problems are complex and evolving because human desires
-are insatiable. And technology is the ever-evolving ways we find solutions to those
-problems.
+It’s true many roles are changing or being eliminated, but as Tim O’Reilly explains,
+human problems are complex and evolving because human desires are insatiable.
+Technology is what gives us ever-evolving ways to find solutions to those problems.
 
 <div class="boxed-text">
 

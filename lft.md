@@ -3,7 +3,7 @@
 <div class="sans-text">
 
 **Joshua Levy** ([GitHub](https://github.com/jlevy), [Twitter](https://x.com/ojoshe))\
-*v0.1.11 (July 2025) – Draft!*
+*v0.1.12 (July 2025) – Draft!*
 
 <div class="boxed-text">
 
@@ -221,7 +221,7 @@ But now AI writes code—in fact, better than most programmers.
 Therefore, programmers are no longer needed.*
 
 In my view, this reasoning reflects a deep misunderstanding of what engineering is.
-It is a much like confusing writing with typing.
+It is much like confusing writing with typing.
 Writing certainly *involves* typing (at least, it usually does today), but it’s a woeful
 misunderstanding to think the value of a writer is their typing
 ability.[^combinedskills]
@@ -373,8 +373,9 @@ solve problems entirely).
 
 There are two consequences of this.
 First, this means human engineering effort is increasingly about infrastructure
-engineering. helps human engineers be more productive also helps LLMs be more produtive.
-And secondly, good infrastructure, once it is used in training data, also helps LLMs.
+engineering. What helps human engineers be more productive also helps LLMs be more
+productive. And secondly, good infrastructure, once it is used in training data, also
+helps LLMs.
 
 <div class="boxed-text">
 
@@ -469,8 +470,8 @@ Very simply:
 Note “essential complexity” is a slightly misleading term, because it sounds like if it
 is “essential” it might be fixed or unchanging.
 This isn’t true! In fact, feature complexity always grows due to human nature and
-[Tog’s pardox](https://www.votito.com/methods/togs-paradox/): as soon as you solve a
-problem for someone, they will think of a new problem.
+[**Tog’s paradox**](https://www.votito.com/methods/togs-paradox/): as soon as you solve
+a problem for someone, they will think of a new problem.
 
 <div class="boxed-text">
 
@@ -564,7 +565,7 @@ also some common confusions about the essential nature of code.
 When learning to program, people tend to think of programming as communicating with the
 computer. It can be good for learning or a fun challenge to do this “the hard way” in C
 or assembly language.
-Over time, whenever they can, engineers and programmers invariably move to to
+Over time, whenever they can, engineers and programmers invariably move to
 “higher-level” languages and frameworks that are easier to write in.
 
 But there is a key point even some experienced programmers forget: As systems evolve,
@@ -717,7 +718,7 @@ regardless of how they are implemented.*
 
 </div>
 
-Imagine that you have code that performs a task, such as use an API to get your sales
+Imagine that you have code that performs a task, such as using an API to get your sales
 data from your payment processor.
 And you have certain pieces of code to calculate customized monthly sales metrics.
 It’s easy to combine these into reporting software that does both reliably.
@@ -735,8 +736,8 @@ sure they’re happy with the service.
 Partly or even fully automating both these processes might be possible, but it’s not a
 simple composition of two procedures.
 To do this right requires creating *more* procedures, such as a dashboard for the CEO,
-the sales lead, and and the account manager to monitor the state of these automations
-and deal with issues personally.
+the sales lead, and the account manager to monitor the state of these automations and
+deal with issues personally.
 
 <div class="boxed-text">
 
@@ -912,7 +913,7 @@ in C programs. Modern linters parse code into abstract syntax trees and check it
 predefined rules. The idea was to catch bugs early before they manifest at runtime.
 
 Now as it turned out, the validation of code is one of the hardest problems in software.
-The past 40 years, this idea has slowly but consistently grown in maturity and in
+Over the past 40 years, this idea has slowly but consistently grown in maturity and in
 importance for software development.
 
 *Type systems* were another layer of validation for software.
@@ -948,7 +949,7 @@ far better at coding accurately.
 A similar thing is true for unit tests.
 While people often knew that unit tests were a good practice, the fact that they are now
 quick to write with LLMs *and* they then benefit LLMs in writing code with fewer bugs
-has driven to a rapid increase in their use.
+has driven a rapid increase in their use.
 
 <div class="boxed-text">
 
@@ -1406,12 +1407,11 @@ And some lower-level libraries I’ve found helpful for the above work:
   wrapping and filling**, with an emphasis on making **git diffs** and **LLM edits** to
   text documents easier to diff and review.
 
-  - Flowmark has the option to to use **semantic line breaks** (using a heuristic to
-    break lines on sentences sentences when that is reasonable), which is an underrated
-    feature that can **make diffs on GitHub much more readable**. The the change may
-    seem subtle but avoids having paragraphs reflow for very small edits, which does a
-    lot to **minimize merge conflicts**. An example of what sentence-guided wrapping
-    looks like, see the
+  - Flowmark has the option to use **semantic line breaks** (using a heuristic to break
+    lines on sentences when that is reasonable), which is an underrated feature that can
+    **make diffs on GitHub much more readable**. The change may seem subtle but avoids
+    having paragraphs reflow for very small edits, which does a lot to **minimize merge
+    conflicts**. An example of what sentence-guided wrapping looks like, see the
     [Markdown source](https://github.com/jlevy/flowmark/blob/main/README.md?plain=1) of
     this readme file.)
 

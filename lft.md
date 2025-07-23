@@ -1023,6 +1023,13 @@ work:[^drucker]
 
 ## Strategies for Building Tools
 
+<div class="boxed-text sans-text">
+
+This section is still in progress and I’d like to refine these ideas.
+I’d welcome your suggestions!
+
+</div>
+
 What are the tools that can help people iteratively improve the quality of written work
 and consequently, of their ideas, both individually and when collaborating?
 
@@ -1118,7 +1125,7 @@ paths in the grass, then pave the discovered paths.
 
 <div class="boxed-text">
 
-*Tooling should support powerful **primitve operations** and encourage **discoverd
+*Tooling should support powerful **primitive operations** and encourage **discoverd
 paths** that combine these operations in varied, creative ways.*
 
 </div>
@@ -1328,7 +1335,7 @@ Some key areas where document and tooling infrastructure needs to improve:
 
 Over the past couple months, I’ve found that because I can build more myself with LLM
 coding tools, I have been able to prototype a few of these bottom-up tools.
-These are just a start but they are pieces that build on each other:
+These are just a start but they are pieces that build on each other.
 
 All of these are rough and I haven’t really promoted them yet as they are early
 prototypes. But I’d love early feedback if you’re willing to share it:

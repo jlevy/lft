@@ -3,7 +3,7 @@
 <div class="sans-text">
 
 **Joshua Levy** ([GitHub](https://github.com/jlevy), [Twitter](https://x.com/ojoshe))\
-*v0.1.10 (July 2025) – Draft!*
+*v0.1.11 (July 2025) – Draft!*
 
 <div class="boxed-text">
 
@@ -175,9 +175,8 @@ time.
 
 ## The Complexity of Software Engineering
 
-> “Technology is the solution to human problems, and we won’t run out of work till we
-> run out of problems.”
-> —Tim O’Reilly[^oreilly]
+> “*Technology is the solution to human problems, and we won’t run out of work till we
+> run out of problems.*” —Tim O’Reilly[^oreilly]
 
 ### What is Technology?
 
@@ -199,14 +198,13 @@ problems.
 People (even programmers and tech leaders) make confused statements about programming
 and engineering[^progvseng] surprisingly often.
 
-The thinking seems to be: Programmers write code.
-But now AI writes code.
-In fact, it writes code better than most programmers.
-Therefore programmers are no longer needed.
+The thinking seems to be: *Programmers write code.
+But now AI writes code—in fact, better than most programmers.
+Therefore, programmers are no longer needed.*
 
 In my view, this reasoning reflects a deep misunderstanding of what engineering is.
-It is a bit like confusing writing with typing.
-Writing certainly involves typing (at least, it does today), but it’s a woeful
+It is a much like confusing writing with typing.
+Writing certainly *involves* typing (at least, it usually does today), but it’s a woeful
 misunderstanding to think the value of a writer is their typing
 ability.[^combinedskills]
 
@@ -221,8 +219,17 @@ best solve the problem.
 It takes time and effort to *explore* the problem and possible solutions.
 Engineering is a practical exploration of solutions to a problem.
 
-Not everyone would give this definition, but I hope I can convince you this is the
-correct one.
+<div class="boxed-text">
+
+***Software engineering** is the precise exploration of software solutions to human
+problems.*
+
+</div>
+
+### Why We Will Always Need Engineers
+
+Not everyone would give this definition of engineering, but I hope I can convince you
+this is the correct one,
 
 Just for fun, let’s take a hypothetical example.
 
@@ -244,16 +251,9 @@ The more clever or determined users would start *exploring* what they really wan
 Changing B to D or adding a special case E, and so on.
 
 You know what you’d call those determined, unusually analytical users who were good at
-figuring out what they really wanted?
+figuring out what people really want?
 
 You guessed it: engineers.
-
-<div class="boxed-text">
-
-***Software engineering** is the precise exploration of software solutions to human
-problems.*
-
-</div>
 
 ### What is Good Engineering?
 
@@ -284,8 +284,8 @@ solutions.*
 You need to do it quickly but at the same time without getting bogged down by details
 that aren’t really relevant to the problem.
 
-As one of the best engineers I know describes it, “good engineering is moving fast but
-not painting yourself into a corner.”
+As one of the best engineers I know puts it, “good engineering is moving fast but not
+painting yourself into a corner.”
 
 ### Product vs. Infrastructure Engineering
 
@@ -312,47 +312,87 @@ engineering*.
 
 This distinction can help resolve some confusions.
 
-For example, most arguments between engineers on things like software architecture and
-programming languages are not about product engineering.
+For example, you’ve probably seen heated arguments between engineers on things like what
+database to use, which programming langauge is better, or if microservices are a
+mistake.
 
-Product-thinking people often find these arguments confusing or distracting.
+Product-thinking people often find these arguments confusing or just a waste of time.
 
-But it’s because they are not about product engineering.
-They are about infrastructure engineering: they are arguments about *what infrastructure
-will lead to future sustained velocity for other engineers*.
+That’s because they are not about product engineering.
+They are about *infrastructure engineering*: they are arguments about *what
+infrastructure will lead to future sustained velocity for other engineers*.
 
 Product-oriented people most respect people who give solutions to users.
 Engineering-oriented people most respect engineers who help other engineers be more
 productive.
 
 These observations have applied for decades on software teams.
+But this observation has new relevance today with LLMs.
 
-But it has new relevance today with LLMs.
 LLMs are currently best implementing clear specifications.
 Product engineers can often give clear specifications.
-However, infrastructure engineers are problems for other engineers.
-It’s harder to give specifications for infrastructure engineering because so aspects are
-non-obvious, second order, and take time to observe.
+
+However, infrastructure engineers are solving problems for *other* engineers.
+It’s much harder to give specifications for infrastructure engineering because almost
+every hard decision is non-obvious, second order, and takes time (often years!)
+to observe.
+
+To a junior engineer, Java and Python may both seem perfectly fine for writing programs.
+Similarly, Postgres and MongoDB might seem like just two different ways to store data.
+To an experienced engineer, these are radically different technologies.
+This is because they have years of experience with the non-obvious and painful ways each
+of these tools caused them problems.
 
 LLMs help all engineers, but they can do more for product engineers than for
-infrastructure engineers.
-So human engineering effort is increasingly about infrastructure engineering.
+infrastructure engineers, because LLMs are best at pattern matching from training data.
+Such pattern matching works better for features (which are typically written using
+similar languages and syntax) than for infrastructure (which can change the way you
+solve problems entirely).
+
+There are two consequences of this.
+First, this means human engineering effort is increasingly about infrastructure
+engineering. helps human engineers be more productive also helps LLMs be more produtive.
+And secondly, good infrastructure, once it is used in training data, also helps LLMs.
 
 <div class="boxed-text">
 
+*LLMs are better at product engineering than at infrastructure engineering.*
+
 *LLMs make (human) product engineers more effective.*
 
-*(Human) infrastructure engineers make LLMs more effective.*
+*But (human) infrastructure engineers are what make LLMs more effective.*
 
 </div>
 
+Let’s give an example of the last point.
+
+Almost all engineers readily acknowlege that CSS is overly complex and full of pitfalls.
+Thankfully, many people now say, LLMs know CSS and can now handle the things that were
+previously error-prone for humans.
+
+This is true. But what is often overlooked is that another thing is also true: if it’s
+hard for humans, it’s also hard for LLMs!
+
+It is *relatively* far more productive to use an LLM with good infrastructure than it is
+with bad infrastructure.[^infravsllm]
+
+<div class="boxed-text">
+
+*If you can minimize irrelevant complexity for an LLM while staying within the scope of
+the training data, you can achieve more with the same LLM.*
+
+</div>
+
+Minimizing accidental complexity for engineers and LLMs is (for a while at least) still
+the job of human infrastructure engineers.
+
+This brings us to another word that has a few distinct meanings in engineering:
+complexity.
+
 ### Three Types of Complexity
 
-> People will strive to experience an equal or increasing level of complexity in their
-> lives no matter what is done to reduce it.
-> —Bruce Tognazzini
-
-Let’s mention another word that has a few distinct meanings in engineering: complexity.
+> “*People will strive to experience an equal or increasing level of complexity in their
+> lives no matter what is done to reduce it.*” —Bruce Tognazzini
 
 An alternate and important way to frame the concept of good engineering is originally
 due to Fred Brooks: good engineering involves exploring the *essential complexity* of a
@@ -363,7 +403,7 @@ This is actually just a reframing of the same definition above of sustained velo
 Having too much accidental complexity is a common way engineering slows down and becomes
 ineffective.[^techdebt]
 
-In fact, I think it’s best to think of three kinds of complexity that arise in
+In fact, I think it’s best to think of *three* kinds of complexity that arise in
 engineering:
 
 - **Natural complexity:** If you are building an airplane, you need a good understanding
@@ -647,10 +687,10 @@ that need ongoing resolution.
 
 <div class="boxed-text">
 
-Socio-technical systems require a combination of both **exact** and **inexact**
-procedures.
+*Socio-technical systems require a combination of both **exact** and **inexact**
+procedures.*
 
-Exact and inexact procedures are qualitatively different and not interchangeable.
+*Exact and inexact procedures are qualitatively different and not interchangeable.*
 
 </div>
 
@@ -677,11 +717,11 @@ and deal with issues personally.
 
 <div class="boxed-text">
 
-Exact procedures can be composed easily: combine them and the result is an exact
-procedure.
+*Exact procedures can be composed easily: combine them and the result is an exact
+procedure.*
 
-Inexact procedures can only be composed with care: if you combine them naively the
-result is likely to be useless.
+*Inexact procedures can only be composed with care: if you combine them naively the
+result is likely to be useless.*
 
 </div>
 
@@ -695,7 +735,7 @@ The design of systems of inexact processes is qualitatively different from pure 
 engineering.
 This is why many generic early “agent frameworks” were not as useful as they
 at first may have seemed.
-Agent frameworks often are trying to componse lots of inexact processes, blindly hoping
+Agent frameworks often are trying to compose lots of inexact processes, blindly hoping
 the composition would work.
 
 ### Is English the New Programming Language?
@@ -722,9 +762,9 @@ next month will do the same thing 99.9% of the time.
 
 <div class="boxed-text">
 
-English is ideal for documenting inexact procedures.
+*English is ideal for documenting inexact procedures.*
 
-Code (of some form) is ideal for documenting exact procedures.
+*Code (of some form) is ideal for documenting exact procedures.*
 
 </div>
 
@@ -833,10 +873,10 @@ This may be a bold statement, but I think it’s worth exploring its implication
 
 ## The Metaphor of Linting
 
-> “When you make it harder to do the basic parts of an activity, the more advanced parts
-> become almost impossible … Tools don’t only make things easier: they allow us to
-> augment ourselves to do things that were previously impossible.”
-> —Doug Engelbart[^aug]
+> “*When you make it harder to do the basic parts of an activity, the more advanced
+> parts become almost impossible … Tools don’t only make things easier: they allow us to
+> augment ourselves to do things that were previously impossible.*” —Doug
+> Engelbart[^aug]
 
 ### A Brief History of Linting and Type Checking
 
@@ -1451,6 +1491,11 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
     And exploration is directly powered by learning.
     This is the real reason for the classic startup advice to ship fast and
     iterate.[^leanstartup]
+
+[^infravsllm]: Another way to think of this is, LLM training is generally not the most
+    efficient way to design infrastructure, because essential information (such as the
+    difficulty of writing code, or how error prone that code is in a given framework)
+    simply isn’t in the training data (at least so far).
 
 [^nosilverbullet]: Frederick P. Brooks, [*No Silver Bullet—Essence and Accident in
     Software

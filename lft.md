@@ -504,24 +504,24 @@ There are several reasons for this.
 And they depend on the size of the team and some apply *even if people know the solution
 and know how to build it*. It’s worth being aware of the key ones:
 
-1. *Lack of awareness*: They don’t know your problem exists
+1. **Lack of awareness:** They don’t know the problem exists.
 
-2. *Lack of understanding*: They are aware of the problem but don’t understand it
+2. **Lack of understanding:** They are aware of the problem but don’t understand it
    properly (because they haven’t talked to users or because they can’t as a team
-   describe or articulate it in a way that can be built)
+   articulate or communicate what is needed in a way that can be built).
 
-3. *Lack of resources*: They understand the problem, but don’t have the resources
-   (money, data, or people with the right skills) to properly design and build it
+3. **Lack of resources:** They understand the problem, but don’t have the resources
+   (money, data, or people with the right skills) to design and build it.
 
-4. *Innovator’s Dilemma*: They understand and have the resources, but to do so seems
+4. **Innovator’s Dilemma:** They understand and have the resources, but to do so seems
    irrational because it is *relatively* less profitable than working on existing,
    successful products and features.[^christensen]
 
-5. *Conway’s Law*: They understand the problem and resources and incentives to solve the
-   problem, but still don’t solve it (or solve it poorly or do something else).
-   This is surprisingly common for larger teams.
-   The reason many large, successful companies don’t add specific features you want,
-   even if they should and they are obviously a good idea, is
+5. **Conway’s Law:** They understand the problem *and* have resources and incentives to
+   solve the problem, but *still* don’t solve it (or solve it poorly or do something
+   else). You might wonder if this is really possible, but it is very common for larger
+   teams. The reason many companies don’t add specific features you want, even if they
+   should and they are obviously a good idea, is
    [Conway’s Law](https://en.wikipedia.org/wiki/Conway%27s_law): teams are almost always
    constrained to ship products that mirror their organizational structure.
 
@@ -535,7 +535,7 @@ managers, designers, entrepreneurs, and companies design and ship solutions.
 <div class="boxed-text">
 
 *Even with perfect engineering and powerful AI, software and features are always
-constrained by **human understanding**, **profit incentives**, and **organizational
+constrained by **human communication**, **profit incentives**, and **organizational
 structure**.*
 
 </div>
@@ -793,13 +793,19 @@ next month will do the same thing 99.9% of the time.
 
 </div>
 
-There is an interesting nuance, however: Could we think of English as a program, but use
-LLMs to “compile” English to code of some form, and then review and use that code?
+There is an interesting nuance, however: Could we think of English as an “inexact
+program” that we “compile” using an LLM to code, and then review and use that code?
 Well, yes! That’s what we are already doing when we use LLMs to code.
 
-The only difference is right now we tend to only save or version control the code.
-Increasingly, we may wish to version control the spec that led to the code, as well, so
-we can streamline the update process of “re-compiling,” reviewing, and testing the code.
+But the key thing is, this process *is itself inexact*! There’s no free lunch.
+Making a procedure exact is a process of exploring straggling, unresolved ambiguities.
+This requires information about the problem, not just the current solution.
+So to get exactness takes human effort.
+
+One thing that *is* changing right now: traditionally, we tend to only save or version
+control the code. Increasingly, we may wish to version control the spec that led to the
+code, as well, so we can streamline the update process of “re-compiling,” reviewing, and
+testing the code.
 
 ### Automation of Inexact Procedures
 
@@ -819,18 +825,34 @@ specifications** shared by both humans and LLMs tools.*
 
 </div>
 
-A lot of confusion arises from confusing the *automation* of LLMs with the *exactness*
+Because of this, all the workflows engineers have devised over decades to manage the
+complexity of code will begin to apply to specifications.
+
+<div class="boxed-text">
+
+*Engineering workflows (like version control, code reviews, and so on) will begin to
+apply to English specifications of inexact procedures, just as they do now for code that
+defines exact procedures.*
+
+</div>
+
+A lot of confusion arises from mistaking the *automation* of LLMs with the *exactness*
 of code. I hope I’ve now convinced you of this:
 
 <div class="boxed-text">
 
-*LLMs can **automate inexact procedures** but without additions to the procedure,
+**Automation** is not the same as **exactness**.
+
+*LLMs can **automate inexact procedures** but without clarifications to the procedure,
 automation **does not make an inexact procedure exact**.*
 
 </div>
 
-In other words, LLMs offer automation, but they don’t eliminate the prime importance of
-code to define software behavior.
+We have to remember what we will see is coding workflows applied to *inexact*
+procedures.
+LLMs offer automation but they don’t automatically convert inexact procedures
+to exact procedures or eliminate the prime importance of code to exactly define software
+behavior.
 
 ### Software Engineering with LLMs
 
@@ -1509,8 +1531,8 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
     The most successful engineers of the future may combine have a different combination
     of skills.
 
-[^whyfast]: A reasonable question is, why is good engineering mean building things
-    quickly? Isn’t it more important to build them right?
+[^whyfast]: A reasonable question is, why does good engineering mean building things
+    *quickly*? Isn’t it more important to build them *right*?
 
     There are two answers.
     One is a business reason: if you don’t build it quickly, someone else might, and you
@@ -1519,8 +1541,7 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
     learn more quickly in the process of exploring solutions.
     Engineering is exploration.
     And exploration is directly powered by learning.
-    This is the real reason for the classic startup advice to ship fast and
-    iterate.[^leanstartup]
+    This is the real reason for the classic startup advice to ship fast and iterate.
 
 [^infravsllm]: Another way to think of this: LLM training is generally not the most
     efficient way to design infrastructure, because essential information (such as the
@@ -1586,9 +1607,4 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
 [^sociotech]: The concept of socio-technical systems was developed by Eric Trist and
     Fred Emery at the Tavistock Institute in the 1960s, emphasizing the interdependence
     of social and technical factors in organizational design.
-
-[^leanstartup]: This principle is central to the lean startup methodology, popularized
-    by Eric Ries in *The Lean Startup* (2011), which emphasizes
-    building-measuring-learning feedback loops to reduce waste and accelerate
-    innovation.
 

@@ -161,8 +161,8 @@ The hard part is figuring out which parts are which.
 
 <div class="boxed-text">
 
-*Many of the inherent challenges of building AI and software products have been with us
-for decades. To plan the future, we must also study the past.*
+*The inherent challenges of building AI and software products have been with us for
+decades. To **plan the future**, we must also **study the past**.*
 
 </div>
 
@@ -244,7 +244,7 @@ problems.*
 
 </div>
 
-### We Will Always Need Engineers
+### Do We Still Need Software Engineers?
 
 Not everyone would give this definition of engineering, but I hope I can convince you
 this is the correct one,
@@ -272,6 +272,13 @@ You know what you’d call those determined, unusually analytical users who were
 figuring out what people really want?
 
 You guessed it: engineers.
+
+<div class="boxed-text">
+
+*LLMs and agents alter engineering processes and the skills engineers need, but they
+**do not eliminate the need for engineers**.*
+
+</div>
 
 ### What is Good Engineering?
 
@@ -811,6 +818,7 @@ testing the code.
 
 Traditionally, we have used code for exact procedures.
 And we’ve used people and documents for inexact procedures.
+But LLMs change all this.
 
 <div class="boxed-text">
 
@@ -820,39 +828,40 @@ And we’ve used people and documents for inexact procedures.
 
 <div class="boxed-text">
 
-***Inexact procedures** will increasingly become automated with **natural language
+***Inexact procedures** will increasingly become **automated** with **natural language
 specifications** shared by both humans and LLMs tools.*
 
 </div>
 
-Because of this, all the workflows engineers have devised over decades to manage the
-complexity of code will begin to apply to specifications.
+Because of this, engineering workflows engineers have devised over decades to manage the
+complexity of code (like version control, code reviews, and so on) will begin to apply
+to English specifications, just as they do now for code that defines exact procedures.
+
+However, this doesn’t mean English is just like code.
+LLMs can automate inexact procedures but without clarifications to the procedure,
+automation does not make an inexact procedure exact.
+To automate an inexact procedure you have two options:
+
+- Automate but combine it with interactive human oversight on an ongoing basis
+
+- Invest in human engineering (perhaps also with LLMs) to explore new ways to convert
+  the inexact procedure to a more reliable exact procedure
+
+Automated workflows for inexact procedures will lead to great efficiency gains.
+But we have to remember:
 
 <div class="boxed-text">
 
-*Engineering workflows (like version control, code reviews, and so on) will begin to
-apply to English specifications of inexact procedures, just as they do now for code that
-defines exact procedures.*
+***Automation** is not the same as **exactness** of a procedure.*
 
 </div>
 
-A lot of confusion arises from mistaking the *automation* of LLMs with the *exactness*
-of code. I hope I’ve now convinced you of this:
+Basically, we are seeing an explosion in the forth quadrant of this table:
 
-<div class="boxed-text">
-
-**Automation** is not the same as **exactness**.
-
-*LLMs can **automate inexact procedures** but without clarifications to the procedure,
-automation **does not make an inexact procedure exact**.*
-
-</div>
-
-We have to remember what we will see is coding workflows applied to *inexact*
-procedures.
-LLMs offer automation but they don’t automatically convert inexact procedures
-to exact procedures or eliminate the prime importance of code to exactly define software
-behavior.
+|  | Exact procedures | Inexact procedures |
+| --- | --- | --- |
+| *Manual implementation* | **Traditional tedious paperwork**<br>(increasingly obsolete) | **Traditional company processes**<br>(most work at large companies today) |
+| *Automated implementation* | **Typical software usage**<br>(defined in code, run on a computer, used by humans) | **New agent-human workflows**<br>(defined in English, interpreted by LLMs, interactive with humans) |
 
 ### Software Engineering with LLMs
 
@@ -975,7 +984,7 @@ has driven a rapid increase in their use.
 
 <div class="boxed-text">
 
-When it comes to developer tooling, what is good humans is great for LLMs.
+*When it comes to developer tooling, what is good humans is great for LLMs.*
 
 </div>
 

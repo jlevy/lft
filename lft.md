@@ -30,6 +30,9 @@ can reference it.
 > “*Civilization advances by extending the number of important operations which we can
 > perform without thinking about them.*” —Alfred North Whitehead[^whitehead]
 
+> “*Simple should be simple.
+> Complex should be possible.*” —Alan Kay[^kay]
+
 This work is a collection of reflections and research ideas on software engineering and
 tools to augment our *collective intelligence*—that is, to improve our ability to find
 solutions to complex human problems.
@@ -984,7 +987,7 @@ has driven a rapid increase in their use.
 
 <div class="boxed-text">
 
-*When it comes to developer tooling, what is good humans is great for LLMs.*
+*When it comes to developer tooling, what is good for humans is great for LLMs.*
 
 </div>
 
@@ -1156,8 +1159,8 @@ paths in the grass, then pave the discovered paths.
 
 <div class="boxed-text">
 
-*Tooling should support powerful **primitive operations** and encourage **discoverd
-paths** that combine these operations in varied, creative ways.*
+*Tooling should aim for powerful **primitive operations** and allow **discoverd paths**
+that combine these operations in varied, creative ways.*
 
 </div>
 
@@ -1505,6 +1508,15 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 ## Notes
 
+[^whitehead]: “It is a profoundly erroneous truism … that we should cultivate the habit
+    of thinking of what we are doing.
+    The precise opposite is the case.
+    Civilization advances by extending the number of important operations which we can
+    perform without thinking about them.”
+    —Alfred N. Whitehead, *An Introduction to Mathematics* (1911), p. 61
+
+[^kay]: https://news.ycombinator.com/item?id=24463842
+
 [^engelbart]: https://en.wikipedia.org/wiki/Douglas_Engelbart
 
 [^futurehistory]: In fact, this is true for many fields.
@@ -1578,13 +1590,6 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 [^aug]: *Augmenting Human Intellect: A Conceptual Framework* —\
     https://www.dougengelbart.org/pubs/augment-3906.html
-
-[^whitehead]: “It is a profoundly erroneous truism … that we should cultivate the habit
-    of thinking of what we are doing.
-    The precise opposite is the case.
-    Civilization advances by extending the number of important operations which we can
-    perform without thinking about them.”
-    —Alfred N. Whitehead, *An Introduction to Mathematics* (1911), p. 61
 
 [^uptimevscorrect]: In engineering, “counting nines” traditionally refers to *service
     availability* (uptime): 99.99% uptime means less than 52 minutes of downtime per

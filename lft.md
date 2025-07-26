@@ -80,7 +80,7 @@ There is quite a bit here, but it is all in support of four key points:
    infrastructure.
 
 If you find you agree with these arguments, you’ll see this suggests different areas of
-emphasis than is currently in many research labs and AI startups.
+emphasis than is currently pursued in many research labs and AI startups.
 It suggests areas where we could take inspiration from known patterns like linting to
 build more powerful tools for thought and collective problem-solving.[^matuschak] At the
 end, I give a few ideas for areas to focus on.
@@ -112,12 +112,23 @@ he famously came to three conclusions:[^bush][^engelbart]
 3. If we could dramatically improve how we do that, we’d be boosting every effort on the
    planet to solve important problems
 
-A key inspiration in my own career was meeting Doug in the 2000s, when I was a young
-researcher at [SRI](https://en.wikipedia.org/wiki/SRI_International).
+In 1968, in San Francisco, he gave what is now known as the [**Mother of All
+Demos**](https://en.wikipedia.org/wiki/The_Mother_of_All_Demos), the result of 6 years
+of research at his lab in [SRI](https://en.wikipedia.org/wiki/SRI_International). In 90
+minutes, he showed the computer mouse, graphics, command input, hypertext and links,
+word processing, video conferencing (via a microwave link to Menlo Park), dynamic file
+linking, revision control, and a collaborative real-time editor.
 
-75 years later, over 50 years after he invented the computer mouse and gave [the Mother
-of All Demos](https://en.wikipedia.org/wiki/The_Mother_of_All_Demos), I think his
-conclusions are still relevant.
+It is no exaggeration to say that all applications and software in use today were
+influenced by it. The work led to research projects at Xerox PARC in the early 1970s,
+which influenced the Apple Macintosh and Microsoft Windows graphical user interface
+operating systems in the 1980s and 1990s.
+
+A key inspiration in my own career was meeting Doug in the 2000s, many years later, when
+I was a young researcher at SRI.
+
+75 years later, over 50 years after he invented the computer mouse, I think his ideas
+and vision are still relevant.
 
 ### Why We Should Talk about IA (Not Just AI)
 
@@ -137,11 +148,9 @@ I see so much focus today on the rising capabilities of AI systems—but vastly 
 Doug’s vision never wavered, but in spite of the immense impact of his work on the
 Internet, the GUI, the mouse, and almost every piece of software we use, he always
 considered his dream unrealized.
-
-However those who knew him tend to feel his most profound legacy wasn’t the mouse or
-GUI, but rather his “[unfinished
-revolution](https://dougengelbart.org/content/view/194)”—a vision for increasing our
-collective capacity to address challenging problems.
+Those who knew him tend to feel his most profound legacy wasn’t the mouse or GUI, but
+rather his “[unfinished revolution](https://dougengelbart.org/content/view/194)”—a
+vision for increasing our collective capacity to address challenging problems.
 
 It’s time we apply the vastly more powerful tools of today with this vision in mind.
 
@@ -188,7 +197,7 @@ software are excited about today.*
 
 </div>
 
-The rise of LLMs are making it possible for non-programmers to become programmers,
+The rise of LLMs is making it possible for non-programmers to become programmers,
 programmers to become designers, and roles to increasingly blur.
 Along with this, the dichotomy between human language and code is blurring.
 
@@ -250,7 +259,7 @@ problems.*
 ### Do We Still Need Software Engineers?
 
 Not everyone would give this definition of engineering, but I hope I can convince you
-this is the correct one,
+this is the correct one.
 
 Just for fun, let’s take a hypothetical example.
 
@@ -346,7 +355,7 @@ and agent frameworks.
 This distinction can help resolve some confusions.
 
 For example, you’ve probably seen heated arguments between engineers on things like what
-database to use, which programming langauge is better, or if microservices are a
+database to use, which programming language is better, or if microservices are a
 mistake.
 
 Product-thinking people often find these arguments confusing or just a waste of time.
@@ -365,14 +374,14 @@ LLMs are currently best implementing clear specifications.
 Product engineers usually have clear specifications for a feature.
 However, it’s much harder to give specifications for infrastructure engineering because
 almost every hard decision is non-obvious and second order.
-And it can takes time (often years!)
+And it can take time (often years!)
 to see if it worked out as intended.
 
 To a junior engineer, Java and Python may both seem perfectly fine for writing programs.
 Similarly, Postgres and MongoDB might seem like just two different ways to store data.
 To an experienced engineer, these are radically different technologies.
-This is because they have years of experience with the non-obvious and painful ways each
-of these tools caused them problems.
+This is because they have years of experience with the non-obvious (and quite often
+painful) ways each of these tools has had unexpected consequences.
 
 So how does this relate to LLM tools?
 Well, LLMs help all engineers, but they can do more for product engineers than for
@@ -402,9 +411,9 @@ But (human) infrastructure engineers are what make LLMs more effective.*
 
 Let’s give an example of the last point.
 
-Almost all engineers readily acknowlege that CSS is overly complex and full of pitfalls.
-Thankfully, many people now say, LLMs know CSS and can now handle the things that were
-previously error-prone for humans.
+Almost all engineers readily acknowledge that CSS is overly complex and full of
+pitfalls. Thankfully, many people now say, LLMs know CSS and can now handle the things
+that were previously error-prone for humans.
 
 This is true. But what is often overlooked is that another thing is also true: if it’s
 hard for humans, it’s also hard for LLMs!
@@ -445,8 +454,8 @@ engineering:
   of aerodynamics and materials science, which are governed by quite complex
   interactions of the laws of physics.
   This is natural complexity.
-  It involves the inherent consequences logic, mathematics, physics, and the real world.
-  It is ultimately consistent.
+  It involves the inherent consequences of logic, mathematics, physics, and the real
+  world. It is ultimately consistent.
 
   *Engineers should always try to understand natural complexity.*
 
@@ -623,8 +632,8 @@ code was written. The idea was that business analysts or architects would specif
 behavior precisely enough that programmers could implement it correctly.
 
 Famously, the waterfall approach to software development rarely worked in practice.
-(At this point this should come as no surprise since we know it fundamentally hinders
-the true process of engineering.)
+(At this point this should come as no surprise, since we can see how it could often
+hinder the true process of engineering, which is exploration.)
 Specifications were too vague, didn’t reflect a correct solution, or were too detailed
 to maintain as requirements evolved.
 
@@ -644,7 +653,7 @@ essential complexity of problems.
 
 <div class="boxed-text">
 
-***Specifications** are text format that describes the behavior of software with
+***Specifications** are a text format that describes the behavior of software with
 **inexact precision** in a way humans (and LLMs) can understand.*
 
 </div>
@@ -693,7 +702,7 @@ In other cases, we can adapt to errors because the cost of errors is low.
 
 Most complex human endeavors can be viewed as a **socio-technical system**[^sociotech]
 that involves people, tools, and written or unwritten processes.
-Some activities in such a system are informal or ad-hoc, and some are more systemetized.
+Some activities in such a system are informal or ad-hoc, and some are more systematized.
 
 As systems and products mature, processes are codified and automated for efficiency and
 consistency. And the decades since software began “eating the world,” many of the tools
@@ -701,7 +710,7 @@ and processes are implemented in software.
 
 For example, in a mature software business, there is a process for how software is
 deployed as well as processes for customer support.
-In an accounting department, there is a process for calculating revenue as well a
+In an accounting department, there is a process for calculating revenue as well as a
 process for auditing financial statements.
 
 Let’s call standard processes like this **procedures**.
@@ -808,7 +817,7 @@ program” that we “compile” using an LLM to code, and then review and use t
 Well, yes! That’s what we are already doing when we use LLMs to code.
 
 But the key thing is, this process *is itself inexact*! There’s no free lunch.
-Making a procedure exact is a process of exploring straggling, unresolved ambiguities.
+Making a procedure exact is a process of exploring unresolved ambiguities.
 This requires information about the problem, not just the current solution.
 So to get exactness takes human effort.
 
@@ -832,7 +841,7 @@ But LLMs change all this.
 <div class="boxed-text">
 
 ***Inexact procedures** will increasingly become **automated** with **natural language
-specifications** shared by both humans and LLMs tools.*
+specifications** shared by both humans and LLM tools.*
 
 </div>
 
@@ -859,7 +868,7 @@ But we have to remember:
 
 </div>
 
-Basically, we are seeing an explosion in the forth quadrant of this table:
+Basically, we are seeing an explosion in the fourth quadrant of this table:
 
 |  | Exact procedures | Inexact procedures |
 | --- | --- | --- |
@@ -993,7 +1002,7 @@ has driven a rapid increase in their use.
 
 ### What is Linting?
 
-Historically, linting is mostly used to refer to highlighting fairly low level, specific
+Historically, *linting* is used to refer to highlighting fairly low level, specific
 coding errors.
 
 One lesson of linting is that catching typos or obvious bugs saves time.
@@ -1023,8 +1032,7 @@ inessential to the core problems at hand.*
 
 </div>
 
-A key part of this broadened idea of linting is that it can include a more kinds of
-tools:
+A key part of this broadened idea of linting is that it can include more kinds of tools:
 
 - Tools that automatically fix small or trivial errors (some spell checking is like
   this)
@@ -1067,7 +1075,7 @@ I’d welcome your suggestions!
 What are the tools that can help people iteratively improve the quality of written work
 and consequently, of their ideas, both individually and when collaborating?
 
-We need to look for more reliable, small steps that makes meaningful adjustments and
+We need to look for more reliable, small steps that make meaningful adjustments and
 improvements to content so it is better in different dimensions—clarity, rationality,
 rigor, and so on. By improving content along the right dimensions, and using these tools
 collaboratively, so the judgement of many people is combined, it seems we can
@@ -1131,9 +1139,9 @@ In software, big ideas often must be realized from practical, concrete pieces.
 Typically there are two opposite pitfalls when building software:
 
 - **Under-engineering (inadequate up-front design):** This is when you don’t plan ahead
-  and just building a tool, realizing it doesn’t work as hoped, but then getting stuck
+  and just build a tool, realizing it doesn’t work as hoped, but then getting stuck
   because the complexity of the software is too high to change it.
-  This too little design and too much technical debt.
+  This is too little design and too much technical debt.
 
 - **Over-engineering (too much up-front design):** This is the opposite, which is that
   you’re so afraid of inadequate design that you design a much more complex
@@ -1159,7 +1167,7 @@ paths in the grass, then pave the discovered paths.
 
 <div class="boxed-text">
 
-*Tooling should aim for powerful **primitive operations** and allow **discoverd paths**
+*Tooling should aim for powerful **primitive operations** and allow **discovered paths**
 that combine these operations in varied, creative ways.*
 
 </div>
@@ -1211,7 +1219,7 @@ building and exploring products could have surprisingly large impacts:
 
 1. **Making quality of writing and clarity of reasoning more apparent**
 
-   - **Consistent writing metrics:** Ways to measure and attributes of writing (clarity,
+   - **Consistent writing metrics:** Ways to measure attributes of writing (clarity,
      cohesion, depth, rigor, factuality, warmth, etc.)
 
    - **Fact-check linting:** Workflows for LLM-based fact checking (perform searches,
@@ -1610,7 +1618,7 @@ License](http://creativecommons.org/licenses/by-sa/4.0/).
     economies.
 
 [^matuschak]: The term “tools for thought” has been explored by several researchers.
-    A good article Andy Matuschak and Michael Nielsen, “How can we develop
+    A good article by Andy Matuschak and Michael Nielsen, “How can we develop
     transformative tools for thought?”
     (2019). https://numinous.productions/ttft/
 
